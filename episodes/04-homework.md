@@ -1,7 +1,7 @@
 ---
 title: "Getting Ready for the Next step"
 teaching: 10
-exercises: 2
+exercises: 20
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 

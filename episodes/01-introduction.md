@@ -1,7 +1,7 @@
 ---
 title: "Introduction"
-teaching: 10
-exercises: 2
+teaching: 20
+exercises: 10
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
@@ -17,15 +17,25 @@ exercises: 2
 - Understand the goals of the workshop
 - Understand workshoop expectations
 - Identify the role of open practices in the humanities
+- Meet Instructors and other participants
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
+## Introduction
 The following concepts–____, ____, and ____–are your gateway to open research and open tools.  We will be teaching these concepts via the following tools: Gitbash, Git, Myst, _____ . . . “
 
 
 
+## Goals
+
+
+
+
+## Icebreaker
+
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
+- This will be a hands on workshop
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
