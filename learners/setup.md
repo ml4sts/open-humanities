@@ -20,10 +20,9 @@ Download the [data zip file](https://example.com/FIXME) and unzip it to your Des
 
 ### Details
 
-Setup for different systems can be presented in dropdown menus via a `spoiler`
-tag. They will join to this discussion block, so you can give a general overview
-of the software used in this lesson here and fill out the individual operating
-systems (and potentially add more, e.g. online setup) in the solutions blocks.
+We will have time to do the setup, at least most of it, during the workshop. 
+
+The only thing that must be completed before the first day is to have a GitHub Account. 
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
