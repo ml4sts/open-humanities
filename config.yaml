@@ -34,7 +34,7 @@ life_cycle: 'pre-alpha' # FIXME
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://github.com/ml4sts/open-humanitiesd' # FIXME
+source: 'https://github.com/ml4sts/open-humanities' # FIXME
 
 # Default branch of your lesson
 branch: 'main'

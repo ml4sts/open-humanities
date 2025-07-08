@@ -23,7 +23,7 @@ exercises: 10
 
 
 ## Introduction
-The following concepts–____, ____, and ____–are your gateway to open research and open tools.  We will be teaching these concepts via the following tools: Gitbash, Git, Myst, _____ . . . “
+The following concepts– files, version control, and  computational thinking –are your gateway to open research and open tools.  We will be teaching these concepts via the following tools: Gitbash, Git, Myst, bash shell. . . “
 
 
 
