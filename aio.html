@@ -34,7 +34,7 @@
   <div class="container-fluid top-nav-container">
     <div class="col-md-8">
       <div class="large-logo">
-        <img id="incubator-logo" alt="Lesson Description" src="assets/images/incubator-logo.svg"><span class="badge text-bg-danger">
+        <img id="incubator-logo" alt="Carpentries Incubator" src="assets/images/incubator-logo.svg"><span class="badge text-bg-danger">
           <abbr title="This lesson is in the pre-alpha phase, which means that it is in early development, but has not yet been taught.">
             <a href="https://docs.carpentries.org/resources/curriculum/lesson-life-cycle.html" class="external-link alert-link">
               <i aria-hidden="true" class="icon" data-feather="alert-octagon" style="border-radius: 5px"></i>
@@ -91,7 +91,7 @@
       <span class="menu-title">Menu</span>
     </button>
     <div class="nav-logo">
-      <img class="small-logo" alt="Lesson Description" src="assets/images/incubator-logo-sm.svg">
+      <img class="small-logo" alt="Carpentries Incubator" src="assets/images/incubator-logo-sm.svg">
 </div>
     <div class="lesson-title-md">
       Lesson Title
@@ -255,7 +255,67 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="02-shell.html">2. What is the shell and what can it do??</a>
+        <a href="05-intro-shell.html">2. What is the shell?</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush4">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading4">
+        <a href="06-navigating-the-filesystem.html">3. Navigating the filesystem</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush5">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading5">
+        <a href="07-working-with-files-and-folders.html">4. Working with files and directories</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush6">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading6">
+        <a href="08-loops.html">5. Automating the tedious with loops</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush7">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading7">
+        <a href="09-counting-mining.html">6. Counting and mining with the shell</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush8">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading8">
+        <a href="10-free-text.html">7. Working with free text</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -487,11 +547,11 @@ locally</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</section></section><section id="aio-02-shell"><p>Content from <a href="02-shell.html">What is the shell and what can it do??</a></p>
+</section></section><section id="aio-05-intro-shell"><p>Content from <a href="05-intro-shell.html">What is the shell?</a></p>
 <hr>
 <p>Last updated on 2025-07-08 |
 
-        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/02-shell.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/05-intro-shell.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -503,18 +563,9 @@ any links that you are not going to use.
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li><p>What is the shell?</p></li>
-<li><p>What is the command line?</p></li>
-<li><p>Why should I use it?</p></li>
-<li><p>How do you move around the filesystem in the shell?</p></li>
-<li><p>How can I copy, move, and delete files and directories?</p></li>
-<li><p>How can I read files?</p></li>
-<li><p>What is a loop?</p></li>
-<li><p>How can a loop be used to repeat a task?</p></li>
-<li><p>How can I count data?</p></li>
-<li><p>How can I find data within files?</p></li>
-<li><p>How can I combine existing commands to do new things?</p></li>
-<li><p>How do we work with complex files?</p></li>
+<li>What is the shell?</li>
+<li>What is the command line?</li>
+<li>Why should I use it?</li>
 </ul>
 </div>
 </div>
@@ -524,29 +575,8 @@ any links that you are not going to use.
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li><p>Describe the basics of the Unix shell</p></li>
-<li><p>Explain why and how to use the command line</p></li>
-<li><p>Use shell commands to work with directories and files</p></li>
-<li><p>Use shell commands to find and manipulate data</p></li>
-<li><p>Work with files and directories from the command line</p></li>
-<li><p>Use tab completion to limit typing</p></li>
-<li><p>Use commands to print and view files and parts of files</p></li>
-<li><p>Use commands to move/rename, copy, and delete files</p></li>
-<li><p>Describe how loops can be used to repeat tasks</p></li>
-<li><p>Implement a loop to rename several files</p></li>
-<li><p>Demonstrate counting lines, words, and characters with the shell
-command wc and appropriate flags</p></li>
-<li><p>Use strings to mine files and extract matched lines with the
-shell</p></li>
-<li><p>Create complex single line commands by combining shell commands
-and regular expressions to mine files</p></li>
-<li><p>Redirect a command’s output to a file.</p></li>
-<li><p>Process a file instead of keyboard input using
-redirection.</p></li>
-<li><p>Construct command pipelines with two or more stages.</p></li>
-<li><p>Explain Unix’s ‘small pieces, loosely joined’
-philosophy.</p></li>
-<li><p>Use shell tools to clean and transform free text</p></li>
+<li>Describe the basics of the Unix shell</li>
+<li>Explain why and how to use the command line</li>
 </ul>
 </div>
 </div>
@@ -614,8 +644,60 @@ Subsystem for Linux</a> also gives access to a Bash shell command-line
 tool.</p>
 <p>For this lesson, we will use Git Bash for Windows users, Terminal for
 macOS, and the shell for Linux users.</p>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
 </div>
-</section><section><h2 class="section-heading" id="navigating-the-shell">Navigating the shell<a class="anchor" aria-label="anchor" href="#navigating-the-shell"></a>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points</h3>
+<div class="callout-content">
+<ul>
+<li>The shell is powerful</li>
+<li>The shell can be used to copy, move, and combine multiple files</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</div>
+</section></section><section id="aio-06-navigating-the-filesystem"><p>Content from <a href="06-navigating-the-filesystem.html">Navigating the filesystem</a></p>
+<hr>
+<p>Last updated on 2025-07-08 |
+
+        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/06-navigating-the-filesystem.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>How do you move around the filesystem in the shell?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Use shell commands to work with directories and files</li>
+<li>Use shell commands to find and manipulate data</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="navigating-the-shell">Navigating the shell<a class="anchor" aria-label="anchor" href="#navigating-the-shell"></a>
 </h2>
 <hr class="half-width">
 <p>We will begin with the basics of navigating the Unix shell.</p>
@@ -824,7 +906,9 @@ option, you’ll find it listed as <code>-h</code> in the manual, not as
 <div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1"> Answer </h4>
+  <h4 class="accordion-header" id="headingSolution1">
+  Answer
+  </h4>
 </button>
 <div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
@@ -899,7 +983,9 @@ last modification date. Try ordering files in different directories.</p>
 <div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2"> Answer </h4>
+  <h4 class="accordion-header" id="headingSolution2">
+  Answer
+  </h4>
 </button>
 <div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
@@ -922,7 +1008,62 @@ combination with the <code>-l</code> argument:</p>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="working-with-files-and-folders">Working with files and folders<a class="anchor" aria-label="anchor" href="#working-with-files-and-folders"></a>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points</h3>
+<div class="callout-content">
+<ul>
+<li>Knowing where you are in your directory structure is key to working
+with the shell</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</section></section><section id="aio-07-working-with-files-and-folders"><p>Content from <a href="07-working-with-files-and-folders.html">Working with files and directories</a></p>
+<hr>
+<p>Last updated on 2025-07-08 |
+
+        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/07-working-with-files-and-folders.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>How can I copy, move, and delete files and directories?</li>
+<li>How can I read files?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Work with files and directories from the command line</li>
+<li>Use tab completion to limit typing</li>
+<li>Use commands to print and view files and parts of files</li>
+<li>Use commands to move/rename, copy, and delete files</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="working-with-files-and-folders">Working with files and folders<a class="anchor" aria-label="anchor" href="#working-with-files-and-folders"></a>
 </h2>
 <hr class="half-width">
 <p>As well as navigating directories, we can interact with files on the
@@ -937,10 +1078,10 @@ using shell commands.</p>
 <p>Before getting started, we will use <code>ls</code> to list the
 contents of our current directory. Using <code>ls</code> periodically to
 view your options is useful to orient oneself.</p>
-<div class="codewrapper sourceCode" id="cb18">
+<div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a><span class="ex">$</span> ls</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">$</span> ls</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -950,12 +1091,12 @@ Desktop      Downloads    Movies       Pictures</code></pre>
 </div>
 <p>We will try a few basic ways to interact with files. Let’s first move
 into the <code>shell-lesson</code> directory on your desktop.</p>
-<div class="codewrapper sourceCode" id="cb20">
+<div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" tabindex="-1"></a><span class="ex">$</span> cd</span>
-<span id="cb20-2"><a href="#cb20-2" tabindex="-1"></a><span class="ex">$</span> cd Desktop/shell-lesson</span>
-<span id="cb20-3"><a href="#cb20-3" tabindex="-1"></a><span class="ex">$</span> pwd</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="ex">$</span> cd</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="ex">$</span> cd Desktop/shell-lesson</span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="ex">$</span> pwd</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -963,21 +1104,21 @@ into the <code>shell-lesson</code> directory on your desktop.</p>
 <pre class="output" tabindex="0"><code>/Users/riley/Desktop/shell-lesson</code></pre>
 </div>
 <p>Here, we will create a new directory and move into it:</p>
-<div class="codewrapper sourceCode" id="cb22">
+<div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" tabindex="-1"></a><span class="ex">$</span> mkdir firstdir</span>
-<span id="cb22-2"><a href="#cb22-2" tabindex="-1"></a><span class="ex">$</span> cd firstdir</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="ex">$</span> mkdir firstdir</span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="ex">$</span> cd firstdir</span></code></pre>
 </div>
 <p>Here we used the <code>mkdir</code> command (meaning ‘make
 directories’) to create a directory named ‘firstdir’. Then we moved into
 that directory using the <code>cd</code> command.</p>
 <p>But wait! There’s a trick to make things a bit quicker. Let’s go up
 one directory.</p>
-<div class="codewrapper sourceCode" id="cb23">
+<div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" tabindex="-1"></a><span class="ex">$</span> cd ..</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="ex">$</span> cd ..</span></code></pre>
 </div>
 <p>Instead of typing <code>cd firstdir</code>, let’s try to type
 <code>cd f</code> and then press the Tab key. We notice that the shell
@@ -1006,10 +1147,10 @@ it saves loads of time and effort!).</p>
 back to the <code>shell-lesson</code> directory.</p>
 <p>Here there are copies of two public domain books downloaded from <a href="https://www.gutenberg.org/" class="external-link">Project Gutenberg</a> along with other
 files we will cover later.</p>
-<div class="codewrapper sourceCode" id="cb24">
+<div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" tabindex="-1"></a><span class="ex">$</span> ls <span class="at">-lh</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="ex">$</span> ls <span class="at">-lh</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1029,10 +1170,10 @@ drwxr-xr-x 1 riley staff  64B Feb 22 2017  firstdir</code></pre>
 the content of book #829 and #33504 on Project Gutenberg. But we’ve
 forgot <em>which</em> books, so we try the <code>cat</code> command to
 read the text of the first file:</p>
-<div class="codewrapper sourceCode" id="cb26">
+<div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" tabindex="-1"></a><span class="ex">$</span> cat 829-0.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="ex">$</span> cat 829-0.txt</span></code></pre>
 </div>
 <p>The terminal window erupts and the whole book cascades by (it is
 printed to your terminal), leaving us with a new prompt and the last few
@@ -1041,10 +1182,10 @@ lines of the book above this prompt.</p>
 file to get an idea about what the file is about. To let us do that, the
 Unix shell provides us with the commands <code>head</code> and
 <code>tail</code>.</p>
-<div class="codewrapper sourceCode" id="cb27">
+<div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb27-1"><a href="#cb27-1" tabindex="-1"></a><span class="ex">$</span> head 829-0.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="ex">$</span> head 829-0.txt</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1060,10 +1201,10 @@ with this eBook or online at www.gutenberg.org</code></pre>
 <p>This provides a view of the first ten lines, whereas
 <code>tail 829-0.txt</code> provides a perspective on the last ten
 lines:</p>
-<div class="codewrapper sourceCode" id="cb29">
+<div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1" tabindex="-1"></a><span class="ex">$</span> tail 829-0.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="ex">$</span> tail 829-0.txt</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1085,10 +1226,10 @@ to see if there exists an option to specify the number of lines to get
 time. Type <code>less 829-0.txt</code> to see the first screen,
 <code>spacebar</code> to see the next screen and so on, then
 <code>q</code> to quit (return to the command prompt).</p>
-<div class="codewrapper sourceCode" id="cb31">
+<div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb31-1"><a href="#cb31-1" tabindex="-1"></a><span class="ex">$</span> less 829-0.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="ex">$</span> less 829-0.txt</span></code></pre>
 </div>
 <p>Like many other shell commands, the commands <code>cat</code>,
 <code>head</code>, <code>tail</code> and <code>less</code> can take any
@@ -1114,10 +1255,10 @@ important labour-saving function and something we’ll use a lot.</p>
 command. Add a space and then <code>33504-0.txt</code> (Remember your
 friend Tab? Type <code>3</code> followed by <kbd>tab</kbd> to get
 <code>33504-0.txt</code>), to produce the following command:</p>
-<div class="codewrapper sourceCode" id="cb32">
+<div class="codewrapper sourceCode" id="cb15">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb32-1"><a href="#cb32-1" tabindex="-1"></a><span class="ex">$</span> head 829-0.txt 33504-0.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="ex">$</span> head 829-0.txt 33504-0.txt</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1152,10 +1293,10 @@ wildcards! The <code>?</code> (matches exactly one character) and
 <code>*</code> (matches zero or more characters) are probably familiar
 from library search systems. We can use the <code>*</code> wildcard to
 write the above <code>head</code> command in a more compact way:</p>
-<div class="codewrapper sourceCode" id="cb34">
+<div class="codewrapper sourceCode" id="cb17">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb34-1"><a href="#cb34-1" tabindex="-1"></a><span class="ex">$</span> head <span class="pp">*</span>.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a><span class="ex">$</span> head <span class="pp">*</span>.txt</span></code></pre>
 </div>
 <div id="more-on-wildcards" class="callout">
 <div class="callout-square">
@@ -1183,18 +1324,18 @@ error message that there is no file called *.pdf.</p>
 descriptive. We can <strong>move</strong> it to a new name by using the
 <code>mv</code> or move command, giving it the old name as the first
 argument and the new name as the second argument:</p>
-<div class="codewrapper sourceCode" id="cb35">
+<div class="codewrapper sourceCode" id="cb18">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb35-1"><a href="#cb35-1" tabindex="-1"></a><span class="ex">$</span> mv 829-0.txt gulliver.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a><span class="ex">$</span> mv 829-0.txt gulliver.txt</span></code></pre>
 </div>
 <p>This is equivalent to the ‘rename file’ function.</p>
 <p>Afterwards, when we perform a <code>ls</code> command, we will see
 that it is now called <code>gulliver.txt</code>:</p>
-<div class="codewrapper sourceCode" id="cb36">
+<div class="codewrapper sourceCode" id="cb19">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb36-1"><a href="#cb36-1" tabindex="-1"></a><span class="ex">$</span> ls</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" tabindex="-1"></a><span class="ex">$</span> ls</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1219,17 +1360,19 @@ you make a copy of the file <code>gulliver.txt</code> called
 </div>
 </div>
 </div>
-<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
-  <h4 class="accordion-header" id="headingSolution3"> Answer </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1">
+  Answer
+  </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb38">
+<div class="codewrapper sourceCode" id="cb21">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb38-1"><a href="#cb38-1" tabindex="-1"></a><span class="fu">cp</span> gulliver.txt gulliver-backup.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" tabindex="-1"></a><span class="fu">cp</span> gulliver.txt gulliver-backup.txt</span></code></pre>
 </div>
 </div>
 </div>
@@ -1248,17 +1391,19 @@ directory to <code>backup</code>.</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
-  <h4 class="accordion-header" id="headingSolution4"> Answer </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2">
+  Answer
+  </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb39">
+<div class="codewrapper sourceCode" id="cb22">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb39-1"><a href="#cb39-1" tabindex="-1"></a><span class="fu">mv</span> firstdir backup</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" tabindex="-1"></a><span class="fu">mv</span> firstdir backup</span></code></pre>
 </div>
 </div>
 </div>
@@ -1279,23 +1424,25 @@ folder.</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
-  <h4 class="accordion-header" id="headingSolution5"> Answer </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3">
+  Answer
+  </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb40">
+<div class="codewrapper sourceCode" id="cb23">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb40-1"><a href="#cb40-1" tabindex="-1"></a><span class="fu">mv</span> gulliver-backup.txt backup</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" tabindex="-1"></a><span class="fu">mv</span> gulliver-backup.txt backup</span></code></pre>
 </div>
 <p>This would also work:</p>
-<div class="codewrapper sourceCode" id="cb41">
+<div class="codewrapper sourceCode" id="cb24">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb41-1"><a href="#cb41-1" tabindex="-1"></a><span class="fu">mv</span> gulliver-backup.txt backup/gulliver-backup.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" tabindex="-1"></a><span class="fu">mv</span> gulliver-backup.txt backup/gulliver-backup.txt</span></code></pre>
 </div>
 </div>
 </div>
@@ -1317,12 +1464,14 @@ commands support them. We’ll get back to that.)</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution6" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
-  <h4 class="accordion-header" id="headingSolution6"> Answer </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4">
+  Answer
+  </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <ul>
 <li>The <code>?</code> wildcard matches the regular expression
@@ -1391,12 +1540,14 @@ in the shell environment?</strong></p>
 </div>
 </div>
 </div>
-<div id="accordionSolution7" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution7" aria-expanded="false" aria-controls="collapseSolution7">
-  <h4 class="accordion-header" id="headingSolution7"> Answer </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
+  <h4 class="accordion-header" id="headingSolution5">
+  Answer
+  </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <p>You may think there is not much value in such a basic command like
 <code>echo</code>. However, from the moment you start writing automated
@@ -1420,8 +1571,60 @@ there is <em>no</em> warning, <em>no</em> recycling bin from which you
 can get the files back and no other undo options!</strong> For that
 reason, please be very careful with <code>rm</code> and extremely
 careful with <code>rm -r</code>.</p>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
 </div>
-</section><section><h2 class="section-heading" id="writing-a-loop">Writing a Loop<a class="anchor" aria-label="anchor" href="#writing-a-loop"></a>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points</h3>
+<div class="callout-content">
+<ul>
+<li>The shell can be used to copy, move, and combine multiple files</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</div>
+</section></section><section id="aio-08-loops"><p>Content from <a href="08-loops.html">Automating the tedious with loops</a></p>
+<hr>
+<p>Last updated on 2025-07-08 |
+
+        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/08-loops.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>What is a loop?</li>
+<li>How can a loop be used to repeat a task?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Describe how loops can be used to repeat tasks</li>
+<li>Implement a loop to rename several files</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="writing-a-loop">Writing a Loop<a class="anchor" aria-label="anchor" href="#writing-a-loop"></a>
 </h2>
 <hr class="half-width">
 <p><strong>Loops</strong> are key to productivity improvements through
@@ -1440,23 +1643,23 @@ example that creates a backup copy of four text files in turn.</p>
 <p>This will create four empty files with those names.</p>
 <p>Now we will use a loop to create a backup version of those files.
 First let’s look at the general form of a loop:</p>
-<div class="codewrapper sourceCode" id="cb43">
+<div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb43-1"><a href="#cb43-1" tabindex="-1"></a><span class="cf">for</span> thing <span class="kw">in</span> list_of_things</span>
-<span id="cb43-2"><a href="#cb43-2" tabindex="-1"></a><span class="cf">do</span></span>
-<span id="cb43-3"><a href="#cb43-3" tabindex="-1"></a>    <span class="ex">operation_using</span> <span class="va">$thing</span>    <span class="co"># Indentation within the loop is not required, but aids legibility</span></span>
-<span id="cb43-4"><a href="#cb43-4" tabindex="-1"></a><span class="cf">done</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="cf">for</span> thing <span class="kw">in</span> list_of_things</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="cf">do</span></span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>    <span class="ex">operation_using</span> <span class="va">$thing</span>    <span class="co"># Indentation within the loop is not required, but aids legibility</span></span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="cf">done</span></span></code></pre>
 </div>
 <p>We can apply this to our example like this:</p>
-<div class="codewrapper sourceCode" id="cb44">
+<div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb44-1"><a href="#cb44-1" tabindex="-1"></a><span class="ex">$</span> for filename in <span class="pp">?</span>.txt</span>
-<span id="cb44-2"><a href="#cb44-2" tabindex="-1"></a><span class="op">&gt;</span> do</span>
-<span id="cb44-3"><a href="#cb44-3" tabindex="-1"></a><span class="op">&gt;</span>    echo <span class="st">"</span><span class="va">$filename</span><span class="st">"</span></span>
-<span id="cb44-4"><a href="#cb44-4" tabindex="-1"></a><span class="op">&gt;</span>    cp <span class="st">"</span><span class="va">$filename</span><span class="st">"</span> backup_<span class="st">"</span><span class="va">$filename</span><span class="st">"</span></span>
-<span id="cb44-5"><a href="#cb44-5" tabindex="-1"></a><span class="op">&gt;</span> done</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="ex">$</span> for filename in <span class="pp">?</span>.txt</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="op">&gt;</span> do</span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="op">&gt;</span>    echo <span class="st">"</span><span class="va">$filename</span><span class="st">"</span></span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="op">&gt;</span>    cp <span class="st">"</span><span class="va">$filename</span><span class="st">"</span> backup_<span class="st">"</span><span class="va">$filename</span><span class="st">"</span></span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a><span class="op">&gt;</span> done</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1556,35 +1759,35 @@ doesn’t care what the variable is called.</p>
 <div class="callout-content">
 <p>Complete the blanks in the for loop below to print the name, first
 line, and last line of each text file in the current directory.</p>
-<div class="codewrapper sourceCode" id="cb46">
+<div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb46-1"><a href="#cb46-1" tabindex="-1"></a><span class="ex">___</span> file in <span class="pp">*</span>.txt</span>
-<span id="cb46-2"><a href="#cb46-2" tabindex="-1"></a><span class="ex">__</span></span>
-<span id="cb46-3"><a href="#cb46-3" tabindex="-1"></a>	<span class="bu">echo</span> <span class="st">"_file"</span></span>
-<span id="cb46-4"><a href="#cb46-4" tabindex="-1"></a>	<span class="fu">head</span> <span class="at">-n</span> 1 _______</span>
-<span id="cb46-5"><a href="#cb46-5" tabindex="-1"></a>	<span class="ex">____</span> __ _ _______</span>
-<span id="cb46-6"><a href="#cb46-6" tabindex="-1"></a><span class="ex">____</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="ex">___</span> file in <span class="pp">*</span>.txt</span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="ex">__</span></span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a>	<span class="bu">echo</span> <span class="st">"_file"</span></span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a>	<span class="fu">head</span> <span class="at">-n</span> 1 _______</span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a>	<span class="ex">____</span> __ _ _______</span>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a><span class="ex">____</span></span></code></pre>
 </div>
 </div>
 </div>
 </div>
-<div id="accordionSolution8" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution8" aria-expanded="false" aria-controls="collapseSolution8">
-  <h4 class="accordion-header" id="headingSolution8"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution8" class="accordion-collapse collapse" data-bs-parent="#accordionSolution8" aria-labelledby="headingSolution8">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb47">
+<div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb47-1"><a href="#cb47-1" tabindex="-1"></a><span class="cf">for</span> file <span class="kw">in</span> <span class="pp">*</span>.txt</span>
-<span id="cb47-2"><a href="#cb47-2" tabindex="-1"></a><span class="cf">do</span></span>
-<span id="cb47-3"><a href="#cb47-3" tabindex="-1"></a>	<span class="bu">echo</span> <span class="st">"</span><span class="va">$file</span><span class="st">"</span></span>
-<span id="cb47-4"><a href="#cb47-4" tabindex="-1"></a>	<span class="fu">head</span> <span class="at">-n</span> 1 <span class="st">"</span><span class="va">$file</span><span class="st">"</span></span>
-<span id="cb47-5"><a href="#cb47-5" tabindex="-1"></a>	<span class="fu">tail</span> <span class="at">-n</span> 1 <span class="st">"</span><span class="va">$file</span><span class="st">"</span></span>
-<span id="cb47-6"><a href="#cb47-6" tabindex="-1"></a><span class="cf">done</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="cf">for</span> file <span class="kw">in</span> <span class="pp">*</span>.txt</span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a><span class="cf">do</span></span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a>	<span class="bu">echo</span> <span class="st">"</span><span class="va">$file</span><span class="st">"</span></span>
+<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a>	<span class="fu">head</span> <span class="at">-n</span> 1 <span class="st">"</span><span class="va">$file</span><span class="st">"</span></span>
+<span id="cb6-5"><a href="#cb6-5" tabindex="-1"></a>	<span class="fu">tail</span> <span class="at">-n</span> 1 <span class="st">"</span><span class="va">$file</span><span class="st">"</span></span>
+<span id="cb6-6"><a href="#cb6-6" tabindex="-1"></a><span class="cf">done</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -1630,7 +1833,71 @@ Scripting Tutorial - Ryans Tutorials</a>.</p>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="counting-and-mining-data">Counting and mining data<a class="anchor" aria-label="anchor" href="#counting-and-mining-data"></a>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points</h3>
+<div class="callout-content">
+<ul>
+<li>Looping is the foundation for working smarter with the command
+line</li>
+<li>Loops help us to do the same (or similar) things to a bunch of
+items</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</section></section><section id="aio-09-counting-mining"><p>Content from <a href="09-counting-mining.html">Counting and mining with the shell</a></p>
+<hr>
+<p>Last updated on 2025-07-08 |
+
+        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/09-counting-mining.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>How can I count data?</li>
+<li>How can I find data within files?</li>
+<li>How can I combine existing commands to do new things?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Demonstrate counting lines, words, and characters with the shell
+command wc and appropriate flags</li>
+<li>Use strings to mine files and extract matched lines with the
+shell</li>
+<li>Create complex single line commands by combining shell commands and
+regular expressions to mine files</li>
+<li>Redirect a command’s output to a file.</li>
+<li>Process a file instead of keyboard input using redirection.</li>
+<li>Construct command pipelines with two or more stages.</li>
+<li>Explain Unix’s ‘small pieces, loosely joined’ philosophy.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="counting-and-mining-data">Counting and mining data<a class="anchor" aria-label="anchor" href="#counting-and-mining-data"></a>
 </h2>
 <hr class="half-width">
 <p>Now that you know how to navigate the shell, we will move onto
@@ -1649,17 +1916,17 @@ something that is tricky to achieve using the graphical user interfaces
 of standard office suites.</p>
 <p>Let’s start by navigating to the directory that contains our data
 using the <code>cd</code> command:</p>
-<div class="codewrapper sourceCode" id="cb49">
+<div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb49-1"><a href="#cb49-1" tabindex="-1"></a><span class="ex">$</span> cd shell-lesson</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">$</span> cd shell-lesson</span></code></pre>
 </div>
 <p>Remember, if at any time you are not sure where you are in your
 directory structure, use the <code>pwd</code> command to find out:</p>
-<div class="codewrapper sourceCode" id="cb50">
+<div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb50-1"><a href="#cb50-1" tabindex="-1"></a><span class="ex">$</span> pwd</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">$</span> pwd</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1668,10 +1935,10 @@ directory structure, use the <code>pwd</code> command to find out:</p>
 </div>
 <p>And let’s check what files are in the directory and how large they
 are with <code>ls -lhS</code>:</p>
-<div class="codewrapper sourceCode" id="cb52">
+<div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb52-1"><a href="#cb52-1" tabindex="-1"></a><span class="ex">$</span> ls <span class="at">-lhS</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="ex">$</span> ls <span class="at">-lhS</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1716,10 +1983,10 @@ one.</p>
 <p>First, let’s have a look at the largest data file, using the tools we
 learned in <a href="03-working-with-files-and-folders.html">Reading
 files</a>:</p>
-<div class="codewrapper sourceCode" id="cb54">
+<div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb54-1"><a href="#cb54-1" tabindex="-1"></a><span class="ex">$</span> cat 2014-01_JA.tsv</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="ex">$</span> cat 2014-01_JA.tsv</span></code></pre>
 </div>
 <p>Like <code>829-0.txt</code> before, the whole dataset cascades by and
 can’t really make any sense of that amount of text. To cancel this
@@ -1728,10 +1995,10 @@ shell, press <kbd>Ctrl</kbd>+<kbd>C</kbd>.</p>
 <p>In most data files a quick glimpse of the first few lines already
 tells us a lot about the structure of the dataset, for example the
 table/column headers:</p>
-<div class="codewrapper sourceCode" id="cb55">
+<div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb55-1"><a href="#cb55-1" tabindex="-1"></a><span class="ex">$</span> head <span class="at">-n</span> 3 2014-01_JA.tsv</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="ex">$</span> head <span class="at">-n</span> 3 2014-01_JA.tsv</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1749,10 +2016,10 @@ is the “word count” command: it counts the number of lines, words, and
 bytes. Since we love the wildcard operator, let’s run the command
 <code>wc *.tsv</code> to get counts for all the <code>.tsv</code> files
 in the current directory (it takes a little time to complete):</p>
-<div class="codewrapper sourceCode" id="cb57">
+<div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb57-1"><a href="#cb57-1" tabindex="-1"></a><span class="ex">$</span> wc <span class="pp">*</span>.tsv</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="ex">$</span> wc <span class="pp">*</span>.tsv</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1775,10 +2042,10 @@ though. We will touch upon this slightly.</p>
 shortest file in terms of number of lines. We start by adding the
 <code>-l</code> flag to get only the number of lines, not the number of
 words and bytes:</p>
-<div class="codewrapper sourceCode" id="cb59">
+<div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb59-1"><a href="#cb59-1" tabindex="-1"></a><span class="ex">$</span> wc <span class="at">-l</span> <span class="pp">*</span>.tsv</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="ex">$</span> wc <span class="at">-l</span> <span class="pp">*</span>.tsv</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1796,19 +2063,19 @@ to get what we want.</p>
 output from this command in a new file. To do that, we <em>redirect</em>
 the output from the command to a file using the ‘greater than’ sign
 (&gt;), like so:</p>
-<div class="codewrapper sourceCode" id="cb61">
+<div class="codewrapper sourceCode" id="cb13">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb61-1"><a href="#cb61-1" tabindex="-1"></a><span class="ex">$</span> wc <span class="at">-l</span> <span class="pp">*</span>.tsv <span class="op">&gt;</span> lengths.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="ex">$</span> wc <span class="at">-l</span> <span class="pp">*</span>.tsv <span class="op">&gt;</span> lengths.txt</span></code></pre>
 </div>
 <p>There’s no output now since the output went into the file
 <code>lengths.txt</code>, but we can check that the output indeed ended
 up in the file using <code>cat</code> or <code>less</code> (or Notepad
 or any text editor).</p>
-<div class="codewrapper sourceCode" id="cb62">
+<div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb62-1"><a href="#cb62-1" tabindex="-1"></a><span class="ex">$</span> cat lengths.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="ex">$</span> cat lengths.txt</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1823,11 +2090,11 @@ or any text editor).</p>
 <code>-n</code> flag to specify that we want numerical sorting, not
 lexical sorting, we output the results into yet another file, and we use
 <code>cat</code> to check the results:</p>
-<div class="codewrapper sourceCode" id="cb64">
+<div class="codewrapper sourceCode" id="cb16">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb64-1"><a href="#cb64-1" tabindex="-1"></a><span class="ex">$</span> sort <span class="at">-n</span> lengths.txt <span class="op">&gt;</span> sorted-lengths.txt</span>
-<span id="cb64-2"><a href="#cb64-2" tabindex="-1"></a><span class="ex">$</span> cat sorted-lengths.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a><span class="ex">$</span> sort <span class="at">-n</span> lengths.txt <span class="op">&gt;</span> sorted-lengths.txt</span>
+<span id="cb16-2"><a href="#cb16-2" tabindex="-1"></a><span class="ex">$</span> cat sorted-lengths.txt</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1840,10 +2107,10 @@ lexical sorting, we output the results into yet another file, and we use
 </div>
 <p>Finally we have our old friend <code>head</code>, that we can use to
 get the first line of the <code>sorted-lengths.txt</code>:</p>
-<div class="codewrapper sourceCode" id="cb66">
+<div class="codewrapper sourceCode" id="cb18">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb66-1"><a href="#cb66-1" tabindex="-1"></a><span class="ex">$</span> head <span class="at">-n</span> 1 sorted-lengths.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a><span class="ex">$</span> head <span class="at">-n</span> 1 sorted-lengths.txt</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1858,10 +2125,10 @@ command (<code>sort -n</code>) and then the output from that command to
 <code>head -n 1</code>? Luckily we can, using a concept called pipes. On
 the command line, you make a pipe with the vertical bar character
 <code>|</code>. Let’s try with one pipe first:</p>
-<div class="codewrapper sourceCode" id="cb68">
+<div class="codewrapper sourceCode" id="cb20">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb68-1"><a href="#cb68-1" tabindex="-1"></a><span class="ex">$</span> wc <span class="at">-l</span> <span class="pp">*</span>.tsv <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" tabindex="-1"></a><span class="ex">$</span> wc <span class="at">-l</span> <span class="pp">*</span>.tsv <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1874,10 +2141,10 @@ the command line, you make a pipe with the vertical bar character
 </div>
 <p>Notice that this is exactly the same output that ended up in our
 <code>sorted-lengths.txt</code> earlier. Let’s add another pipe:</p>
-<div class="codewrapper sourceCode" id="cb70">
+<div class="codewrapper sourceCode" id="cb22">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb70-1"><a href="#cb70-1" tabindex="-1"></a><span class="ex">$</span> wc <span class="at">-l</span> <span class="pp">*</span>.tsv <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span> <span class="kw">|</span> <span class="fu">head</span> <span class="at">-n</span> 1</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" tabindex="-1"></a><span class="ex">$</span> wc <span class="at">-l</span> <span class="pp">*</span>.tsv <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span> <span class="kw">|</span> <span class="fu">head</span> <span class="at">-n</span> 1</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1925,25 +2192,25 @@ What would happen if you piped this into <code>cat</code>? Try it!</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution9" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution9" aria-expanded="false" aria-controls="collapseSolution9">
-  <h4 class="accordion-header" id="headingSolution9"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution9" class="accordion-collapse collapse" data-bs-parent="#accordionSolution9" aria-labelledby="headingSolution9">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>The <code>cat</code> command outputs whatever it gets as input, so
 you get exactly the same output from</p>
-<div class="codewrapper sourceCode" id="cb72">
+<div class="codewrapper sourceCode" id="cb24">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb72-1"><a href="#cb72-1" tabindex="-1"></a><span class="ex">$</span> wc <span class="at">-l</span> <span class="pp">*</span>.tsv <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span> <span class="kw">|</span> <span class="fu">head</span> <span class="at">-n</span> 1</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" tabindex="-1"></a><span class="ex">$</span> wc <span class="at">-l</span> <span class="pp">*</span>.tsv <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span> <span class="kw">|</span> <span class="fu">head</span> <span class="at">-n</span> 1</span></code></pre>
 </div>
 <p>and</p>
-<div class="codewrapper sourceCode" id="cb73">
+<div class="codewrapper sourceCode" id="cb25">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb73-1"><a href="#cb73-1" tabindex="-1"></a><span class="ex">$</span> wc <span class="at">-l</span> <span class="pp">*</span>.tsv <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span> <span class="kw">|</span> <span class="fu">head</span> <span class="at">-n</span> 1 <span class="kw">|</span> <span class="fu">cat</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1" tabindex="-1"></a><span class="ex">$</span> wc <span class="at">-l</span> <span class="pp">*</span>.tsv <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span> <span class="kw">|</span> <span class="fu">head</span> <span class="at">-n</span> 1 <span class="kw">|</span> <span class="fu">cat</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -1959,10 +2226,10 @@ you get exactly the same output from</p>
 <p>To count the total lines in every <code>tsv</code> file, sort the
 results and then print the first line of the file we use the
 following:</p>
-<div class="codewrapper sourceCode" id="cb74">
+<div class="codewrapper sourceCode" id="cb26">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb74-1"><a href="#cb74-1" tabindex="-1"></a><span class="fu">wc</span> <span class="at">-l</span> <span class="pp">*</span>.tsv <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span> <span class="kw">|</span> <span class="fu">head</span> <span class="at">-n</span> 1</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" tabindex="-1"></a><span class="fu">wc</span> <span class="at">-l</span> <span class="pp">*</span>.tsv <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span> <span class="kw">|</span> <span class="fu">head</span> <span class="at">-n</span> 1</span></code></pre>
 </div>
 <p>Now let’s change the scenario. We want to know the 10 files that
 contain <em>the most</em> words. Check the manual for the
@@ -1972,29 +2239,29 @@ print out the number of words (but not the number of lines and bytes).
 Fill in the blanks below to count the words for each file, put them into
 order, and then make an output of the 10 files with the most words
 (Hint: The sort command sorts in ascending order by default).</p>
-<div class="codewrapper sourceCode" id="cb75">
+<div class="codewrapper sourceCode" id="cb27">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb75-1"><a href="#cb75-1" tabindex="-1"></a><span class="fu">wc</span> __ <span class="pp">*</span>.tsv <span class="kw">|</span> <span class="fu">sort</span> __ <span class="kw">|</span> <span class="ex">____</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb27-1"><a href="#cb27-1" tabindex="-1"></a><span class="fu">wc</span> __ <span class="pp">*</span>.tsv <span class="kw">|</span> <span class="fu">sort</span> __ <span class="kw">|</span> <span class="ex">____</span></span></code></pre>
 </div>
 </div>
 </div>
 </div>
-<div id="accordionSolution10" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution10" aria-expanded="false" aria-controls="collapseSolution10">
-  <h4 class="accordion-header" id="headingSolution10"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution10" class="accordion-collapse collapse" data-bs-parent="#accordionSolution10" aria-labelledby="headingSolution10">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Here we use the <code>wc</code> command with the <code>-w</code>
 (word) flag on all <code>tsv</code> files, <code>sort</code> them and
 then output the last 11 lines (10 files and the total) using the
 <code>tail</code> command.</p>
-<div class="codewrapper sourceCode" id="cb76">
+<div class="codewrapper sourceCode" id="cb28">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb76-1"><a href="#cb76-1" tabindex="-1"></a><span class="fu">wc</span> <span class="at">-w</span> <span class="pp">*</span>.tsv <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span> <span class="kw">|</span> <span class="fu">tail</span> <span class="at">-n</span> 11</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb28-1"><a href="#cb28-1" tabindex="-1"></a><span class="fu">wc</span> <span class="at">-w</span> <span class="pp">*</span>.tsv <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span> <span class="kw">|</span> <span class="fu">tail</span> <span class="at">-n</span> 11</span></code></pre>
 </div>
 </div>
 </div>
@@ -2014,17 +2281,17 @@ the answer.</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution11" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution11" aria-expanded="false" aria-controls="collapseSolution11">
-  <h4 class="accordion-header" id="headingSolution11"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution11" class="accordion-collapse collapse" data-bs-parent="#accordionSolution11" aria-labelledby="headingSolution11">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb77">
+<div class="codewrapper sourceCode" id="cb29">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb77-1"><a href="#cb77-1" tabindex="-1"></a><span class="ex">$</span> ls <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1" tabindex="-1"></a><span class="ex">$</span> ls <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -2043,18 +2310,18 @@ you write the current date and time to a new file called
 </div>
 </div>
 </div>
-<div id="accordionSolution12" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution12" aria-expanded="false" aria-controls="collapseSolution12">
-  <h4 class="accordion-header" id="headingSolution12"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution12" class="accordion-collapse collapse" data-bs-parent="#accordionSolution12" aria-labelledby="headingSolution12">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb78">
+<div class="codewrapper sourceCode" id="cb30">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb78-1"><a href="#cb78-1" tabindex="-1"></a><span class="ex">$</span> date <span class="op">&gt;</span> logfile.txt</span>
-<span id="cb78-2"><a href="#cb78-2" tabindex="-1"></a><span class="ex">$</span> cat logfile.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb30-1"><a href="#cb30-1" tabindex="-1"></a><span class="ex">$</span> date <span class="op">&gt;</span> logfile.txt</span>
+<span id="cb30-2"><a href="#cb30-2" tabindex="-1"></a><span class="ex">$</span> cat logfile.txt</span></code></pre>
 </div>
 <p>To check the contents, you could also use <code>less</code> or many
 other commands.</p>
@@ -2077,18 +2344,18 @@ the file <code>logfile.txt</code>?</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution13" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution13" aria-expanded="false" aria-controls="collapseSolution13">
-  <h4 class="accordion-header" id="headingSolution13"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
+  <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
 </button>
-<div id="collapseSolution13" class="accordion-collapse collapse" data-bs-parent="#accordionSolution13" aria-labelledby="headingSolution13">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb79">
+<div class="codewrapper sourceCode" id="cb31">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb79-1"><a href="#cb79-1" tabindex="-1"></a><span class="ex">$</span> date <span class="op">&gt;&gt;</span> logfile.txt</span>
-<span id="cb79-2"><a href="#cb79-2" tabindex="-1"></a><span class="ex">$</span> cat logfile.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb31-1"><a href="#cb31-1" tabindex="-1"></a><span class="ex">$</span> date <span class="op">&gt;&gt;</span> logfile.txt</span>
+<span id="cb31-2"><a href="#cb31-2" tabindex="-1"></a><span class="ex">$</span> cat logfile.txt</span></code></pre>
 </div>
 </div>
 </div>
@@ -2109,12 +2376,12 @@ to <code>sort</code>. And/or explore the other flags of
 </div>
 </div>
 </div>
-<div id="accordionSolution14" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution6" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution14" aria-expanded="false" aria-controls="collapseSolution14">
-  <h4 class="accordion-header" id="headingSolution14"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
+  <h4 class="accordion-header" id="headingSolution6"> Show me the solution </h4>
 </button>
-<div id="collapseSolution14" class="accordion-collapse collapse" data-bs-parent="#accordionSolution14" aria-labelledby="headingSolution14">
+<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
 <div class="accordion-body">
 <p>From <code>man wc</code>, you will see that there is a
 <code>-w</code> flag to print the number of words:</p>
@@ -2125,10 +2392,10 @@ to <code>sort</code>. And/or explore the other flags of
              output.</code></pre>
 </div>
 <p>So to print the word counts of the <code>.tsv</code> files:</p>
-<div class="codewrapper sourceCode" id="cb81">
+<div class="codewrapper sourceCode" id="cb33">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb81-1"><a href="#cb81-1" tabindex="-1"></a><span class="ex">$</span> wc <span class="at">-w</span> <span class="pp">*</span>.tsv</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb33-1"><a href="#cb33-1" tabindex="-1"></a><span class="ex">$</span> wc <span class="at">-w</span> <span class="pp">*</span>.tsv</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2140,10 +2407,10 @@ to <code>sort</code>. And/or explore the other flags of
 19364171 total</code></pre>
 </div>
 <p>And to sort the lines numerically:</p>
-<div class="codewrapper sourceCode" id="cb83">
+<div class="codewrapper sourceCode" id="cb35">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb83-1"><a href="#cb83-1" tabindex="-1"></a><span class="ex">$</span> wc <span class="at">-w</span> <span class="pp">*</span>.tsv <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb35-1"><a href="#cb35-1" tabindex="-1"></a><span class="ex">$</span> wc <span class="at">-w</span> <span class="pp">*</span>.tsv <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2171,16 +2438,16 @@ processing power at your disposal.</p>
 <p>To begin using <code>grep</code>, first navigate to the
 <code>shell-lesson</code> directory if not already there. Then create a
 new directory “results”:</p>
-<div class="codewrapper sourceCode" id="cb85">
+<div class="codewrapper sourceCode" id="cb37">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb85-1"><a href="#cb85-1" tabindex="-1"></a><span class="ex">$</span> mkdir results</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb37-1"><a href="#cb37-1" tabindex="-1"></a><span class="ex">$</span> mkdir results</span></code></pre>
 </div>
 <p>Now let’s try our first search:</p>
-<div class="codewrapper sourceCode" id="cb86">
+<div class="codewrapper sourceCode" id="cb38">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb86-1"><a href="#cb86-1" tabindex="-1"></a><span class="ex">$</span> grep 1999 <span class="pp">*</span>.tsv</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb38-1"><a href="#cb38-1" tabindex="-1"></a><span class="ex">$</span> grep 1999 <span class="pp">*</span>.tsv</span></code></pre>
 </div>
 <p>Remember that the shell will expand <code>*.tsv</code> to a list of
 all the <code>.tsv</code> files in the directory. <code>grep</code> will
@@ -2200,10 +2467,10 @@ matching lines.</p>
 <p>Press the up arrow once in order to cycle back to your most recent
 action. Amend <code>grep 1999 *.tsv</code> to
 <code>grep -c 1999 *.tsv</code> and press enter.</p>
-<div class="codewrapper sourceCode" id="cb87">
+<div class="codewrapper sourceCode" id="cb39">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb87-1"><a href="#cb87-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-c</span> 1999 <span class="pp">*</span>.tsv</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb39-1"><a href="#cb39-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-c</span> 1999 <span class="pp">*</span>.tsv</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2217,10 +2484,10 @@ action. Amend <code>grep 1999 *.tsv</code> to
 each file. If you look at the output from the previous command, this
 tends to refer to the date field for each journal article.</p>
 <p>We will try another search:</p>
-<div class="codewrapper sourceCode" id="cb89">
+<div class="codewrapper sourceCode" id="cb41">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb89-1"><a href="#cb89-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-c</span> revolution <span class="pp">*</span>.tsv</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb41-1"><a href="#cb41-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-c</span> revolution <span class="pp">*</span>.tsv</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2233,10 +2500,10 @@ tends to refer to the date field for each journal article.</p>
 <p>We got back the counts of the instances of the string
 <code>revolution</code> within the files. Now, amend the above command
 to the below and observe how the output of each is different:</p>
-<div class="codewrapper sourceCode" id="cb91">
+<div class="codewrapper sourceCode" id="cb43">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb91-1"><a href="#cb91-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-ci</span> revolution <span class="pp">*</span>.tsv</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb43-1"><a href="#cb43-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-ci</span> revolution <span class="pp">*</span>.tsv</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2257,18 +2524,18 @@ format), will save the results to a data file.</p>
 to file those counts. But the real power of <code>grep</code> comes in
 that you can also use it to create subsets of tabulated data (or indeed
 any data) from one or multiple files.</p>
-<div class="codewrapper sourceCode" id="cb93">
+<div class="codewrapper sourceCode" id="cb45">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb93-1"><a href="#cb93-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-i</span> revolution <span class="pp">*</span>.tsv</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb45-1"><a href="#cb45-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-i</span> revolution <span class="pp">*</span>.tsv</span></code></pre>
 </div>
 <p>This script looks in the defined files and prints any lines
 containing <code>revolution</code> (without regard to case) to the
 shell. We let the shell add today’s date to the filename:</p>
-<div class="codewrapper sourceCode" id="cb94">
+<div class="codewrapper sourceCode" id="cb46">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb94-1"><a href="#cb94-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-i</span> revolution <span class="pp">*</span>.tsv <span class="op">&gt;</span> results/<span class="va">$(</span><span class="fu">date</span> <span class="st">"+%Y-%m-%d"</span><span class="va">)</span>_JAi-revolution.tsv</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb46-1"><a href="#cb46-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-i</span> revolution <span class="pp">*</span>.tsv <span class="op">&gt;</span> results/<span class="va">$(</span><span class="fu">date</span> <span class="st">"+%Y-%m-%d"</span><span class="va">)</span>_JAi-revolution.tsv</span></code></pre>
 </div>
 <p>This saves the subsetted data to a new file.</p>
 <div id="alternative-date-commands" class="callout">
@@ -2290,19 +2557,19 @@ words such as ‘revolutionary’. This perhaps isn’t as useful as we
 thought… Thankfully, the <code>-w</code> flag instructs
 <code>grep</code> to look for whole words only, giving us greater
 precision in our search.</p>
-<div class="codewrapper sourceCode" id="cb95">
+<div class="codewrapper sourceCode" id="cb47">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb95-1"><a href="#cb95-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-iw</span> revolution <span class="pp">*</span>.tsv <span class="op">&gt;</span> results/<span class="va">$(</span><span class="fu">date</span> <span class="st">"+%Y-%m-%d"</span><span class="va">)</span>_JAiw-revolution.tsv</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb47-1"><a href="#cb47-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-iw</span> revolution <span class="pp">*</span>.tsv <span class="op">&gt;</span> results/<span class="va">$(</span><span class="fu">date</span> <span class="st">"+%Y-%m-%d"</span><span class="va">)</span>_JAiw-revolution.tsv</span></code></pre>
 </div>
 <p>This script looks in both of the defined files and exports any lines
 containing the whole word <code>revolution</code> (without regard to
 case) to the specified <code>.tsv</code> file.</p>
 <p>We can show the difference between the files we created.</p>
-<div class="codewrapper sourceCode" id="cb96">
+<div class="codewrapper sourceCode" id="cb48">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb96-1"><a href="#cb96-1" tabindex="-1"></a><span class="ex">$</span> wc <span class="at">-l</span> results/<span class="pp">*</span>.tsv</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb48-1"><a href="#cb48-1" tabindex="-1"></a><span class="ex">$</span> wc <span class="at">-l</span> results/<span class="pp">*</span>.tsv</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2325,12 +2592,12 @@ have used.</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution15" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution7" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution15" aria-expanded="false" aria-controls="collapseSolution15">
-  <h4 class="accordion-header" id="headingSolution15"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution7" aria-expanded="false" aria-controls="collapseSolution7">
+  <h4 class="accordion-header" id="headingSolution7"> Show me the solution </h4>
 </button>
-<div id="collapseSolution15" class="accordion-collapse collapse" data-bs-parent="#accordionSolution15" aria-labelledby="headingSolution15">
+<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
 <div class="accordion-body">
 <p>Using <code>date --help</code> (on Git Bash for Windows or Linux) or
 <code>man date</code> (on macOS or Linux) will show you that the
@@ -2372,18 +2639,18 @@ but also “frence” and “franch”. It’s generally a good idea to enclose
 the expression in single quotation marks, since that ensures the shell
 sends it directly to grep without any processing (such as trying to
 expand the wildcard operator *).</p>
-<div class="codewrapper sourceCode" id="cb98">
+<div class="codewrapper sourceCode" id="cb50">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb98-1"><a href="#cb98-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-iwE</span> <span class="st">'fr[ae]nc[eh]'</span> <span class="pp">*</span>.tsv</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb50-1"><a href="#cb50-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-iwE</span> <span class="st">'fr[ae]nc[eh]'</span> <span class="pp">*</span>.tsv</span></code></pre>
 </div>
 <p>The shell will print out each matching line.</p>
 <p>We include the <code>-o</code> flag to print only the matching part
 of the lines e.g. (handy for isolating/checking results):</p>
-<div class="codewrapper sourceCode" id="cb99">
+<div class="codewrapper sourceCode" id="cb51">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb99-1"><a href="#cb99-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-iwEo</span> <span class="st">'fr[ae]nc[eh]'</span> <span class="pp">*</span>.tsv</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb51-1"><a href="#cb51-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-iwEo</span> <span class="st">'fr[ae]nc[eh]'</span> <span class="pp">*</span>.tsv</span></code></pre>
 </div>
 <p>Pair up with your neighbor and work on these exercises:</p>
 <div id="case-sensitive-search" class="callout challenge">
@@ -2399,17 +2666,17 @@ results to the shell.</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution16" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution8" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution16" aria-expanded="false" aria-controls="collapseSolution16">
-  <h4 class="accordion-header" id="headingSolution16"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution8" aria-expanded="false" aria-controls="collapseSolution8">
+  <h4 class="accordion-header" id="headingSolution8"> Show me the solution </h4>
 </button>
-<div id="collapseSolution16" class="accordion-collapse collapse" data-bs-parent="#accordionSolution16" aria-labelledby="headingSolution16">
+<div id="collapseSolution8" class="accordion-collapse collapse" data-bs-parent="#accordionSolution8" aria-labelledby="headingSolution8">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb100">
+<div class="codewrapper sourceCode" id="cb52">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb100-1"><a href="#cb100-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-w</span> hero <span class="pp">*</span>.tsv</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb52-1"><a href="#cb52-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-w</span> hero <span class="pp">*</span>.tsv</span></code></pre>
 </div>
 </div>
 </div>
@@ -2428,17 +2695,17 @@ your results to the shell.</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution17" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution9" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution17" aria-expanded="false" aria-controls="collapseSolution17">
-  <h4 class="accordion-header" id="headingSolution17"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution9" aria-expanded="false" aria-controls="collapseSolution9">
+  <h4 class="accordion-header" id="headingSolution9"> Show me the solution </h4>
 </button>
-<div id="collapseSolution17" class="accordion-collapse collapse" data-bs-parent="#accordionSolution17" aria-labelledby="headingSolution17">
+<div id="collapseSolution9" class="accordion-collapse collapse" data-bs-parent="#accordionSolution9" aria-labelledby="headingSolution9">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb101">
+<div class="codewrapper sourceCode" id="cb53">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb101-1"><a href="#cb101-1" tabindex="-1"></a><span class="ex">$</span> grep hero <span class="pp">*</span>a.tsv</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb53-1"><a href="#cb53-1" tabindex="-1"></a><span class="ex">$</span> grep hero <span class="pp">*</span>a.tsv</span></code></pre>
 </div>
 </div>
 </div>
@@ -2457,17 +2724,17 @@ your results to the shell.</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution18" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution10" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution18" aria-expanded="false" aria-controls="collapseSolution18">
-  <h4 class="accordion-header" id="headingSolution18"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution10" aria-expanded="false" aria-controls="collapseSolution10">
+  <h4 class="accordion-header" id="headingSolution10"> Show me the solution </h4>
 </button>
-<div id="collapseSolution18" class="accordion-collapse collapse" data-bs-parent="#accordionSolution18" aria-labelledby="headingSolution18">
+<div id="collapseSolution10" class="accordion-collapse collapse" data-bs-parent="#accordionSolution10" aria-labelledby="headingSolution10">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb102">
+<div class="codewrapper sourceCode" id="cb54">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb102-1"><a href="#cb102-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-c</span> hero <span class="pp">*</span>a.tsv</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb54-1"><a href="#cb54-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-c</span> hero <span class="pp">*</span>a.tsv</span></code></pre>
 </div>
 </div>
 </div>
@@ -2486,17 +2753,17 @@ results to the shell.</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution19" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution11" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution19" aria-expanded="false" aria-controls="collapseSolution19">
-  <h4 class="accordion-header" id="headingSolution19"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution11" aria-expanded="false" aria-controls="collapseSolution11">
+  <h4 class="accordion-header" id="headingSolution11"> Show me the solution </h4>
 </button>
-<div id="collapseSolution19" class="accordion-collapse collapse" data-bs-parent="#accordionSolution19" aria-labelledby="headingSolution19">
+<div id="collapseSolution11" class="accordion-collapse collapse" data-bs-parent="#accordionSolution11" aria-labelledby="headingSolution11">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb103">
+<div class="codewrapper sourceCode" id="cb55">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb103-1"><a href="#cb103-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-ci</span> hero <span class="pp">*</span>a.tsv</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb55-1"><a href="#cb55-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-ci</span> hero <span class="pp">*</span>a.tsv</span></code></pre>
 </div>
 </div>
 </div>
@@ -2515,17 +2782,17 @@ your results to a file <code>results/hero.tsv</code>.</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution20" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution12" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution20" aria-expanded="false" aria-controls="collapseSolution20">
-  <h4 class="accordion-header" id="headingSolution20"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution12" aria-expanded="false" aria-controls="collapseSolution12">
+  <h4 class="accordion-header" id="headingSolution12"> Show me the solution </h4>
 </button>
-<div id="collapseSolution20" class="accordion-collapse collapse" data-bs-parent="#accordionSolution20" aria-labelledby="headingSolution20">
+<div id="collapseSolution12" class="accordion-collapse collapse" data-bs-parent="#accordionSolution12" aria-labelledby="headingSolution12">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb104">
+<div class="codewrapper sourceCode" id="cb56">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb104-1"><a href="#cb104-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-i</span> hero <span class="pp">*</span>a.tsv <span class="op">&gt;</span> results/hero.tsv</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb56-1"><a href="#cb56-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-i</span> hero <span class="pp">*</span>a.tsv <span class="op">&gt;</span> results/hero.tsv</span></code></pre>
 </div>
 </div>
 </div>
@@ -2544,17 +2811,17 @@ your results to a file <code>results/hero-i.tsv</code>.</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution21" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution13" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution21" aria-expanded="false" aria-controls="collapseSolution21">
-  <h4 class="accordion-header" id="headingSolution21"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution13" aria-expanded="false" aria-controls="collapseSolution13">
+  <h4 class="accordion-header" id="headingSolution13"> Show me the solution </h4>
 </button>
-<div id="collapseSolution21" class="accordion-collapse collapse" data-bs-parent="#accordionSolution21" aria-labelledby="headingSolution21">
+<div id="collapseSolution13" class="accordion-collapse collapse" data-bs-parent="#accordionSolution13" aria-labelledby="headingSolution13">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb105">
+<div class="codewrapper sourceCode" id="cb57">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb105-1"><a href="#cb105-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-iw</span> hero <span class="pp">*</span>a.tsv <span class="op">&gt;</span> results/hero-i.tsv</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb57-1"><a href="#cb57-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-iw</span> hero <span class="pp">*</span>a.tsv <span class="op">&gt;</span> results/hero-i.tsv</span></code></pre>
 </div>
 </div>
 </div>
@@ -2577,23 +2844,23 @@ followed by hyphen followed by four digits) in
 </div>
 </div>
 </div>
-<div id="accordionSolution22" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution14" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution22" aria-expanded="false" aria-controls="collapseSolution22">
-  <h4 class="accordion-header" id="headingSolution22"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution14" aria-expanded="false" aria-controls="collapseSolution14">
+  <h4 class="accordion-header" id="headingSolution14"> Show me the solution </h4>
 </button>
-<div id="collapseSolution22" class="accordion-collapse collapse" data-bs-parent="#accordionSolution22" aria-labelledby="headingSolution22">
+<div id="collapseSolution14" class="accordion-collapse collapse" data-bs-parent="#accordionSolution14" aria-labelledby="headingSolution14">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb106">
+<div class="codewrapper sourceCode" id="cb58">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb106-1"><a href="#cb106-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-Eo</span> <span class="st">'\d{4}-\d{4}'</span> 2014-01_JA.tsv <span class="op">&gt;</span> results/issns.tsv</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb58-1"><a href="#cb58-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-Eo</span> <span class="st">'\d{4}-\d{4}'</span> 2014-01_JA.tsv <span class="op">&gt;</span> results/issns.tsv</span></code></pre>
 </div>
 <p>or</p>
-<div class="codewrapper sourceCode" id="cb107">
+<div class="codewrapper sourceCode" id="cb59">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb107-1"><a href="#cb107-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-Po</span> <span class="st">'\d{4}-\d{4}'</span> 2014-01_JA.tsv <span class="op">&gt;</span> results/issns.tsv</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb59-1"><a href="#cb59-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-Po</span> <span class="st">'\d{4}-\d{4}'</span> 2014-01_JA.tsv <span class="op">&gt;</span> results/issns.tsv</span></code></pre>
 </div>
 <p>It is worth checking the file to make sure <code>grep</code> has
 interpreted the pattern correctly. You could use the <code>less</code>
@@ -2623,23 +2890,23 @@ command. Try piping the output from the command in the last exercise to
 </div>
 </div>
 </div>
-<div id="accordionSolution23" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution15" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution23" aria-expanded="false" aria-controls="collapseSolution23">
-  <h4 class="accordion-header" id="headingSolution23"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution15" aria-expanded="false" aria-controls="collapseSolution15">
+  <h4 class="accordion-header" id="headingSolution15"> Show me the solution </h4>
 </button>
-<div id="collapseSolution23" class="accordion-collapse collapse" data-bs-parent="#accordionSolution23" aria-labelledby="headingSolution23">
+<div id="collapseSolution15" class="accordion-collapse collapse" data-bs-parent="#accordionSolution15" aria-labelledby="headingSolution15">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb108">
+<div class="codewrapper sourceCode" id="cb60">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb108-1"><a href="#cb108-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-Eo</span> <span class="st">'\d{4}-\d{4}'</span> 2014-01_JA.tsv <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb60-1"><a href="#cb60-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-Eo</span> <span class="st">'\d{4}-\d{4}'</span> 2014-01_JA.tsv <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span></span></code></pre>
 </div>
 <p>or</p>
-<div class="codewrapper sourceCode" id="cb109">
+<div class="codewrapper sourceCode" id="cb61">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb109-1"><a href="#cb109-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-Po</span> <span class="st">'\d{4}-\d{4}'</span> 2014-01_JA.tsv <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb61-1"><a href="#cb61-1" tabindex="-1"></a><span class="ex">$</span> grep <span class="at">-Po</span> <span class="st">'\d{4}-\d{4}'</span> 2014-01_JA.tsv <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -2659,14 +2926,14 @@ and named <code>pg514.txt</code>. Let’s rename the file to
 <p>Now let’s create our loop. In the loop, we will ask the computer to
 go through the text, looking for each girl’s name, and count the number
 of times it appears. The results will print to the screen.</p>
-<div class="codewrapper sourceCode" id="cb111">
+<div class="codewrapper sourceCode" id="cb63">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb111-1"><a href="#cb111-1" tabindex="-1"></a><span class="ex">$</span> for name in <span class="st">"Jo"</span> <span class="st">"Meg"</span> <span class="st">"Beth"</span> <span class="st">"Amy"</span></span>
-<span id="cb111-2"><a href="#cb111-2" tabindex="-1"></a><span class="op">&gt;</span> do</span>
-<span id="cb111-3"><a href="#cb111-3" tabindex="-1"></a><span class="op">&gt;</span>    echo <span class="st">"</span><span class="va">$name</span><span class="st">"</span></span>
-<span id="cb111-4"><a href="#cb111-4" tabindex="-1"></a><span class="op">&gt;</span>    grep <span class="ex">-wo</span> <span class="st">"</span><span class="va">$name</span><span class="st">"</span> littlewomen.txt <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span></span>
-<span id="cb111-5"><a href="#cb111-5" tabindex="-1"></a><span class="op">&gt;</span> done</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb63-1"><a href="#cb63-1" tabindex="-1"></a><span class="ex">$</span> for name in <span class="st">"Jo"</span> <span class="st">"Meg"</span> <span class="st">"Beth"</span> <span class="st">"Amy"</span></span>
+<span id="cb63-2"><a href="#cb63-2" tabindex="-1"></a><span class="op">&gt;</span> do</span>
+<span id="cb63-3"><a href="#cb63-3" tabindex="-1"></a><span class="op">&gt;</span>    echo <span class="st">"</span><span class="va">$name</span><span class="st">"</span></span>
+<span id="cb63-4"><a href="#cb63-4" tabindex="-1"></a><span class="op">&gt;</span>    grep <span class="ex">-wo</span> <span class="st">"</span><span class="va">$name</span><span class="st">"</span> littlewomen.txt <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span></span>
+<span id="cb63-5"><a href="#cb63-5" tabindex="-1"></a><span class="op">&gt;</span> done</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2722,12 +2989,12 @@ first line of the loop and remove the <code>"</code> from
 </div>
 </div>
 </div>
-<div id="accordionSolution24" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution16" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution24" aria-expanded="false" aria-controls="collapseSolution24">
-  <h4 class="accordion-header" id="headingSolution24"> Solutions </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution16" aria-expanded="false" aria-controls="collapseSolution16">
+  <h4 class="accordion-header" id="headingSolution16"> Solutions </h4>
 </button>
-<div id="collapseSolution24" class="accordion-collapse collapse" data-bs-parent="#accordionSolution24" aria-labelledby="headingSolution24">
+<div id="collapseSolution16" class="accordion-collapse collapse" data-bs-parent="#accordionSolution16" aria-labelledby="headingSolution16">
 <div class="accordion-body">
 <ol style="list-style-type: lower-alpha">
 <li><p>Because we are explicitly listing the names after
@@ -2740,14 +3007,14 @@ will try to execute <code>grep Louisa May Alcott littlewomen.txt</code>.
 but <code>May</code> and <code>Alcott</code> as filenames. This produces
 two errors and a possibly untrustworthy count:</p></li>
 </ol>
-<div class="codewrapper sourceCode" id="cb113">
+<div class="codewrapper sourceCode" id="cb65">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb113-1"><a href="#cb113-1" tabindex="-1"></a><span class="ex">...</span></span>
-<span id="cb113-2"><a href="#cb113-2" tabindex="-1"></a><span class="ex">Louisa</span> May Alcott</span>
-<span id="cb113-3"><a href="#cb113-3" tabindex="-1"></a><span class="ex">grep:</span> May: No such file or directory</span>
-<span id="cb113-4"><a href="#cb113-4" tabindex="-1"></a><span class="ex">grep:</span> Alcott: No such file or directory</span>
-<span id="cb113-5"><a href="#cb113-5" tabindex="-1"></a><span class="ex">4</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb65-1"><a href="#cb65-1" tabindex="-1"></a><span class="ex">...</span></span>
+<span id="cb65-2"><a href="#cb65-2" tabindex="-1"></a><span class="ex">Louisa</span> May Alcott</span>
+<span id="cb65-3"><a href="#cb65-3" tabindex="-1"></a><span class="ex">grep:</span> May: No such file or directory</span>
+<span id="cb65-4"><a href="#cb65-4" tabindex="-1"></a><span class="ex">grep:</span> Alcott: No such file or directory</span>
+<span id="cb65-5"><a href="#cb65-5" tabindex="-1"></a><span class="ex">4</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -2767,10 +3034,10 @@ so. <code>cut</code> is a tool for extracting sections from a file. For
 instance, say we want to retain only the <code>Creator</code>,
 <code>Volume</code>, <code>Journal</code>, and <code>Citation</code>
 columns from our article data. With <code>cut</code> we’d:</p>
-<div class="codewrapper sourceCode" id="cb114">
+<div class="codewrapper sourceCode" id="cb66">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb114-1"><a href="#cb114-1" tabindex="-1"></a><span class="fu">cut</span> <span class="at">-f</span> 2,4,5,8 2014-01_JA.tsv <span class="kw">|</span> <span class="fu">head</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb66-1"><a href="#cb66-1" tabindex="-1"></a><span class="fu">cut</span> <span class="at">-f</span> 2,4,5,8 2014-01_JA.tsv <span class="kw">|</span> <span class="fu">head</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2804,18 +3071,18 @@ a new file. You can name it something like
 </div>
 </div>
 </div>
-<div id="accordionSolution25" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution17" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution25" aria-expanded="false" aria-controls="collapseSolution25">
-  <h4 class="accordion-header" id="headingSolution25"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution17" aria-expanded="false" aria-controls="collapseSolution17">
+  <h4 class="accordion-header" id="headingSolution17"> Show me the solution </h4>
 </button>
-<div id="collapseSolution25" class="accordion-collapse collapse" data-bs-parent="#accordionSolution25" aria-labelledby="headingSolution25">
+<div id="collapseSolution17" class="accordion-collapse collapse" data-bs-parent="#accordionSolution17" aria-labelledby="headingSolution17">
 <div class="accordion-body">
 <p>First, let’s see where our desired columns are:</p>
-<div class="codewrapper sourceCode" id="cb116">
+<div class="codewrapper sourceCode" id="cb68">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb116-1"><a href="#cb116-1" tabindex="-1"></a><span class="fu">head</span> <span class="at">-n</span> 1 2014-01_JA.tsv</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb68-1"><a href="#cb68-1" tabindex="-1"></a><span class="fu">head</span> <span class="at">-n</span> 1 2014-01_JA.tsv</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2837,6 +3104,60 @@ positional column numbers to construct our <code>cut</code> command:</p>
 1	59	eng	ARIZONA ARCHAEOLOGICAL AND HISTORICAL SOCIETY
 1	59	eng	ARIZONA ARCHAEOLOGICAL AND HISTORICAL SOCIETY</code></pre>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points</h3>
+<div class="callout-content">
+<ul>
+<li>The shell can be used to count elements of documents</li>
+<li>The shell can be used to search for patterns within files</li>
+<li>Commands can be used to count and mine any number of files</li>
+<li>Commands and flags can be combined to build complex queries specific
+to your work</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</div>
+</section></section><section id="aio-10-free-text"><p>Content from <a href="10-free-text.html">Working with free text</a></p>
+<hr>
+<p>Last updated on 2025-07-08 |
+
+        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/10-free-text.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>How do we work with complex files?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Use shell tools to clean and transform free text</li>
+</ul>
 </div>
 </div>
 </div>
@@ -2878,7 +3199,7 @@ and illustrations.]</em> 1898 (Retrieved from <a href="https://doi.org/10.21250/
 Piper’s World (a GeoCities page from 1999 saved at <a href="https://wayback.archive.org/web/20091020080943/http:/geocities.com/Heartland/Hills/7649/diary.html" class="external-link">archive.org</a>)</li>
 </ul>
 </div>
-</section><section><h2 class="section-heading" id="option-1-hand-transcribed-text">Option 1: Hand transcribed text<a class="anchor" aria-label="anchor" href="#option-1-hand-transcribed-text"></a>
+<section><h2 class="section-heading" id="option-1-hand-transcribed-text">Option 1: Hand transcribed text<a class="anchor" aria-label="anchor" href="#option-1-hand-transcribed-text"></a>
 </h2>
 <hr class="half-width">
 <div class="section level3">
@@ -2889,10 +3210,10 @@ made in <a href="03-working-with-files-and-folders.html">Episode 3,
 ‘Working with files and directories’</a>. You should (still) be working
 in the <code>shell-lesson</code> directory.</p>
 <p>Let’s look at the file.</p>
-<div class="codewrapper sourceCode" id="cb121">
+<div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb121-1"><a href="#cb121-1" tabindex="-1"></a><span class="ex">$</span> less <span class="at">-N</span> gulliver.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">$</span> less <span class="at">-N</span> gulliver.txt</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2938,29 +3259,29 @@ in the <code>shell-lesson</code> directory.</p>
 </div>
 <p>We’re going to start by using the <code>sed</code> command. The
 command allows you to edit files directly.</p>
-<div class="codewrapper sourceCode" id="cb123">
+<div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb123-1"><a href="#cb123-1" tabindex="-1"></a><span class="ex">$</span> sed <span class="st">'9352,9714d'</span> gulliver.txt <span class="op">&gt;</span> gulliver-nofoot.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="ex">$</span> sed <span class="st">'9352,9714d'</span> gulliver.txt <span class="op">&gt;</span> gulliver-nofoot.txt</span></code></pre>
 </div>
 <p>The command <code>sed</code> in combination with the <code>d</code>
 value will look at <code>gulliver.txt</code> and delete all values
 between the rows specified. The <code>&gt;</code> action then prompts
 the script to this edited text to the new file specified.</p>
-<div class="codewrapper sourceCode" id="cb124">
+<div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb124-1"><a href="#cb124-1" tabindex="-1"></a><span class="ex">$</span> sed <span class="st">'1,37d'</span> gulliver-nofoot.txt <span class="op">&gt;</span> gulliver-noheadfoot.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="ex">$</span> sed <span class="st">'1,37d'</span> gulliver-nofoot.txt <span class="op">&gt;</span> gulliver-noheadfoot.txt</span></code></pre>
 </div>
 <p>This does the same as before, but for the header.</p>
 <p>You now have a cleaner text. The next step is to prepare it even
 further for rigorous analysis.</p>
 <p>We now use the <code>tr</code> command, used for translating or
 deleting characters. Type and run:</p>
-<div class="codewrapper sourceCode" id="cb125">
+<div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb125-1"><a href="#cb125-1" tabindex="-1"></a><span class="ex">$</span> tr <span class="at">-d</span> <span class="st">'[:punct:]\r'</span> <span class="op">&lt;</span> gulliver-noheadfoot.txt <span class="op">&gt;</span> gulliver-noheadfootpunct.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="ex">$</span> tr <span class="at">-d</span> <span class="st">'[:punct:]\r'</span> <span class="op">&lt;</span> gulliver-noheadfoot.txt <span class="op">&gt;</span> gulliver-noheadfootpunct.txt</span></code></pre>
 </div>
 <p>This uses the translate command and a special syntax to remove all
 punctuation (<code>[:punct:]</code>) and carriage returns
@@ -2969,10 +3290,10 @@ punctuation (<code>[:punct:]</code>) and carriage returns
 we haven’t seen.</p>
 <p>Finally regularise the text by removing all the uppercase
 lettering.</p>
-<div class="codewrapper sourceCode" id="cb126">
+<div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb126-1"><a href="#cb126-1" tabindex="-1"></a><span class="ex">$</span> tr <span class="st">'[:upper:]'</span> <span class="st">'[:lower:]'</span> <span class="op">&lt;</span> gulliver-noheadfootpunct.txt <span class="op">&gt;</span> gulliver-clean.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="ex">$</span> tr <span class="st">'[:upper:]'</span> <span class="st">'[:lower:]'</span> <span class="op">&lt;</span> gulliver-noheadfootpunct.txt <span class="op">&gt;</span> gulliver-clean.txt</span></code></pre>
 </div>
 <p>Open the <code>gulliver-clean.txt</code> in a text editor. Note how
 the text has been transformed ready for analysis.</p>
@@ -2981,10 +3302,10 @@ the text has been transformed ready for analysis.</p>
 <h3 id="pulling-a-text-apart-counting-word-frequencies">Pulling a text apart, counting word frequencies<a class="anchor" aria-label="anchor" href="#pulling-a-text-apart-counting-word-frequencies"></a>
 </h3>
 <p>We are now ready to pull the text apart.</p>
-<div class="codewrapper sourceCode" id="cb127">
+<div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb127-1"><a href="#cb127-1" tabindex="-1"></a><span class="ex">$</span> tr <span class="st">' '</span> <span class="st">'\n'</span> <span class="op">&lt;</span> gulliver-clean.txt <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="at">-c</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-nr</span> <span class="op">&gt;</span> gulliver-final.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="ex">$</span> tr <span class="st">' '</span> <span class="st">'\n'</span> <span class="op">&lt;</span> gulliver-clean.txt <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="at">-c</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-nr</span> <span class="op">&gt;</span> gulliver-final.txt</span></code></pre>
 </div>
 <p>Here we’ve made extended use of the pipes we saw in <a href="05-counting-mining.html">Counting and mining with the shell</a>.
 The first part of this script uses the translate command again, this
@@ -3016,36 +3337,36 @@ script; we encountered these at the end of episode 4, ‘Automating the
 tedious with loops’.</p>
 <p>As a reminder, use the text editor of your choice to write a file
 that looks like this:</p>
-<div class="codewrapper sourceCode" id="cb128">
+<div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb128-1"><a href="#cb128-1" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
-<span id="cb128-2"><a href="#cb128-2" tabindex="-1"></a><span class="co"># This script removes quote marks from gulliver-clean.txt and saves the result as gulliver-noquotes.txt</span></span>
-<span id="cb128-3"><a href="#cb128-3" tabindex="-1"></a><span class="kw">(</span><span class="ex">replace</span> this line with your solution<span class="kw">)</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="co"># This script removes quote marks from gulliver-clean.txt and saves the result as gulliver-noquotes.txt</span></span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a><span class="kw">(</span><span class="ex">replace</span> this line with your solution<span class="kw">)</span></span></code></pre>
 </div>
 <p>Save the file as <code>remove-quotes.sh</code> and run it from the
 command line like this:</p>
-<div class="codewrapper sourceCode" id="cb129">
+<div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb129-1"><a href="#cb129-1" tabindex="-1"></a><span class="fu">bash</span> remove-quotes.sh</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="fu">bash</span> remove-quotes.sh</span></code></pre>
 </div>
 </div>
 </div>
 </div>
-<div id="accordionSolution26" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution26" aria-expanded="false" aria-controls="collapseSolution26">
-  <h4 class="accordion-header" id="headingSolution26"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution26" class="accordion-collapse collapse" data-bs-parent="#accordionSolution26" aria-labelledby="headingSolution26">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb130">
+<div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb130-1"><a href="#cb130-1" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
-<span id="cb130-2"><a href="#cb130-2" tabindex="-1"></a><span class="co"># This script removes quote marks from gulliver-clean.txt and saves the result as gulliver-noquotes.txt</span></span>
-<span id="cb130-3"><a href="#cb130-3" tabindex="-1"></a><span class="fu">sed</span> <span class="at">-Ee</span> <span class="st">'s/[""‘'</span>]//g<span class="st">' gulliver-clean.txt &gt; gulliver-noquotes.txt</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a><span class="co"># This script removes quote marks from gulliver-clean.txt and saves the result as gulliver-noquotes.txt</span></span>
+<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a><span class="fu">sed</span> <span class="at">-Ee</span> <span class="st">'s/[""‘'</span>]//g<span class="st">' gulliver-clean.txt &gt; gulliver-noquotes.txt</span></span></code></pre>
 </div>
 <p>If this doesn’t work for you, you might need to check whether your
 text editor can save files using the UTF-8 encoding.</p>
@@ -3070,10 +3391,10 @@ powerful command line.</p>
 </h3>
 <p>We’re going to work with <code>201403160_01_text.json</code>.</p>
 <p>Let’s look at the file.</p>
-<div class="codewrapper sourceCode" id="cb131">
+<div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb131-1"><a href="#cb131-1" tabindex="-1"></a><span class="ex">$</span> less <span class="at">-N</span> 201403160_01_text.json</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="ex">$</span> less <span class="at">-N</span> 201403160_01_text.json</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3104,10 +3425,10 @@ powerful command line.</p>
 </div>
 <p>We’re going to start by using the <code>tr</code> command, used for
 translating or deleting characters. Type and run:</p>
-<div class="codewrapper sourceCode" id="cb133">
+<div class="codewrapper sourceCode" id="cb13">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb133-1"><a href="#cb133-1" tabindex="-1"></a><span class="ex">$</span> tr <span class="at">-d</span> <span class="st">'[:punct:]'</span> <span class="op">&lt;</span> 201403160_01_text.json <span class="op">&gt;</span> 201403160_01_text-nopunct.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="ex">$</span> tr <span class="at">-d</span> <span class="st">'[:punct:]'</span> <span class="op">&lt;</span> 201403160_01_text.json <span class="op">&gt;</span> 201403160_01_text-nopunct.txt</span></code></pre>
 </div>
 <p>This uses the translate command and a special syntax to remove all
 punctuation. It also requires the use of both the output redirect
@@ -3115,10 +3436,10 @@ punctuation. It also requires the use of both the output redirect
 we haven’t seen.</p>
 <p>Finally regularise the text by removing all the uppercase
 lettering.</p>
-<div class="codewrapper sourceCode" id="cb134">
+<div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb134-1"><a href="#cb134-1" tabindex="-1"></a><span class="ex">$</span> tr <span class="st">'[:upper:]'</span> <span class="st">'[:lower:]'</span> <span class="op">&lt;</span> 201403160_01_text-nopunct.txt <span class="op">&gt;</span> 201403160_01_text-clean.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="ex">$</span> tr <span class="st">'[:upper:]'</span> <span class="st">'[:lower:]'</span> <span class="op">&lt;</span> 201403160_01_text-nopunct.txt <span class="op">&gt;</span> 201403160_01_text-clean.txt</span></code></pre>
 </div>
 <p>Open the <code>201403160_01_text-clean.txt</code> in a text editor.
 Note how the text has been transformed ready for analysis.</p>
@@ -3127,10 +3448,10 @@ Note how the text has been transformed ready for analysis.</p>
 <h3 id="pulling-a-text-apart-counting-word-frequencies-1">Pulling a text apart, counting word frequencies<a class="anchor" aria-label="anchor" href="#pulling-a-text-apart-counting-word-frequencies-1"></a>
 </h3>
 <p>We are now ready to pull the text apart.</p>
-<div class="codewrapper sourceCode" id="cb135">
+<div class="codewrapper sourceCode" id="cb15">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb135-1"><a href="#cb135-1" tabindex="-1"></a><span class="ex">$</span> tr <span class="st">' '</span> <span class="st">'\n'</span> <span class="op">&lt;</span> 201403160_01_text-clean.txt <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="at">-c</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-nr</span> <span class="op">&gt;</span> 201403160_01_text-final.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="ex">$</span> tr <span class="st">' '</span> <span class="st">'\n'</span> <span class="op">&lt;</span> 201403160_01_text-clean.txt <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="at">-c</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-nr</span> <span class="op">&gt;</span> 201403160_01_text-final.txt</span></code></pre>
 </div>
 <p>Here we’ve made extended use of the pipes we saw in <a href="05-counting-mining.html">Counting and mining with the shell</a>.
 The first part of this script uses the translate command again, this
@@ -3165,10 +3486,10 @@ powerful command line.</p>
 </h3>
 <p>We’re going to work with <code>diary.html</code>.</p>
 <p>Let’s look at the file.</p>
-<div class="codewrapper sourceCode" id="cb136">
+<div class="codewrapper sourceCode" id="cb16">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb136-1"><a href="#cb136-1" tabindex="-1"></a><span class="ex">$</span> less <span class="at">-N</span> diary.html</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a><span class="ex">$</span> less <span class="at">-N</span> diary.html</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3200,28 +3521,28 @@ powerful command line.</p>
 </div>
 <p>We’re going to start by using the <code>sed</code> command. The
 command allows you to edit files directly.</p>
-<div class="codewrapper sourceCode" id="cb138">
+<div class="codewrapper sourceCode" id="cb18">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb138-1"><a href="#cb138-1" tabindex="-1"></a><span class="ex">$</span> sed <span class="st">'265,330d'</span> diary.html <span class="op">&gt;</span> diary-nofoot.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a><span class="ex">$</span> sed <span class="st">'265,330d'</span> diary.html <span class="op">&gt;</span> diary-nofoot.txt</span></code></pre>
 </div>
 <p>The command <code>sed</code> in combination with the <code>d</code>
 value will look at <code>diary.html</code> and delete all values between
 the rows specified. The <code>&gt;</code> action then prompts the script
 to this edited text to the new file specified.</p>
-<div class="codewrapper sourceCode" id="cb139">
+<div class="codewrapper sourceCode" id="cb19">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb139-1"><a href="#cb139-1" tabindex="-1"></a><span class="ex">$</span> sed <span class="st">'1,221d'</span> diary-nofoot.txt <span class="op">&gt;</span> diary-noheadfoot.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" tabindex="-1"></a><span class="ex">$</span> sed <span class="st">'1,221d'</span> diary-nofoot.txt <span class="op">&gt;</span> diary-noheadfoot.txt</span></code></pre>
 </div>
 <p>This does the same as before, but for the header.</p>
 <p>You now have a cleaner text. The next step is to prepare it even
 further for rigorous analysis.</p>
 <p>First we wil remove all the html tags. Type and run:</p>
-<div class="codewrapper sourceCode" id="cb140">
+<div class="codewrapper sourceCode" id="cb20">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb140-1"><a href="#cb140-1" tabindex="-1"></a><span class="ex">$</span> sed <span class="at">-e</span> <span class="st">'s/&lt;[^&gt;]*&gt;//g'</span> diary-noheadfoot.txt <span class="op">&gt;</span> diary-notags.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" tabindex="-1"></a><span class="ex">$</span> sed <span class="at">-e</span> <span class="st">'s/&lt;[^&gt;]*&gt;//g'</span> diary-noheadfoot.txt <span class="op">&gt;</span> diary-notags.txt</span></code></pre>
 </div>
 <p>Here we are using a regular expression (see the <a href="https://librarycarpentry.org/lc-data-intro/01-regular-expressions" class="external-link">Library
 Carpentry regular expression lesson</a> to find all valid html tags
@@ -3232,20 +3553,20 @@ script also requires the use of both the output redirect
 we haven’t seen.</p>
 <p>We’re going to start by using the <code>tr</code> command, used for
 translating or deleting characters. Type and run:</p>
-<div class="codewrapper sourceCode" id="cb141">
+<div class="codewrapper sourceCode" id="cb21">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb141-1"><a href="#cb141-1" tabindex="-1"></a><span class="ex">$</span> tr <span class="at">-d</span> <span class="st">'[:punct:]\r'</span> <span class="op">&lt;</span> diary-notags.txt <span class="op">&gt;</span> diary-notagspunct.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" tabindex="-1"></a><span class="ex">$</span> tr <span class="at">-d</span> <span class="st">'[:punct:]\r'</span> <span class="op">&lt;</span> diary-notags.txt <span class="op">&gt;</span> diary-notagspunct.txt</span></code></pre>
 </div>
 <p>This uses the translate command and a special syntax to remove all
 punctuation (<code>[:punct:]</code>) and carriage returns
 (<code>\r</code>).</p>
 <p>Finally regularise the text by removing all the uppercase
 lettering.</p>
-<div class="codewrapper sourceCode" id="cb142">
+<div class="codewrapper sourceCode" id="cb22">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb142-1"><a href="#cb142-1" tabindex="-1"></a><span class="ex">$</span> tr <span class="st">'[:upper:]'</span> <span class="st">'[:lower:]'</span> <span class="op">&lt;</span> diary-notagspunct.txt <span class="op">&gt;</span> diary-clean.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" tabindex="-1"></a><span class="ex">$</span> tr <span class="st">'[:upper:]'</span> <span class="st">'[:lower:]'</span> <span class="op">&lt;</span> diary-notagspunct.txt <span class="op">&gt;</span> diary-clean.txt</span></code></pre>
 </div>
 <p>Open the <code>diary-clean.txt</code> in a text editor. Note how the
 text has been transformed ready for analysis.</p>
@@ -3254,10 +3575,10 @@ text has been transformed ready for analysis.</p>
 <h3 id="pulling-a-text-apart-counting-word-frequencies-2">Pulling a text apart, counting word frequencies<a class="anchor" aria-label="anchor" href="#pulling-a-text-apart-counting-word-frequencies-2"></a>
 </h3>
 <p>We are now ready to pull the text apart.</p>
-<div class="codewrapper sourceCode" id="cb143">
+<div class="codewrapper sourceCode" id="cb23">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb143-1"><a href="#cb143-1" tabindex="-1"></a><span class="ex">$</span> tr <span class="st">' '</span> <span class="st">'\n'</span> <span class="op">&lt;</span> diary-clean.txt <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="at">-c</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-nr</span> <span class="op">&gt;</span> diary-final.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" tabindex="-1"></a><span class="ex">$</span> tr <span class="st">' '</span> <span class="st">'\n'</span> <span class="op">&lt;</span> diary-clean.txt <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="at">-c</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-nr</span> <span class="op">&gt;</span> diary-final.txt</span></code></pre>
 </div>
 <p>Here we’ve made extended use of the pipes we saw in <a href="05-counting-mining.html">Counting and mining with the shell</a>.
 The first part of this script uses the translate command again, this
@@ -3365,25 +3686,7 @@ Commons Attribution-NonCommercial-ShareAlike 3.0 Unported</a>.</li>
 <h3 class="callout-title">Key Points</h3>
 <div class="callout-content">
 <ul>
-<li><p>The shell is powerful</p></li>
-<li><p>The shell can be used to copy, move, and combine multiple
-files</p></li>
-<li><p>Knowing where you are in your directory structure is key to
-working with the shell</p></li>
-<li><p>The shell can be used to copy, move, and combine multiple
-files</p></li>
-<li><p>Looping is the foundation for working smarter with the command
-line</p></li>
-<li><p>Loops help us to do the same (or similar) things to a bunch of
-items</p></li>
-<li><p>The shell can be used to count elements of documents</p></li>
-<li><p>The shell can be used to search for patterns within
-files</p></li>
-<li><p>Commands can be used to count and mine any number of
-files</p></li>
-<li><p>Commands and flags can be combined to build complex queries
-specific to your work</p></li>
-<li><p>Shell tools can be combined to powerful effect</p></li>
+<li>Shell tools can be combined to powerful effect</li>
 </ul>
 </div>
 </div>
