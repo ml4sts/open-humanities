@@ -71,7 +71,10 @@ contact: 'brownsarahm@uri.edu'
 
 # Order of episodes in your lesson
 episodes: 
-- introduction.md
+- 01-introduction.md
+- 02-jargon-busting.md
+- 03-hello-open-science.md
+- 04-homework.md
 - 05-intro-shell.Rmd
 - 06-navigating-the-filesystem.Rmd
 - 07-working-with-files-and-folders.Rmd
