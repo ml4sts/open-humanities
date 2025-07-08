@@ -1,34 +1,13 @@
 ---
-title: What is the shell? Navigating the filesystem. Working with files and directories. Automating the tedious with loops. Counting and mining with the shell. Working with free text.
-teaching: 165
-exercises: 80
+title: What is the shell?
+teaching: 5
+exercises: 0
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
 - Describe the basics of the Unix shell
 - Explain why and how to use the command line
-
-- Use shell commands to work with directories and files
-- Use shell commands to find and manipulate data
-
-- Work with files and directories from the command line
-- Use tab completion to limit typing
-- Use commands to print and view files and parts of files
-- Use commands to move/rename, copy, and delete files
-
-- Describe how loops can be used to repeat tasks
-- Implement a loop to rename several files
-
-- Demonstrate counting lines, words, and characters with the shell command wc and appropriate flags
-- Use strings to mine files and extract matched lines with the shell
-- Create complex single line commands by combining shell commands and regular expressions to mine files
-- Redirect a command's output to a file.
-- Process a file instead of keyboard input using redirection.
-- Construct command pipelines with two or more stages.
-- Explain Unix's 'small pieces, loosely joined' philosophy.
-
-- Use shell tools to clean and transform free text
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -37,20 +16,6 @@ exercises: 80
 - What is the shell?
 - What is the command line?
 - Why should I use it?
-
-- How do you move around the filesystem in the shell?
-- How can I copy, move, and delete files and directories?
-- How can I read files?
-
-- What is a loop?
-- How can a loop be used to repeat a task?
-
-- How can I count data?
-- How can I find data within files?
-- How can I combine existing commands to do new things?
-
-- How do we work with complex files?
-
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -76,8 +41,34 @@ The shell is a program that is usually launched on your computer much in the way
 
 For this lesson, we will use Git Bash for Windows users, Terminal for macOS, and the shell for Linux users.
 
+:::::::::::::::::::::::::::::::::::::::: keypoints
+
+- The shell is powerful
+- The shell can be used to copy, move, and combine multiple files
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
+
+
+---
+title: Navigating the filesystem
+teaching: 20
+exercises: 10
+---
+
+::::::::::::::::::::::::::::::::::::::: objectives
+
+- Use shell commands to work with directories and files
+- Use shell commands to find and manipulate data
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: questions
+
+- How do you move around the filesystem in the shell?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Navigating the shell
 
@@ -294,8 +285,34 @@ ls -lt
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+:::::::::::::::::::::::::::::::::::::::: keypoints
+
+- Knowing where you are in your directory structure is key to working with the shell
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
+---
+title: Working with files and directories
+teaching: 20
+exercises: 10
+---
+
+::::::::::::::::::::::::::::::::::::::: objectives
+
+- Work with files and directories from the command line
+- Use tab completion to limit typing
+- Use commands to print and view files and parts of files
+- Use commands to move/rename, copy, and delete files
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: questions
+
+- How can I copy, move, and delete files and directories?
+- How can I read files?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Working with files and folders
 
@@ -623,7 +640,32 @@ Using wildcards, we can even delete lots of files. And adding the `-r` flag we c
 
 **Unlike deleting from within our graphical user interface, there is *no* warning, *no* recycling bin from which you can get the files back and no other undo options!** For that reason, please be very careful with `rm` and extremely careful with `rm -r`.
 
+:::::::::::::::::::::::::::::::::::::::: keypoints
 
+- The shell can be used to copy, move, and combine multiple files
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+---
+title: Automating the tedious with loops
+teaching: 20
+exercises: 10
+---
+
+::::::::::::::::::::::::::::::::::::::: objectives
+
+- Describe how loops can be used to repeat tasks
+- Implement a loop to rename several files
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: questions
+
+- What is a loop?
+- How can a loop be used to repeat a task?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Writing a Loop
 
@@ -758,7 +800,39 @@ Download/copy [my\_first\_bash\_script.sh](files/my_first_bash_script.sh). For m
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+:::::::::::::::::::::::::::::::::::::::: keypoints
 
+- Looping is the foundation for working smarter with the command line
+- Loops help us to do the same (or similar) things to a bunch of items
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+---
+title: Counting and mining with the shell
+teaching: 60
+exercises: 30
+---
+
+::::::::::::::::::::::::::::::::::::::: objectives
+
+- Demonstrate counting lines, words, and characters with the shell command wc and appropriate flags
+- Use strings to mine files and extract matched lines with the shell
+- Create complex single line commands by combining shell commands and regular expressions to mine files
+- Redirect a command's output to a file.
+- Process a file instead of keyboard input using redirection.
+- Construct command pipelines with two or more stages.
+- Explain Unix's 'small pieces, loosely joined' philosophy.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: questions
+
+- How can I count data?
+- How can I find data within files?
+- How can I combine existing commands to do new things?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Counting and mining data
 
@@ -1582,6 +1656,33 @@ Issue	Volume	Language	Publisher
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+:::::::::::::::::::::::::::::::::::::::: keypoints
+
+- The shell can be used to count elements of documents
+- The shell can be used to search for patterns within files
+- Commands can be used to count and mine any number of files
+- Commands and flags can be combined to build complex queries specific to your work
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+---
+title: Working with free text
+teaching: 20
+exercises: 40
+---
+
+::::::::::::::::::::::::::::::::::::::: objectives
+
+- Use shell tools to clean and transform free text
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: questions
+
+- How do we work with complex files?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ### Working with free text
 
@@ -1938,24 +2039,8 @@ Keep in mind that the full potential the tools can offer may only emerge upon em
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-
-- The shell is powerful
-- The shell can be used to copy, move, and combine multiple files
-
-- Knowing where you are in your directory structure is key to working with the shell
-
 - Shell tools can be combined to powerful effect
 
-- The shell can be used to copy, move, and combine multiple files
-
-- Looping is the foundation for working smarter with the command line
-- Loops help us to do the same (or similar) things to a bunch of items
-
-- The shell can be used to count elements of documents
-- The shell can be used to search for patterns within files
-- Commands can be used to count and mine any number of files
-- Commands and flags can be combined to build complex queries specific to your work
-
-
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
 
