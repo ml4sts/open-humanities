@@ -73,7 +73,7 @@ contact: 'brownsarahm@uri.edu'
 episodes: 
 - 01-introduction.md
 - 02-jargon-busting.md
-- 03-hello-open-science.md
+- 03-hello-open-source.md
 - 04-homework.md
 - 05-intro-shell.Rmd
 - 06-navigating-the-filesystem.Rmd
