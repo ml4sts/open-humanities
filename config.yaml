@@ -17,7 +17,9 @@ carpentry: 'incubator'
 # carpentry_description: "Custom Carpentry"
 
 # Overall title for pages.
-title: 'Lesson Title'
+
+title: 'Open Humanities' 
+
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
 created: 
@@ -33,13 +35,17 @@ life_cycle: 'pre-alpha'
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://github.com/carpentries/workbench-template-md'
+
+source: 'https://github.com/ml4sts/open-humanities' # FIXME
+
 
 # Default branch of your lesson
 branch: 'main'
 
 # Who to contact if there are any issues
-contact: 'team@carpentries.org'
+
+contact: 'brownsarahm@uri.edu' 
+
 
 # Navigation ------------------------------------------------
 #
