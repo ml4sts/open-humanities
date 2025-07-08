@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://ml4sts.github.io/open-humanities/01-introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://ml4sts.github.io/open-humanities/02-jargon-busting.html</loc>
+  </url>
+  <url>
     <loc>https://ml4sts.github.io/open-humanities/02-shell.html</loc>
+  </url>
+  <url>
+    <loc>https://ml4sts.github.io/open-humanities/03-hello-open-source.html</loc>
+  </url>
+  <url>
+    <loc>https://ml4sts.github.io/open-humanities/04-homework.html</loc>
   </url>
   <url>
     <loc>https://ml4sts.github.io/open-humanities/05-intro-shell.html</loc>
@@ -22,6 +34,21 @@
     <loc>https://ml4sts.github.io/open-humanities/10-free-text.html</loc>
   </url>
   <url>
+    <loc>https://ml4sts.github.io/open-humanities/11-what-is-git.html</loc>
+  </url>
+  <url>
+    <loc>https://ml4sts.github.io/open-humanities/12-getting-started.html</loc>
+  </url>
+  <url>
+    <loc>https://ml4sts.github.io/open-humanities/13-sharing.html</loc>
+  </url>
+  <url>
+    <loc>https://ml4sts.github.io/open-humanities/14-review.html</loc>
+  </url>
+  <url>
+    <loc>https://ml4sts.github.io/open-humanities/15-github-pages.html</loc>
+  </url>
+  <url>
     <loc>https://ml4sts.github.io/open-humanities/404.html</loc>
   </url>
   <url>
@@ -40,7 +67,19 @@
     <loc>https://ml4sts.github.io/open-humanities/index.html</loc>
   </url>
   <url>
+    <loc>https://ml4sts.github.io/open-humanities/instructor/01-introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://ml4sts.github.io/open-humanities/instructor/02-jargon-busting.html</loc>
+  </url>
+  <url>
     <loc>https://ml4sts.github.io/open-humanities/instructor/02-shell.html</loc>
+  </url>
+  <url>
+    <loc>https://ml4sts.github.io/open-humanities/instructor/03-hello-open-source.html</loc>
+  </url>
+  <url>
+    <loc>https://ml4sts.github.io/open-humanities/instructor/04-homework.html</loc>
   </url>
   <url>
     <loc>https://ml4sts.github.io/open-humanities/instructor/05-intro-shell.html</loc>
@@ -59,6 +98,21 @@
   </url>
   <url>
     <loc>https://ml4sts.github.io/open-humanities/instructor/10-free-text.html</loc>
+  </url>
+  <url>
+    <loc>https://ml4sts.github.io/open-humanities/instructor/11-what-is-git.html</loc>
+  </url>
+  <url>
+    <loc>https://ml4sts.github.io/open-humanities/instructor/12-getting-started.html</loc>
+  </url>
+  <url>
+    <loc>https://ml4sts.github.io/open-humanities/instructor/13-sharing.html</loc>
+  </url>
+  <url>
+    <loc>https://ml4sts.github.io/open-humanities/instructor/14-review.html</loc>
+  </url>
+  <url>
+    <loc>https://ml4sts.github.io/open-humanities/instructor/15-github-pages.html</loc>
   </url>
   <url>
     <loc>https://ml4sts.github.io/open-humanities/instructor/404.html</loc>
