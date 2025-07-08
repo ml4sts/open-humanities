@@ -72,7 +72,11 @@ episodes:
 - 08-loops.Rmd
 - 09-counting-mining.Rmd
 - 10-free-text.Rmd
-
+- 11-what-is-git.Rmd
+- 12-getting-started.Rmd
+- 13-sharing.Rmd
+- 14-review.Rmd
+- 15-github-pages.Rmd
 
 # Information for Learners
 learners: 
