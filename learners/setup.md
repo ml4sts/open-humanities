@@ -3,7 +3,6 @@ title: Setup
 ---
 
 
-
 <!--
 ## Data Sets
 
@@ -39,7 +38,6 @@ Bash is the default shell on most Linux distributions and older versions of macO
 
 ::: tab
 ### Windows
-
 On Windows, CMD or PowerShell are normally available as the default shell environments. These use a syntax and set of applications unique to Windows systems and are incompatible with the more widely used Unix utilities. However, a Bash shell can be installed on Windows to provide a Unix-like environment. For this lesson we suggest using Git Bash, part of the >[Git for Windows](https://gitforwindows.org/) package:
   
   - Download the latest Git for Windows [installer](https://gitforwindows.org/).
@@ -91,11 +89,61 @@ You need to download some files to follow this lesson:
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
+## Git
+:::::::::::: prereq
+## Installing Git
+
+Since several Carpentries lessons rely on Git, please see
+[this section of the workshop template][workshop-setup] for
+instructions on installing Git for various operating systems.
+
+- [Git installation on Windows][workshop-setup]
+- [Git installation on MacOS][workshop-setup]
+- [Git installation on Linux][workshop-setup]
+::::::::::::
+
+
+:::::::::::: prereq
+
+## Creating a GitHub Account
+
+You will need an account for [GitHub](https://github.com) to follow this lesson.
+
+1. Go to <https://github.com> and follow the "Sign up" link at the top-right of the window
+2. Follow the instructions to create an account
+3. Verify your email address with GitHub
+4. Configure multifactor authentication (see below)
+
+::::::::::::
+
+
+:::::::::::: discussion
+### Multi-factor Authentication
+
+In 2023, GitHub introduced a requirement for 
+all accounts to have 
+[multi-factor authentication (2FA)](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication) 
+configured for extra security.
+Several options exist for setting up 2FA, which are summarised here:
+
+1. If you already use an authenticator app, 
+   like [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en&co=GENIE.Platform%3DiOS&oco=0) 
+   or [Duo Mobile](https://duo.com/product/multi-factor-authentication-mfa/duo-mobile-app) on your smartphone for example, 
+   [add GitHub to that app](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-totp-mobile-app).
+2. If you have access to a smartphone but do not already use an authenticator app, install one and 
+   [add GitHub to the app](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-totp-mobile-app).
+3. If you do not have access to a smartphone or do not want to install an authenticator app, you have two options:
+    1. [set up 2FA via text message](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-text-messages) 
+       ([list of countries where authentication by SMS is supported](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/countries-where-sms-authentication-is-supported)), or
+    2. [use a hardware security key](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-security-key) 
+       like [Yubikey](https://www.yubico.com/products/yubikey-5-overview/) 
+       or the [Google Titan key](https://store.google.com/us/product/titan_security_key?hl=en-US&pli=1).
+
+The GitHub documentation provides [more details about configuring 2FA](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication).
+
+
+::::::::::::
 
 
 
-::: tab
-### Windows
-### Linux
-### Mac OS
-:::
+[workshop-setup]: https://carpentries.github.io/workshop-template/install_instructions/#git
