@@ -565,16 +565,15 @@ any links that you are not going to use.
  --></tbody></table><p>
       The actual schedule may vary slightly depending on the topics and exercises chosen by the instructor.
       </p>
-      </section><section id="setup"><p>FIXME: Setup instructions live in this document. Please specify the
-tools and the data sets the Learner needs to have installed.</p>
-<section><h2 class="section-heading" id="data-sets">Data Sets<a class="anchor" aria-label="anchor" href="#data-sets"></a></h2>
-<hr class="half-width"><!--
+      </section><section id="setup"><!--
+## Data Sets
+
 FIXME: place any data you want learners to use in `episodes/data` and then use
        a relative link ( [data zip file](data/lesson-data.zip) ) to provide a
        link to it, replacing the example.com link.
---><p>Download the <a href="https://example.com/FIXME" class="external-link">data zip file</a>
-and unzip it to your Desktop</p>
-</section><section><h2 class="section-heading" id="software-setup">Software Setup<a class="anchor" aria-label="anchor" href="#software-setup"></a></h2>
+
+Download the [data zip file](https://example.com/FIXME) and unzip it to your Desktop
+--><section><h2 class="section-heading" id="software-setup">Software Setup<a class="anchor" aria-label="anchor" href="#software-setup"></a></h2>
 <hr class="half-width"><div id="details" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
@@ -589,51 +588,97 @@ a GitHub Account.</p>
 </div>
 </div>
 </div>
-<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
-  <h3 class="accordion-header" id="headingSpoiler1">
-  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>
-  Windows
-  </h3>
-</button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
-<div class="accordion-body">
-<p>Use PuTTY</p>
+</section><section><h2 class="section-heading" id="shell">Shell<a class="anchor" aria-label="anchor" href="#shell"></a></h2>
+<hr class="half-width"><p>To participate in this Library Carpentry lesson, you will need a
+working Unix-like shell environment. We will be using Bash (<a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)" class="external-link">Bourne Again
+Shell</a>) which is standard on Linux and macOS. Some macOS users
+(Catalina or later) will have zsh (Z shell) as their default version.
+Even if you are a Windows user, learning Bash will open up a powerful
+set of tools on your personal machine, and familiarize you with the
+standard remote interface used on most servers and supercomputers.</p>
+<div id="terminal-setup" class="callout prereq">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check"></i>
+</div>
+<div id="terminal-setup" class="callout-inner">
+<h3 class="callout-title">Terminal Setup</h3>
+<div class="callout-content">
+<p>Bash is the default shell on most Linux distributions and older
+versions of macOS. Windows users will need to install Git Bash to
+provide a Unix-like environment.</p>
+<p>`<code>{tab-item} ### Windows</code> On Windows, CMD or PowerShell
+are normally available as the default shell environments. These use a
+syntax and set of applications unique to Windows systems and are
+incompatible with the more widely used Unix utilities. However, a Bash
+shell can be installed on Windows to provide a Unix-like environment.
+For this lesson we suggest using Git Bash, part of the &gt;<a href="https://gitforwindows.org/" class="external-link">Git for Windows</a> package:</p>
+<ul><li>Download the latest Git for Windows <a href="https://gitforwindows.org/" class="external-link">installer</a>.</li>
+<li>Double click the <code>.exe</code> file to run the installer (for
+example, <code>Git-2.42.0.2-64-bit.exe</code>) using the default
+settings.</li>
+<li>Once installed, open the shell by selecting Git Bash from the start
+menu (in the Git folder).</li>
+</ul><pre><code></code></pre>
+<p><code>{tab-item} ### Linux ``` The default shell is usually Bash, but if your machine is set up differently you can run it by opening a terminal and typing `bash` followed by the &lt;kbd&gt;enter&lt;/kbd&gt; key. There is no need to install anything. Look for Terminal in your applications to start the Bash shell. ```</code>
+<code>{tab-item} ### Mac OS ``` Open Terminal from `/Applications/Utilities` or Spotlight Search. In versions before Catalina, Bash is the default shell, so you do not need to do anything further. In Catalina and onwards, the default shell is zsh, which is similar but may behave differently from Bash in some cases. To switch to Bash, enter the command `bash` in your terminal window followed by the &lt;kbd&gt;enter&lt;/kbd&gt; key. ```</code></p>
+<p>If you encounter issues, the Carpentries has a <a href="https://github.com/carpentries/workshop-template/wiki/Configuration-Problems-and-Solutions" class="external-link">Configuration
+Problems and Solutions wiki page</a> that may help.</p>
+<!-- AS: Most likely for deletion... -->
+<ul><li>
+<strong>Windows:</strong> There are also some more advanced
+solutions available for running Bash commands on Windows. A Bash shell
+command-line tool is available for Windows 10, which you can use if you
+enable the <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10" class="external-link">Windows
+Subsystem for Linux</a>. You can also run Bash commands on a remote
+computer or server that already has a Unix Shell from your Windows
+machine. This can be done through a Secure Shell (SSH) client. One
+client available for free for Windows is <a href="https://www.putty.org/" class="external-link">PuTTY</a>.</li>
+</ul></div>
 </div>
 </div>
+<div id="data-files" class="callout prereq">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check"></i>
+</div>
+<div id="data-files" class="callout-inner">
+<h3 class="callout-title">Data Files</h3>
+<div class="callout-content">
+<p>You need to download some files to follow this lesson:</p>
+<ol style="list-style-type: decimal"><li><p>Download <a href="../data/shell-lesson.zip">shell-lesson.zip</a> and
+move the file to your Desktop.</p></li>
+<li><p>Unzip/extract the file (ask your instructor if you need help with
+this step). You should end up with a new folder called
+<code>shell-lesson</code> on your Desktop.</p></li>
+<li>
+<p>Open the terminal and type <code>ls</code> followed by the
+<kbd>enter</kbd> key.</p>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">$</span> ls</span></code></pre>
+</div>
+<p>You should see a list of files and folders in your current
+directory.</p>
+</li>
+<li>
+<p>Then type:</p>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="ex">$</span> pwd</span></code></pre>
+</div>
+<p>This command will show you where you are in your file system, which
+should now be your home directory. In the lesson, you will find out more
+about the commands <code>ls</code>, <code>pwd</code> and how to work
+with the data in <code>shell-lesson</code> folder.</p>
+</li>
+</ol></div>
 </div>
 </div>
-<div id="accordionSpoiler2" class="accordion spoiler-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler2" aria-expanded="false" aria-controls="collapseSpoiler2">
-  <h3 class="accordion-header" id="headingSpoiler2">
-  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>
-  MacOS
-  </h3>
-</button>
-<div id="collapseSpoiler2" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler2" aria-labelledby="headingSpoiler2">
-<div class="accordion-body">
-<p>Use Terminal.app</p>
-</div>
-</div>
-</div>
-</div>
-<div id="accordionSpoiler3" class="accordion spoiler-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler3" aria-expanded="false" aria-controls="collapseSpoiler3">
-  <h3 class="accordion-header" id="headingSpoiler3">
-  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>
-  Linux
-  </h3>
-</button>
-<div id="collapseSpoiler3" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler3" aria-labelledby="headingSpoiler3">
-<div class="accordion-body">
-<p>Use Terminal</p>
-</div>
-</div>
-</div>
-</div>
+<p>`<code>{tab-item} ### Windows</code></p>
+<pre><code></code></pre>
+<p><code>{tab-item} ### Linux ``` ```</code>
+<code>{tab-item} ### Mac OS ``` ```</code></p>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
@@ -686,9 +731,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://ml4sts.github.io/open-humanities/instructor/index.html",
   "identifier": "https://ml4sts.github.io/open-humanities/instructor/index.html",
-  "dateCreated": "2025-07-08",
-  "dateModified": "2025-07-08",
-  "datePublished": "2025-07-08"
+  "dateCreated": "2025-07-14",
+  "dateModified": "2025-07-14",
+  "datePublished": "2025-07-14"
 }
 
   </script><script>
