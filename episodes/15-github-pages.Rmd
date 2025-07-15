@@ -111,11 +111,11 @@ On your repository `code<>` page click `Upload files` from the `Add file` dropdo
 
 Drag your file and drop it in the following page and select `Commit changes`
 
-![](fig\gh_upload -file.png){alt="GitHub upload file"}
+![](fig\gh_upload-file.png){alt="GitHub upload file"}
 
 Wait a minute for the new changes to render and then view your website again
 
-![](fig\gh-pages_updated-webpage.png){alt="GitHub new webpage with new content"}
+![](fig\gh_updated-webpage.png){alt="GitHub new webpage with new content"}
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
