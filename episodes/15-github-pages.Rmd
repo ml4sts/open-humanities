@@ -6,9 +6,10 @@ exercises: 20
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- create a GitHub Pages branch and push a file to it
-- with a partner, experiment with collaborating on a GitHub Pages website
-- apply the workflow between local and remote repositories to collaborate on a website
+- Create a GitHub repo and push a file to it
+- Render a static webpage from the repo
+- Share the link to your webpage with a partner and confirm they can view it
+- Consider what options there are to collaborate on a website or contribute to someone else's webpage
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -22,15 +23,16 @@ exercises: 20
 ## GitHub Pages
 
 GitHub Pages is a simple service to publish a website directly on GitHub from a Git repository.
-You add some files and folders to a repository and GitHub Pages turns it into a website.
-You can use HTML directly if you like, but they also provide Jekyll,
-which renders Markdown into HTML and makes it really easy to setup a blog or a template-based website.
+You can add some files and folders to a repository and GitHub Pages turns it into a website.
+There are multiple ways of doing so, either by having GitHub use an HTML file (`index.html`) directly to publish, or by using a tool that GitHub provides called Jekyll which renders Markdown into HTML. You can use the contents of one md file directly named either `README.md` or `index.md and Jekyll will render them into a webpage making it really easy to setup a blog or a template-based website.
+You can then configure Jekyll with more detailed configuration settings to make your webpage more customized.
+There also more tools that help turn md files into HTML that can be published by gh-pages such as Jupyterbook or MkDocs.
 
 ### Why GitHub Pages is awesome!
 
 GitHub Pages allows you to version control your website. This is useful for a lot of different reasons. It allows you to
 keep a record of what changes you have made. It allows people to reference your website at a particular point in time
-and (if you make your source open) to see what it was like at that particular point in time. This is very useful for
+and (if you make your repo open source) to see what it was like at that particular point in time. This is very useful for
 academic citations. Most people have had the experience of following up a reference to a website and either getting a
 404 error or seeing something completely different. Although using versions on your site doesn't guarantee this won't
 happen, it does make it easier to manage old versions of your site.
@@ -39,6 +41,27 @@ GitHub Pages also mean that you can collaborate on a website with a lot of peopl
 communicate endlessly back and forwards about what changes need to be made, or have been made already. You can create
 'issues' (things that need discussing or fixing), list things to do in the future, and allow other people visiting your
 website to quickly suggest, and help implement changes through pull requests.
+
+### Creating a new repo
+
+To create a new repo login to your GitHub account. At the top, right corner click on the `+` sign and choose `New repository`
+
+![](fig\gh_new-repo.png){alt="GitHub create a new repo button"}
+
+
+Give your repository a meaningful name that suits the contents it shall hold. And we encourage adding something to the optional description section. 
+
+
+![](fig\gh-new-repo-name.png){alt="GitHub create a new repo page"}
+
+Select `Add a README file` box and click on the green `Create Repository` button
+
+![](fig\gh_new-repo-publish.png){alt="GitHub create a new repo README and publish button"}
+
+Here is a preview of how the new repo would look like
+
+![](fig\gh_new-repo-page.png){alt="GitHub new repo view"}
+
 
 ### Enable GitHub Pages
 
@@ -70,9 +93,29 @@ See the [GitHub Pages documentation](https://docs.github.com/en/pages/getting-st
 
 ### View your site
 
-If we now visit `https://some-librarian.github.io/hello-world/`,
+If we now visit `https://aymanbx.github.io/my-website/`,
 we should see the contents of the index.md file that created earlier.
 Usually it's available instantly, but it can take a few seconds and in the worst case a few minutes if GitHub are very busy.
+
+And here's a preview of the new website
+
+![](fig\gh-pages_new-webpage.png){alt="GitHub new webpage"}
+
+### Adding new content to your webpage
+
+Locally rename a copy of your file to `index.md`
+
+On your repository `code<>` page click `Upload files` from the `Add file` dropdown menu
+
+![](fig\gh_add-file.png){alt="GitHub add file"}
+
+Drag your file and drop it in the following page and select `Commit changes`
+
+![](fig\gh_upload -file.png){alt="GitHub upload file"}
+
+Wait a minute for the new changes to render and then view your website again
+
+![](fig\gh-pages_updated-webpage.png){alt="GitHub new webpage with new content"}
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -81,7 +124,7 @@ Usually it's available instantly, but it can take a few seconds and in the worst
 To practice using Git, GitHub pages and Markdown we can contribute to a GitHub pages site.
 Pair up in groups of two (or more if needed) and do the exercises below together.
 
-1. Go to [https://github.com/some-librarian/hello-world](https://github.com/some-librarian/hello-world), where "some-librarian" is the username of your exercise partner.
+1. Go to [https://github.com/some-humanist/my-website](https://github.com/some-humanist/my-website), where "some-humanist" is the username of your exercise partner.
 
 2. Click on "Fork" in the upper right part of the screen to create a copy of the repository on your account. Once you have a fork > of your partner's repository, you can edit the files in your own fork directly.
 
