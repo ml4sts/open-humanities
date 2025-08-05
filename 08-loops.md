@@ -58,7 +58,7 @@ c.txt
 d.txt
 ```
 
-When the shell sees the keyword `for`, it knows to repeat a command (or group of commands) once for each thing `in` a list. For each iteration, the name of each thing is sequentially assigned to the **loop variable** and the commands inside the loop are executed before moving on to the next thing in the list. Inside the loop, we call for the variable's value by putting `$` in front of it. The `$` tells the shell interpreter to treat the **variable** as a variable name and substitute its value in its place, rather than treat it as text or an external command.
+When the shell sees the keyword `for`, it knows to repeat a command (or group of commands) once for each thing `in` a list. For each iteration, the name of each thing is sequentially assigned to the **loop variable**. The commands inside the loop are executed before moving on to the next thing in the list. Inside the loop, we call for the variable's value by putting `$` in front of it. The `$` tells the shell interpreter to treat the **variable** as a variable name and substitute its value in its place, rather than treat it as text or an external command.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
