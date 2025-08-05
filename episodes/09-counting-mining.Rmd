@@ -77,7 +77,7 @@ CSV (Comma-separated values) is a common plain text format for storing tabular d
 
 <!-- hm, reminds me of MARC -->
 
-First, let's have a look at the largest data file, using the tools we learned in [Reading files](03-working-with-files-and-folders.md):
+First, let's have a look at the largest data file, using the tools we learned in [Reading files](07-working-with-files-and-folders.md):
 
 ```bash
 $ cat 2014-01_JA.tsv
@@ -755,7 +755,7 @@ What is happening in the loop?
 
 ## Why are the variables double-quoted here?
 
-a) In [episode 4](04-loops.md) we learned to use `"$..."` as a safeguard against white-space being misinterpreted. Why *could* we omit the `"`\-quotes in the above example?
+a) In [episode 8](08-loops.md) we learned to use `"$..."` as a safeguard against white-space being misinterpreted. Why *could* we omit the `"`\-quotes in the above example?
 
 b) What happens if you add `"Louisa May Alcott"` to the first line of the loop and remove the `"` from `$name` in the loop's code?
 
