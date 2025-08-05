@@ -30,10 +30,12 @@ The only thing that must be completed before the first day is to have a GitHub A
 
 To participate in this Library Carpentry lesson, you will need a working Unix-like shell environment. We will be using Bash ([Bourne Again Shell](https://en.wikipedia.org/wiki/Bash_\(Unix_shell\))) which is standard on Linux and macOS. Some macOS users (Catalina or later) will have zsh (Z shell) as their default version. Even if you are a Windows user, learning Bash will open up a powerful set of tools on your personal machine, and familiarize you with the standard remote interface used on most servers and supercomputers.
 
+The shell is a program that allows you to interact with your computer using typed text commands. It is the primary interface used on Linux and Unix-based systems, such as macOS, and can be installed optionally on other operating systems such as Windows.
+
 ::::::::::::::::::::::::::::::::::::::::::  prereq
 
 ### Terminal Setup
-
+A terminal is the text-based interface that gives the user access to the shell of the operating system.
 Bash is the default shell on most Linux distributions and older versions of macOS. Windows users will need to install Git Bash to provide a Unix-like environment.
 
 ::: tab
