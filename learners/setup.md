@@ -177,6 +177,49 @@ sudo apt install ./<file>.deb
 - Add VS Code to your Dock by right-clicking on the icon, located in the Dock, to bring up the context menu and choosing Options, Keep in Dock.
 - Launch VS Code from the c
 :::
+:::
 
+
+::: prereq
+## Myst
+Myst is a tool used to build and render interactive webpages easily using text files with a splash of markdown syntax (the arrangement of words and phrases to create well-formed sentences in a language)
+Installing myst:
+::: tab
+### Windows
+This requires having python package installer
+- Confirm you have Python installed in your system and Python Package Installer `pip`
+```
+python -v
+pip -v
+```
+If you get an output from these two commands then you have these two packages installed
+- On your shell terminal run:
+```
+pip install mystmd
+```
+### Linux
+This requires having python package installer
+- Confirm you have Python installed in your system and Python Package Installer `pip`
+```
+python -v
+pip -v
+```
+If you get an output from these two commands then you have these two packages installed
+- On your shell terminal run:
+```
+pip install mystmd
+```
+### Mac OS
+This requires having python package installer
+- Confirm you have Python installed in your system and Python Package Installer `pip`
+```
+python -v
+pip -v
+```
+If you get an output from these two commands then you have these two packages installed
+- On your shell terminal run:
+```
+pip install mystmd
+```
 
 [workshop-setup]: https://carpentries.github.io/workshop-template/install_instructions/#git
