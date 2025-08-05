@@ -47,7 +47,8 @@ Applications Documents    Library      Music        Public
 Desktop      Downloads    Movies       Pictures
 ```
 
-We may want more information than just a list of files and directories. We can get this by specifying various **flags** (also known as `options`, `parameters`, or, most frequently, `arguments`) to go with our basic commands. Arguments modify the workings of the command by telling the computer what sort of output or manipulation we want.
+We may want more information than just a list of files and directories. We can get this by specifying various **flags** (also known as `options`) to go with our basic commands. 
+Options modify the workings of the command by telling the computer what sort of output or manipulation we want.
 
 If we type `ls -l` and press enter, the computer returns a list of files that contains information similar to what we would find in our Finder (Mac) or Explorer (Windows): the size of the files in bytes, the date it was created or last modified, and the file name.
 
@@ -114,9 +115,9 @@ bash: cd: things to learn about the shell: No such file or directory
 ```
 
 Notice that we surrounded the name by quotation marks. The *arguments* given to any shell command are separated by spaces, so a way to let them know that we mean 'one single thing called "things to learn about the shell"', not 'six different things', is to use (single or double) quotation marks.
+Arguments are things that we give the command to work with; for example, if the command is change directory, we give it an argument _a path_ to use to change the directory to that path. We could do the same thing with the list command (`ls`). If we provide it with a path as an **argument**, instead of listing the files and directories of the current directory (that we're in) it does so for the provided path.
 
-We've now seen how we can go 'down' through our directory structure (as in into more nested directories). If we want to go back, we can type `cd ..`. This moves us 'up' one directory, putting us back where we started. **If we ever get completely lost, the command `cd` without any arguments will bring
-us right back to the home directory, the place where we started.**
+We've now seen how we can go 'down' through our directory structure (as in into more nested directories). If we want to go back, we can type `cd ..`. This moves us 'up' one directory, putting us back where we started. **If we ever get completely lost, the command `cd` without any arguments will bring us right back to the home directory, the place where we started.**
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
@@ -143,7 +144,7 @@ As we become more comfortable, we can get very quickly to the directory that we 
 
 ## Getting help
 
-Use the `man` command to invoke the manual page (documentation) for a shell command. For example, `man ls` displays all the arguments available to you - which saves you remembering them all! Try this for each command you've learned so far. Use the <kbd>spacebar</kbd> to navigate the manual pages. Use <kbd>q</kbd> at any time to quit.
+Use the `man` command to invoke the manual page (documentation) for a shell command. For example, `man ls` displays all the options available to you - which saves you remembering them all! Try this for each command you've learned so far. Use the <kbd>spacebar</kbd> to navigate the manual pages. Use <kbd>q</kbd> at any time to quit.
 
 ***Note*: this command is for Mac and Linux users only**. It does not work directly for Windows users. If you use Windows, you can search for the shell command on [http://man.he.net/](https://man.he.net/), and view the associated manual page. In some systems the command name followed by `--help` will work, e.g. `ls --help`.
 
@@ -206,7 +207,7 @@ BSD                              May 19, 2002                              BSD
 
 ## Find out about advanced `ls` commands
 
-Find out, using the manual page, how to list the files in a directory ordered by their filesize. Try it out in different directories. Can you combine it with the `-l` *argument* you learned before?
+Find out, using the manual page, how to list the files in a directory ordered by their filesize. Try it out in different directories. Can you combine it with the `-l` *option* you learned before?
 
 Afterwards, find out how you can order a list of files based on their last modification date. Try ordering files in different directories.
 
@@ -214,7 +215,7 @@ Afterwards, find out how you can order a list of files based on their last modif
 
 ## Answer
 
-To order files in a directory by their filesize, in combination with the `-l` argument:
+To order files in a directory by their filesize, in combination with the `-l` option:
 
 ```bash
 ls -lS
@@ -222,7 +223,7 @@ ls -lS
 
 Note that the `S` is **case-sensitive!**
 
-To order files in a directory by their last modification date, in combination with the `-l` argument:
+To order files in a directory by their last modification date, in combination with the `-l` option:
 
 ```bash
 ls -lt
