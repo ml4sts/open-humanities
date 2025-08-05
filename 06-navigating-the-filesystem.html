@@ -488,10 +488,9 @@ Desktop      Downloads    Movies       Pictures</code></pre>
 </div>
 <p>We may want more information than just a list of files and
 directories. We can get this by specifying various
-<strong>flags</strong> (also known as <code>options</code>,
-<code>parameters</code>, or, most frequently, <code>arguments</code>) to
-go with our basic commands. Arguments modify the workings of the command
-by telling the computer what sort of output or manipulation we want.</p>
+<strong>flags</strong> (also known as <code>options</code>) to go with
+our basic commands. Options modify the workings of the command by
+telling the computer what sort of output or manipulation we want.</p>
 <p>If we type <code>ls -l</code> and press enter, the computer returns a
 list of files that contains information similar to what we would find in
 our Finder (Mac) or Explorer (Windows): the size of the files in bytes,
@@ -580,7 +579,14 @@ directory:</p>
 <em>arguments</em> given to any shell command are separated by spaces,
 so a way to let them know that we mean ‘one single thing called “things
 to learn about the shell”’, not ‘six different things’, is to use
-(single or double) quotation marks.</p>
+(single or double) quotation marks. Arguments are things that we give
+the command to work with; for example, if the command is change
+directory, we give it an argument <em>a path</em> to use to change the
+directory to that path. We could do the same thing with the list command
+(<code>ls</code>). If we provide it with a path as an
+<strong>argument</strong>, instead of listing the files and directories
+of the current directory (that we’re in) it does so for the provided
+path.</p>
 <p>We’ve now seen how we can go ‘down’ through our directory structure
 (as in into more nested directories). If we want to go back, we can type
 <code>cd ..</code>. This moves us ‘up’ one directory, putting us back
@@ -629,10 +635,10 @@ very quickly to the directory that we want.</p>
 <div class="callout-content">
 <p>Use the <code>man</code> command to invoke the manual page
 (documentation) for a shell command. For example, <code>man ls</code>
-displays all the arguments available to you - which saves you
-remembering them all! Try this for each command you’ve learned so far.
-Use the <kbd>spacebar</kbd> to navigate the manual pages. Use
-<kbd>q</kbd> at any time to quit.</p>
+displays all the options available to you - which saves you remembering
+them all! Try this for each command you’ve learned so far. Use the
+<kbd>spacebar</kbd> to navigate the manual pages. Use <kbd>q</kbd> at
+any time to quit.</p>
 <p><strong><em>Note</em>: this command is for Mac and Linux users
 only</strong>. It does not work directly for Windows users. If you use
 Windows, you can search for the shell command on <a href="https://man.he.net/" class="external-link">http://man.he.net/</a>, and view the
@@ -652,7 +658,7 @@ option, you’ll find it listed as <code>-h</code> in the manual, not as
   Answer
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -715,7 +721,7 @@ commands</h3>
 <div class="callout-content">
 <p>Find out, using the manual page, how to list the files in a directory
 ordered by their filesize. Try it out in different directories. Can you
-combine it with the <code>-l</code> <em>argument</em> you learned
+combine it with the <code>-l</code> <em>option</em> you learned
 before?</p>
 <p>Afterwards, find out how you can order a list of files based on their
 last modification date. Try ordering files in different directories.</p>
@@ -729,10 +735,10 @@ last modification date. Try ordering files in different directories.</p>
   Answer
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>To order files in a directory by their filesize, in combination with
-the <code>-l</code> argument:</p>
+the <code>-l</code> option:</p>
 <div class="codewrapper sourceCode" id="cb16">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -740,7 +746,7 @@ the <code>-l</code> argument:</p>
 </div>
 <p>Note that the <code>S</code> is <strong>case-sensitive!</strong></p>
 <p>To order files in a directory by their last modification date, in
-combination with the <code>-l</code> argument:</p>
+combination with the <code>-l</code> option:</p>
 <div class="codewrapper sourceCode" id="cb17">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
