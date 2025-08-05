@@ -54,7 +54,7 @@ Give your repository a meaningful name that suits the contents it shall hold. An
 
 ![](fig\gh-new-repo-name.png){alt="GitHub create a new repo page"}
 
-Select `Add a README file` box and click on the green `Create Repository` button
+Select `Add a README file` box and click on the green `Create Repository` button.
 
 ![](fig\gh_new-repo-publish.png){alt="GitHub create a new repo README and publish button"}
 
