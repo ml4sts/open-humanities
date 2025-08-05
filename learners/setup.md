@@ -146,4 +146,37 @@ The GitHub documentation provides [more details about configuring 2FA](https://d
 
 
 
+::: prereq
+## VS Code 
+VS Code is a text editor with super powers that help programmers with their work by applying color schemes to text to help programmers follow syntactical and semantical rules.
+It also gives its users access to a terminal built in within it. And it can holf extentions that can be useful for different purposes.
+Example extentions:
+- [GitLense](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+- [pdf viewer](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf)
+- [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
+
+Here are installation instructions for VS Code:
+::: tab
+### Windows
+Download the [windows installer](https://code.visualstudio.com/docs?dv=win) for windows and run it 
+
+### Linux
+- Download the [debian-based distribution](https://go.microsoft.com/fwlink/?LinkID=760868)
+- Run the install through the graphical software center if it's available
+- Or use the commandline to run it:
+```
+sudo apt install ./<file>.deb
+```
+
+### Mac OS
+- [Download Visual Studio Code](https://go.microsoft.com/fwlink/?LinkID=534106) for macOS.
+- Open the browser's download list and locate the downloaded app or archive.
+- If archive, extract the archive contents. Use double-click for some browsers or select the 'magnifying glass' icon with Safari.
+- Drag Visual Studio Code.app to the Applications folder, making it available in the macOS Launchpad.
+- Open VS Code from the Applications folder, by double clicking the icon.
+- Add VS Code to your Dock by right-clicking on the icon, located in the Dock, to bring up the context menu and choosing Options, Keep in Dock.
+- Launch VS Code from the c
+:::
+
+
 [workshop-setup]: https://carpentries.github.io/workshop-template/install_instructions/#git
