@@ -58,7 +58,7 @@ Select `Add a README file` box and click on the green `Create Repository` button
 
 ![](fig\gh_new-repo-publish.png){alt="GitHub create a new repo README and publish button"}
 
-Here is a preview of how the new repo would look like
+Here is a preview of how the new repo would look like:
 
 ![](fig\gh_new-repo-page.png){alt="GitHub new repo view"}
 
