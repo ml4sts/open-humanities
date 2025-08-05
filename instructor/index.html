@@ -393,8 +393,49 @@
       <hr></nav><main id="main-content" class="main-content"><h1 class="schedule-heading">Summary and Schedule</h1>
       
 
-<p>This is a new lesson built with <a href="https://carpentries.github.io/sandpaper-docs" class="external-link">The Carpentries
-Workbench</a>.</p>
+<p>This Library Carpentry lesson introduces humanities scholars,
+educators, and public practitioners to essential open-source research
+tools. At the conclusion of the lesson you will be able to:</p>
+<ul><li>describe the basics of the Unix shell</li>
+<li>explain why and how to use the command line</li>
+<li>use shell commands to work with directories and files</li>
+<li>use shell commands to find and manipulate data</li>
+<li>Understand and use Git/GitHub</li>
+<li>Use Git from the Unix Shell</li>
+</ul><div id="prerequisites" class="callout prereq">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check"></i>
+</div>
+<div id="prerequisites" class="callout-inner">
+<h3 class="callout-title">Prerequisites</h3>
+<div class="callout-content">
+<ol style="list-style-type: decimal"><li>To complete this lesson, you will need a Unix-like shell environment
+(see <a href="index.html#setup">Setup</a>). You will also need to download the
+file <strong><a href="https://librarycarpentry.org/lc-shell/data/shell-lesson.zip" class="external-link">shell-lesson.zip</a></strong>
+from the lesson website to your <em>desktop</em> and extract it there
+(once you have unzipped/extracted the file, you should end up with a
+folder called “shell-lesson”).</li>
+<li>Setup a <a href="https://github.com/" class="external-link">GitHub account</a>
+</li>
+<li><a href="https://help.github.com/articles/set-up-git/" class="external-link">Install git
+on your own computer</a></li>
+</ol></div>
+</div>
+</div>
+<div id="be-excellent-to-each-other" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="be-excellent-to-each-other" class="callout-inner">
+<h3 class="callout-title">Be Excellent to Each Other</h3>
+<div class="callout-content">
+<ul><li>If you spot someone in the class who is struggling with something
+and you think you know how to help, please give them a hand. Try not to
+do the task for them: instead explain the steps they need to take and
+<em>what</em> these steps will achieve.</li>
+</ul></div>
+</div>
+</div>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
@@ -606,23 +647,57 @@ standard remote interface used on most servers and supercomputers.</p>
 <p>Bash is the default shell on most Linux distributions and older
 versions of macOS. Windows users will need to install Git Bash to
 provide a Unix-like environment.</p>
-<p>`<code>{tab-item} ### Windows</code> On Windows, CMD or PowerShell
-are normally available as the default shell environments. These use a
-syntax and set of applications unique to Windows systems and are
-incompatible with the more widely used Unix utilities. However, a Bash
-shell can be installed on Windows to provide a Unix-like environment.
-For this lesson we suggest using Git Bash, part of the &gt;<a href="https://gitforwindows.org/" class="external-link">Git for Windows</a> package:</p>
+<div class="tabs">
+<nav><div id="nav-tab-1" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-1-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-1" type="button" role="tab" aria-controls="nav-tabpanel-1-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-1-1">
+  Windows
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-1-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-2" type="button" role="tab" aria-controls="nav-tabpanel-1-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-1-2">
+  Linux
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-1-3" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-3" type="button" role="tab" aria-controls="nav-tabpanel-1-3" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-1-3">
+  Mac OS
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-1" class="tab-content">
+<div id="nav-tabpanel-1-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-1">
+<p>On Windows, CMD or PowerShell are normally available as the default
+shell environments. These use a syntax and set of applications unique to
+Windows systems and are incompatible with the more widely used Unix
+utilities. However, a Bash shell can be installed on Windows to provide
+a Unix-like environment. For this lesson we suggest using Git Bash, part
+of the &gt;<a href="https://gitforwindows.org/" class="external-link">Git for Windows</a>
+package:</p>
 <ul><li>Download the latest Git for Windows <a href="https://gitforwindows.org/" class="external-link">installer</a>.</li>
 <li>Double click the <code>.exe</code> file to run the installer (for
 example, <code>Git-2.42.0.2-64-bit.exe</code>) using the default
 settings.</li>
 <li>Once installed, open the shell by selecting Git Bash from the start
 menu (in the Git folder).</li>
-</ul><pre><code></code></pre>
-<p><code>{tab-item} ### Linux ``` The default shell is usually Bash, but if your machine is set up differently you can run it by opening a terminal and typing `bash` followed by the &lt;kbd&gt;enter&lt;/kbd&gt; key. There is no need to install anything. Look for Terminal in your applications to start the Bash shell. ```</code>
-<code>{tab-item} ### Mac OS ``` Open Terminal from `/Applications/Utilities` or Spotlight Search. In versions before Catalina, Bash is the default shell, so you do not need to do anything further. In Catalina and onwards, the default shell is zsh, which is similar but may behave differently from Bash in some cases. To switch to Bash, enter the command `bash` in your terminal window followed by the &lt;kbd&gt;enter&lt;/kbd&gt; key. ```</code></p>
-<p>If you encounter issues, the Carpentries has a <a href="https://github.com/carpentries/workshop-template/wiki/Configuration-Problems-and-Solutions" class="external-link">Configuration
-Problems and Solutions wiki page</a> that may help.</p>
+</ul></div>
+<div id="nav-tabpanel-1-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-2">
+<p>The default shell is usually Bash, but if your machine is set up
+differently you can run it by opening a terminal and typing
+<code>bash</code> followed by the <kbd>enter</kbd> key. There is no need
+to install anything. Look for Terminal in your applications to start the
+Bash shell.</p>
+</div>
+<div id="nav-tabpanel-1-3" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-3">
+<p>Open Terminal from <code>/Applications/Utilities</code> or Spotlight
+Search. In versions before Catalina, Bash is the default shell, so you
+do not need to do anything further. In Catalina and onwards, the default
+shell is zsh, which is similar but may behave differently from Bash in
+some cases. To switch to Bash, enter the command <code>bash</code> in
+your terminal window followed by the <kbd>enter</kbd> key.</p>
+</div>
+</div>
+</div>
 <!-- AS: Most likely for deletion... -->
 <ul><li>
 <strong>Windows:</strong> There are also some more advanced
@@ -633,7 +708,9 @@ Subsystem for Linux</a>. You can also run Bash commands on a remote
 computer or server that already has a Unix Shell from your Windows
 machine. This can be done through a Secure Shell (SSH) client. One
 client available for free for Windows is <a href="https://www.putty.org/" class="external-link">PuTTY</a>.</li>
-</ul></div>
+</ul><p>If you encounter issues, the Carpentries has a <a href="https://github.com/carpentries/workshop-template/wiki/Configuration-Problems-and-Solutions" class="external-link">Configuration
+Problems and Solutions wiki page</a> that may help.</p>
+</div>
 </div>
 </div>
 <div id="data-files" class="callout prereq">
@@ -652,20 +729,20 @@ this step). You should end up with a new folder called
 <li>
 <p>Open the terminal and type <code>ls</code> followed by the
 <kbd>enter</kbd> key.</p>
-<div class="codewrapper sourceCode" id="cb2">
+<div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">$</span> ls</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">$</span> ls</span></code></pre>
 </div>
 <p>You should see a list of files and folders in your current
 directory.</p>
 </li>
 <li>
 <p>Then type:</p>
-<div class="codewrapper sourceCode" id="cb3">
+<div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="ex">$</span> pwd</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">$</span> pwd</span></code></pre>
 </div>
 <p>This command will show you where you are in your file system, which
 should now be your home directory. In the lesson, you will find out more
@@ -675,10 +752,77 @@ with the data in <code>shell-lesson</code> folder.</p>
 </ol></div>
 </div>
 </div>
-<p>`<code>{tab-item} ### Windows</code></p>
-<pre><code></code></pre>
-<p><code>{tab-item} ### Linux ``` ```</code>
-<code>{tab-item} ### Mac OS ``` ```</code></p>
+</section><section><h2 class="section-heading" id="git">Git<a class="anchor" aria-label="anchor" href="#git"></a></h2>
+<hr class="half-width"><div id="installing-git" class="callout prereq">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check"></i>
+</div>
+<div id="installing-git" class="callout-inner">
+<h3 class="callout-title">Installing Git</h3>
+<div class="callout-content">
+<p>Since several Carpentries lessons rely on Git, please see <a href="https://carpentries.github.io/workshop-template/install_instructions/#git" class="external-link">this
+section of the workshop template</a> for instructions on installing Git
+for various operating systems.</p>
+<ul><li><a href="https://carpentries.github.io/workshop-template/install_instructions/#git" class="external-link">Git
+installation on Windows</a></li>
+<li><a href="https://carpentries.github.io/workshop-template/install_instructions/#git" class="external-link">Git
+installation on MacOS</a></li>
+<li><a href="https://carpentries.github.io/workshop-template/install_instructions/#git" class="external-link">Git
+installation on Linux</a></li>
+</ul></div>
+</div>
+</div>
+<div id="creating-a-github-account" class="callout prereq">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check"></i>
+</div>
+<div id="creating-a-github-account" class="callout-inner">
+<h3 class="callout-title">Creating a GitHub Account</h3>
+<div class="callout-content">
+<p>You will need an account for <a href="https://github.com" class="external-link">GitHub</a>
+to follow this lesson.</p>
+<ol style="list-style-type: decimal"><li>Go to <a href="https://github.com" class="external-link uri">https://github.com</a> and follow the “Sign up” link at the
+top-right of the window</li>
+<li>Follow the instructions to create an account</li>
+<li>Verify your email address with GitHub</li>
+<li>Configure multifactor authentication (see below)</li>
+</ol></div>
+</div>
+</div>
+<div id="multi-factor-authentication" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="multi-factor-authentication" class="callout-inner">
+<h3 class="callout-title">Multi-factor Authentication</h3>
+<div class="callout-content">
+<p>In 2023, GitHub introduced a requirement for all accounts to have <a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication" class="external-link">multi-factor
+authentication (2FA)</a> configured for extra security. Several options
+exist for setting up 2FA, which are summarised here:</p>
+<ol style="list-style-type: decimal"><li>If you already use an authenticator app, like <a href="https://support.google.com/accounts/answer/1066447?hl=en&amp;co=GENIE.Platform%3DiOS&amp;oco=0" class="external-link">Google
+Authenticator</a> or <a href="https://duo.com/product/multi-factor-authentication-mfa/duo-mobile-app" class="external-link">Duo
+Mobile</a> on your smartphone for example, <a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-totp-mobile-app" class="external-link">add
+GitHub to that app</a>.</li>
+<li>If you have access to a smartphone but do not already use an
+authenticator app, install one and <a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-totp-mobile-app" class="external-link">add
+GitHub to the app</a>.</li>
+<li>If you do not have access to a smartphone or do not want to install
+an authenticator app, you have two options:
+<ol style="list-style-type: decimal"><li>
+<a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-text-messages" class="external-link">set
+up 2FA via text message</a> (<a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/countries-where-sms-authentication-is-supported" class="external-link">list
+of countries where authentication by SMS is supported</a>), or</li>
+<li>
+<a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-security-key" class="external-link">use
+a hardware security key</a> like <a href="https://www.yubico.com/products/yubikey-5-overview/" class="external-link">Yubikey</a>
+or the <a href="https://store.google.com/us/product/titan_security_key?hl=en-US&amp;pli=1" class="external-link">Google
+Titan key</a>.</li>
+</ol></li>
+</ol><p>The GitHub documentation provides <a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication" class="external-link">more
+details about configuring 2FA</a>.</p>
+</div>
+</div>
+</div>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
