@@ -40,7 +40,7 @@ That said, all areas of scholarship can benefit from more openness.
 When was the last time you paid for software or a digital subscription in your work or faced a barrier in a project because you did not have funds for a piece of software?
 
 :::::::::::::::::::::
-
+    
 
 ## Icebreaker
 
