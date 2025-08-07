@@ -6,7 +6,7 @@ exercises: 30
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain terms, phrases, and concepts associated with software development in libraries.
+- Explain terms, phrases, and concepts associated with open research.
 - Compare knowledge of these terms, phrases, and concepts.
 - Differentiate between these terms, phrases, and concepts.
 
@@ -25,13 +25,13 @@ exercises: 30
 This exercise is an opportunity to gain a firmer grasp on the concepts around data, code or software development in libraries.
 
 1. Pair with a neighbor and decide who will take notes (or depending on the amount of time available for the exercise, skip to forming groups of four to six).
-2. Talk for three minutes (your instructor will be timing you!) on any terms, phrases, or ideas around code or software development in libraries that you've come across and perhaps feel you should know better.
+2. Talk for three minutes (your instructor will be timing you!) on any terms, phrases, or ideas around code or software development related to open research, open source, or even computing in general that you've come across and perhaps feel you should know better.
 3. Next, get into groups of four to six.
 4. Make a list of all the problematic terms, phrases, and ideas each pair came up with. Retain duplicates.
 5. Identify common words as a starting point - spend 10 minutes working together to try to explain what the terms, phrases, or ideas on your list mean.  Note: use both each other and the internet as a resource.
 6. Identify the terms your groups were able to explain as well as those you are still struggling with.
 7. Each group then reports back on one issue resolved by their group and one issue not resolved by their group.
-8. The instructor will collate these on a whiteboard and facilitate a discussion about what we will cover today and where you can go for help on those things we won't cover. Any jargon or terms that will not be covered specifically are good notes.
+8. The instructor will collate these on a whiteboard and facilitate a discussion about what we will cover in the workshop and where you can go for help on those things we won't cover. Any jargon or terms that will not be covered specifically are good notes.
   
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -44,14 +44,14 @@ Often, workshop attendees ask if there is a handout of common terms and definiti
 
 Keep in mind that our goal is not to explain all the terms we list out in the exercise, but instead to highlight how much jargon we use in our daily work and to come up with a shared understanding for a select number of jargon terms.
 
-If you do have a helpful handout that you would like to share, please submit an [issue/pull request](https://github.com/LibraryCarpentry/lc-data-intro) to this lesson.
+If you do have a helpful handout that you would like to share, please submit an [issue/pull request](https://github.com/ml4sts/open-humanities/) to this lesson.
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- It helps to share what you know and don't know about software development and data science jargon.
+- It helps to share what you know and don't know about open research and open software jargon.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
