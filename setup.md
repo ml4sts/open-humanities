@@ -30,13 +30,15 @@ The only thing that must be completed before the first day is to have a GitHub A
 
 To participate in this Library Carpentry lesson, you will need a working Unix-like shell environment. We will be using Bash ([Bourne Again Shell](https://en.wikipedia.org/wiki/Bash_\(Unix_shell\))) which is standard on Linux and macOS. Some macOS users (Catalina or later) will have zsh (Z shell) as their default version. Even if you are a Windows user, learning Bash will open up a powerful set of tools on your personal machine, and familiarize you with the standard remote interface used on most servers and supercomputers.
 
+The shell is a program that allows you to interact with your computer using typed text commands. It is the primary interface used on Linux and Unix-based systems, such as macOS, and can be installed optionally on other operating systems such as Windows.
+
 ::::::::::::::::::::::::::::::::::::::::::  prereq
 
 ### Terminal Setup
-
+A terminal is the text-based interface that gives the user access to the shell of the operating system.
 Bash is the default shell on most Linux distributions and older versions of macOS. Windows users will need to install Git Bash to provide a Unix-like environment.
 
-::: tab
+::::: tab
 ### Windows
 On Windows, CMD or PowerShell are normally available as the default shell environments. These use a syntax and set of applications unique to Windows systems and are incompatible with the more widely used Unix utilities. However, a Bash shell can be installed on Windows to provide a Unix-like environment. For this lesson we suggest using Git Bash, part of the >[Git for Windows](https://gitforwindows.org/) package:
   
@@ -50,7 +52,7 @@ The default shell is usually Bash, but if your machine is set up differently you
 ### Mac OS
 Open Terminal from `/Applications/Utilities` or Spotlight Search. In versions before Catalina, Bash is the default shell, so you do not need to do anything further. In Catalina and onwards, the default shell is zsh, which is similar but may behave differently from Bash in some cases. To switch to Bash, enter the command `bash` in your terminal window followed by the <kbd>enter</kbd> key.
 
-:::
+:::::::::::::::
 
 
 <!-- AS: Most likely for deletion... -->
@@ -62,12 +64,51 @@ If you encounter issues, the Carpentries has a [Configuration Problems and Solut
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-::::::::::::::::::::::::::::::::::::::::::  prereq
+## Python
+Python is a very popular scripting programming language. 
+We want to make sure we have it installed to use some packages that are built with python such as `mystmd`
+Here are steps to installing python:
+
+:::::::::::::::::: prereq
+
+::: tab
+### Windows
+To install python on windows, download and run the [python installer](https://www.python.org/downloads/)
+When installing make sure to check the two boxes that say to `include PATH` and `Accept long paths`
+
+### Linux
+Python 3 is typically pre-installed on modern Ubuntu versions. To install or ensure you have the latest available version from the Ubuntu repositories, follow these steps: Update Package Lists.
+- Open your terminal
+- Type the commands 
+``` 
+sudo apt update
+sudo apt upgrade
+```
+- Confirm Python and PIP are installed:
+```
+python --version
+pip --version
+```
+- If you don't get an output from either of the previous commands run:
+```
+sudo apt install python3
+sudo apt install python3-pip
+```
+
+### Mac OS
+To install python on macOS, download and run the [python installer](https://www.python.org/downloads/)
+
+:::: 
+
+::::::::::::::::::::::::
+
+
 
 ### Data Files
 
 You need to download some files to follow this lesson:
 
+::::::::::::::::::::::::::::::::::::::::::  prereq
 1. Download [shell-lesson.zip](data/shell-lesson.zip) and move the file to your Desktop.
 2. Unzip/extract the file (ask your instructor if you need help with this step). You should end up with a new folder called `shell-lesson` on your Desktop.
 3. Open the terminal and type `ls` followed by the <kbd>enter</kbd> key.
@@ -145,5 +186,103 @@ The GitHub documentation provides [more details about configuring 2FA](https://d
 ::::::::::::
 
 
+
+::::::::::::::: prereq
+## VS Code 
+VS Code is a text editor with super powers that help programmers with their work by applying color schemes to text to help programmers follow syntactical and semantical rules.
+It also gives its users access to a terminal built in within it. And it can holf extentions that can be useful for different purposes.
+Example extentions:
+- [GitLense](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+- [pdf viewer](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf)
+- [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
+
+Here are installation instructions for VS Code:
+::: tab
+### Windows
+Download the [windows installer](https://code.visualstudio.com/docs?dv=win) for windows and run it 
+
+### Linux
+- Download the [debian-based distribution](https://go.microsoft.com/fwlink/?LinkID=760868)
+- Run the install through the graphical software center if it's available
+- Or use the commandline to run it:
+```
+sudo apt install ./<file>.deb
+```
+
+### Mac OS
+- [Download Visual Studio Code](https://go.microsoft.com/fwlink/?LinkID=534106) for macOS.
+- Open the browser's download list and locate the downloaded app or archive.
+- If archive, extract the archive contents. Use double-click for some browsers or select the 'magnifying glass' icon with Safari.
+- Drag Visual Studio Code.app to the Applications folder, making it available in the macOS Launchpad.
+- Open VS Code from the Applications folder, by double clicking the icon.
+- Add VS Code to your Dock by right-clicking on the icon, located in the Dock, to bring up the context menu and choosing Options, Keep in Dock.
+- Launch VS Code from the c
+:::
+::::::::::::::
+
+
+## Myst
+Myst is a tool used to build and render interactive webpages easily using text files with a splash of markdown syntax (the arrangement of words and phrases to create well-formed sentences in a language)
+:::::::: callout
+Depending on how your python install went, you may need to use `pip3` instead of pip
+::::::
+
+:::::::::: prereq
+Installing myst:
+::: tab
+### Windows
+
+This requires having python package installer
+- Confirm you have Python installed in your system and Python Package Installer `pip`
+
+```
+python -v
+pip -v
+```
+
+If you get an output from these two commands then you have these two packages installed
+- On your shell terminal run:
+
+```
+pip install mystmd
+```
+
+### Linux
+
+This requires having python package installer
+ Confirm you have Python installed in your system and Python Package Installer `pip`
+
+```
+python -v
+pip -v
+```
+
+If you get an output from these two commands then you have these two packages installed
+
+On your shell terminal run:
+
+```
+pip install mystmd
+```
+
+### Mac OS
+
+This requires having python package installer
+- Confirm you have Python installed in your system and Python Package Installer `pip`
+
+```
+python -v
+pip -v
+```
+
+If you get an output from these two commands then you have these two packages installed
+- On your shell terminal run:
+```
+pip install mystmd
+```
+:::
+
+
+::::::::::
 
 [workshop-setup]: https://carpentries.github.io/workshop-template/install_instructions/#git
