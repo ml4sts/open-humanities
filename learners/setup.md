@@ -63,6 +63,37 @@ If you encounter issues, the Carpentries has a [Configuration Problems and Solut
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+::: prereq
+## Python
+Python is a very popular scripting programming language. 
+We want to make sure we have it installed to use some packages that are built with python such as `mystmd`
+
+Here are steps to installing python:
+::: tab
+### Windows
+To install python on windows, download and run the [python installer](https://www.python.org/downloads/)
+When installing make sure to check the two boxes that say to `include PATH` and `Accept long paths`
+
+### Linux
+Python 3 is typically pre-installed on modern Ubuntu versions. To install or ensure you have the latest available version from the Ubuntu repositories, follow these steps: Update Package Lists.
+- Open your terminal
+- Type the commands 
+``` 
+sudo apt update
+sudo apt upgrade
+```
+- Confirm Python and PIP are installed:
+```
+python --version
+pip --version
+```
+- If you don't get an output from either of the previous commands run:
+```
+sudo apt install python3
+sudo apt install python3-pip
+```
+### Mac OS
+To install python on macOS, download and run the [python installer](https://www.python.org/downloads/)
 
 ::::::::::::::::::::::::::::::::::::::::::  prereq
 
