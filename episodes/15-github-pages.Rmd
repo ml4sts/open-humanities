@@ -50,13 +50,10 @@ To create a new repo login to your GitHub account. At the top, right corner clic
 
 
 Give your repository a meaningful name that suits the contents it shall hold. And we encourage adding something to the optional description section. 
-
+Toggle the `Add a README file` button and click on the green `Create Repository` button.
 
 ![](fig\gh-new-repo-name.png){alt="GitHub create a new repo page"}
 
-Select `Add a README file` box and click on the green `Create Repository` button.
-
-![](fig\gh_new-repo-publish.png){alt="GitHub create a new repo README and publish button"}
 
 Here is a preview of how the new repo would look like:
 
@@ -93,7 +90,7 @@ See the [GitHub Pages documentation](https://docs.github.com/en/pages/getting-st
 
 ### View your site
 
-If we now visit `https://aymanbx.github.io/my-website/`,
+If we now visit `https://some-humanist.github.io/my-website/`,
 we should see the contents of the index.md file that created earlier.
 Usually it's available instantly, but it can take a few seconds and in the worst case a few minutes if GitHub are very busy.
 
