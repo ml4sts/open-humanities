@@ -50,6 +50,21 @@ On paper, or your favorite drawing tool, visualize what we have learned.
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
+::::::::: challenge
+
+### Call to Action
+
+Consider how you can maximize the time you spent learning in this workshop. 
+It's okay to dream big, but momentum builds from small wins, so we challenge you to think of at least one small thing that you are very confident you can do. 
+
+Some ideas: 
+- Set one realistic goal of how you will use what you learned in your scholarship or teaching in the next two weeks, set yourself a reminder (or calendar invite)
+- Send an email/ schedule a meeting with one person you met who you want to stay in touch with
+- Set aside some time to review one particular point or explore one new idea you have based on the workshop
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 
 :::::::::: discussion
 
