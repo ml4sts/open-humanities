@@ -21,6 +21,27 @@ exercises: 10
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+## Welcome
+
+Before we start the material we will set the stage for the workshop as an environment for learning 
+
+:::::::::::::::::::::: instructor
+
+- Introduce yourself & team
+- share CoC; 
+- remind pedagogical practices
+
+:::::::::::::::::::::::: 
+
+
+
+:::::::::::::::::::::::: discussion
+
+### Icebreaker
+
+Introduce yourself and your main motivation for learning about open research practices. 
+
+:::::::::::::::::::::
 
 ## Introduction
 
@@ -42,11 +63,16 @@ When was the last time you paid for software or a digital subscription in your w
 :::::::::::::::::::::
     
 
-## Icebreaker
 
 
-## Goals
+## Goals and Background
 
+This project was funded by ORCA, led by Sarah, Madison, Jeremiah and supported Ayman and Maya. 
+
+
+Our goals for the curriculum and the workshop are: 
+- platform independence
+- more collaboration
 
 
 
