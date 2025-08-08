@@ -19,6 +19,12 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+:::::::: instructor
+
+Remember to address feedback from the previous session
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 ## Introduction: What is the shell, and why should I use it?
 
 If you've ever had to deal with large amounts of data or large numbers of digital files scattered across your computer or a remote server, you know that copying, moving, renaming, counting, searching through, or otherwise processing those files manually can be immensely time-consuming and error-prone. Fortunately, there is an extraordinarily powerful and flexible tool designed for just that purpose.
