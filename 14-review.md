@@ -36,6 +36,35 @@ In group work, spend some time trying to illustrate some of the commands we've u
 
 If you want to practise more feel free to keep practicising making changes to your file and committing the changes. If you want to explore more git commands, search for some more online or follow one of the suggested links below.
 
+
+
+::::::::: challenge
+
+### Reflection
+
+1. Use your terminal to make file on your desktop (or another location you prefer) titled `open-humanities-pt3.txt`. 
+2. Add some notes about things you want to remember
+3. add reflections to the bottom of your file. 
+
+Some questions to consider:
+1. When is a time you wish you had git?
+1. How might you use git in your work?
+1. What else do you want to learn about git and GitHub? 
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+::::::::: challenge
+
+### Feedback 
+Use your sticky notes to give the instructors feedback for today.  
+
+- On the "good" color, share one thing you liked about today or something you are glad you learned. 
+- On the "need help" color, share one thing you are still confused about or one thing that could have been better
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
 - the language of Git can be confusing and intimidating

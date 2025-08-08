@@ -22,6 +22,12 @@ exercises: 2
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+:::::::: instructor
+
+Remember to address feedback from the previous session
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 ## Introduction
 
 MyST is an open-source, community-driven project to improve scientific communication, including integrations into Jupyter Notebooks and computational results. (Sourced from [mystmd.org's Project goals](https://mystmd.org/guide#project-goals))

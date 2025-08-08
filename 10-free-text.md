@@ -362,6 +362,33 @@ This only scratches the surface of what the Unix environment is capable of. It i
 
 Keep in mind that the full potential the tools can offer may only emerge upon embedding these skills into real projects. Nonetheless, being able to manipulate, count and mine thousands of files is extremely useful. Even a large collection of files which do not contain any alpha-numeric data elements, such as image files, can be easily sorted, selected and queried depending on the amount of description, of metadata contained in each filename. If not a prerequisite of working with the Unix, then taking the time to structure your data in a consistent and predictable manner is certainly a significant step towards getting the most out of Unix commands. And if you can find a way of using the Unix shell regularly - perhaps only to copy or amend files - you'll keep the basics fresh, meaning that next time you have cause to use the Unix shell for more complex commands, you shouldn't need to learn it all over again.
 
+::::::::: challenge
+
+### Reflection
+
+1. Use your terminal to make file on your desktop (or another location you prefer) titled `open-humanities-pt2.txt`. 
+2. Add some notes about things you want to remember (even pointers to where other files are, ideas you had today etc). 
+3. add reflections to the bottom of your file. 
+
+Some questions to consider:
+1. What is one way you might use the shell in your work?
+1. What new questions do you have? 
+1. What about today changes how you might work.  
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+::::::::: challenge
+
+### Feedback 
+Use your sticky notes to give the instructors feedback for today.  
+
+- On the "good" color, share one thing you liked about today or something you are glad you learned. 
+- On the "need help" color, share one thing you are still confused about or one thing that could have been better
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 ## References
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
