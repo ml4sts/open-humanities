@@ -32,6 +32,13 @@ Open source is when a software or a project is published online and available to
 
 Let's use an example of our own to see what it's like to have an open source project.
 
+## GitHub
+GitHub is a developer platform that allows developers to create and hold projects on it. It is benificial for reasons such as managing different versions of a project, collaboration and task management.
+
+### GitHub Interface
+
+
+
 ## GitHub Pages
 
 GitHub Pages is a simple service to publish a website directly on GitHub from a Git repository.
