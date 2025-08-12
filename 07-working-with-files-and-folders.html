@@ -490,6 +490,23 @@ documents (Word or OpenOffice), browsing the web, editing images, etc.
 But if we wanted to make the same crop on hundreds of images, say, the
 pages of a scanned book, then we could automate that cropping work by
 using shell commands.</p>
+<div id="what-is-a-graphical-user-interface-gui" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="what-is-a-graphical-user-interface-gui" class="callout-inner">
+<h3 class="callout-title">What is a Graphical User Interface (GUI)?</h3>
+<div class="callout-content">
+<p>A breakdown of this term: “Graphical”– contains elements you can
+click on, “User”– suited for people to use, “Interface”– the platform
+you are working with. Essentially, this is an electronic platform that
+is designed with buttons and other clickable features, as opposed to an
+interface that requires text. This would be a different user-computer
+interaction approach than using a shell.</p>
+</div>
+</div>
+</div>
 <p>Before getting started, we will use <code>ls</code> to list the
 contents of our current directory. Using <code>ls</code> periodically to
 view your options is useful to orient oneself.</p>
@@ -553,6 +570,55 @@ auto-complete will only fill up to the first point of difference, after
 which we can add more characters, and try using tab again. We would
 encourage using this method throughout today to see how it behaves (as
 it saves loads of time and effort!).</p>
+<p>With <code>Desktop</code>, <code>Documents</code>, and
+<code>Downloads</code> folders living in the same directory. Let’s say
+we want to change directory into the <code>Downloads</code> folder while
+using the <code>Tab</code> auto-complete help.</p>
+<div class="codewrapper sourceCode" id="cb7">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="bu">cd</span> D</span></code></pre>
+</div>
+<p>If we press <code>Tab</code> at this point we can’t really
+auto-complete because there are three different folders that start with
+the letter <code>D</code>. If we double press <code>Tab</code> the shell
+provides us with the options that start with the letter
+<code>D</code></p>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>Desktop    Documents
+Downloads</code></pre>
+</div>
+<p>Let’s try again</p>
+<div class="codewrapper sourceCode" id="cb9">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="bu">cd</span> Do</span></code></pre>
+</div>
+<p>With double press on <code>Tab</code> we get</p>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>Documents    Downloads  </code></pre>
+</div>
+<p>Finally if we try the auto-complete method with enough unique set of
+characters that identify the word <code>Downloads</code> bash can auto
+complete the word:</p>
+<div class="codewrapper sourceCode" id="cb11">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="bu">cd</span> Dow</span></code></pre>
+</div>
+<p><code>Tab</code> The shell will auto complete your command:</p>
+<div class="codewrapper sourceCode" id="cb12">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="bu">cd</span> Downloads</span></code></pre>
+</div>
+<p>This feature can be very helpful for quicker access to files and
+folders with known names. It can also prevent typos, which is especially
+helpful in files with long names.</p>
 </div>
 </div>
 </div>
@@ -562,10 +628,10 @@ it saves loads of time and effort!).</p>
 back to the <code>shell-lesson</code> directory.</p>
 <p>Here there are copies of two public domain books downloaded from <a href="https://www.gutenberg.org/" class="external-link">Project Gutenberg</a> along with other
 files we will cover later.</p>
-<div class="codewrapper sourceCode" id="cb7">
+<div class="codewrapper sourceCode" id="cb13">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="ex">$</span> ls <span class="at">-lh</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="ex">$</span> ls <span class="at">-lh</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -585,10 +651,10 @@ drwxr-xr-x 1 riley staff  64B Feb 22 2017  firstdir</code></pre>
 the content of book #829 and #33504 on Project Gutenberg. But we’ve
 forgot <em>which</em> books, so we try the <code>cat</code> command to
 read the text of the first file:</p>
-<div class="codewrapper sourceCode" id="cb9">
+<div class="codewrapper sourceCode" id="cb15">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="ex">$</span> cat 829-0.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="ex">$</span> cat 829-0.txt</span></code></pre>
 </div>
 <p>The terminal window erupts and the whole book cascades by (it is
 printed to your terminal), leaving us with a new prompt and the last few
@@ -597,10 +663,10 @@ lines of the book above this prompt.</p>
 file to get an idea about what the file is about. To let us do that, the
 Unix shell provides us with the commands <code>head</code> and
 <code>tail</code>.</p>
-<div class="codewrapper sourceCode" id="cb10">
+<div class="codewrapper sourceCode" id="cb16">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="ex">$</span> head 829-0.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a><span class="ex">$</span> head 829-0.txt</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -616,10 +682,10 @@ with this eBook or online at www.gutenberg.org</code></pre>
 <p>This provides a view of the first ten lines, whereas
 <code>tail 829-0.txt</code> provides a perspective on the last ten
 lines:</p>
-<div class="codewrapper sourceCode" id="cb12">
+<div class="codewrapper sourceCode" id="cb18">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="ex">$</span> tail 829-0.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a><span class="ex">$</span> tail 829-0.txt</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -641,10 +707,10 @@ to see if there exists an option to specify the number of lines to get
 time. Type <code>less 829-0.txt</code> to see the first screen,
 <code>spacebar</code> to see the next screen and so on, then
 <code>q</code> to quit (return to the command prompt).</p>
-<div class="codewrapper sourceCode" id="cb14">
+<div class="codewrapper sourceCode" id="cb20">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="ex">$</span> less 829-0.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" tabindex="-1"></a><span class="ex">$</span> less 829-0.txt</span></code></pre>
 </div>
 <p>Like many other shell commands, the commands <code>cat</code>,
 <code>head</code>, <code>tail</code> and <code>less</code> can take any
@@ -671,10 +737,10 @@ important labour-saving function and something we’ll use a lot.</p>
 command. Add a space and then <code>33504-0.txt</code> (Remember your
 friend Tab? Type <code>3</code> followed by <kbd>tab</kbd> to get
 <code>33504-0.txt</code>), to produce the following command:</p>
-<div class="codewrapper sourceCode" id="cb15">
+<div class="codewrapper sourceCode" id="cb21">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="ex">$</span> head 829-0.txt 33504-0.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" tabindex="-1"></a><span class="ex">$</span> head 829-0.txt 33504-0.txt</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -709,10 +775,10 @@ wildcards! The <code>?</code> (matches exactly one character) and
 <code>*</code> (matches zero or more characters) are probably familiar
 from library search systems. We can use the <code>*</code> wildcard to
 write the above <code>head</code> command in a more compact way:</p>
-<div class="codewrapper sourceCode" id="cb17">
+<div class="codewrapper sourceCode" id="cb23">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a><span class="ex">$</span> head <span class="pp">*</span>.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" tabindex="-1"></a><span class="ex">$</span> head <span class="pp">*</span>.txt</span></code></pre>
 </div>
 <div id="more-on-wildcards" class="callout">
 <div class="callout-square">
@@ -740,18 +806,18 @@ error message that there is no file called *.pdf.</p>
 descriptive. We can <strong>move</strong> it to a new name by using the
 <code>mv</code> or move command, giving it the old name as the first
 argument and the new name as the second argument:</p>
-<div class="codewrapper sourceCode" id="cb18">
+<div class="codewrapper sourceCode" id="cb24">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a><span class="ex">$</span> mv 829-0.txt gulliver.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" tabindex="-1"></a><span class="ex">$</span> mv 829-0.txt gulliver.txt</span></code></pre>
 </div>
 <p>This is equivalent to the ‘rename file’ function.</p>
 <p>Afterwards, when we perform a <code>ls</code> command, we will see
 that it is now called <code>gulliver.txt</code>:</p>
-<div class="codewrapper sourceCode" id="cb19">
+<div class="codewrapper sourceCode" id="cb25">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" tabindex="-1"></a><span class="ex">$</span> ls</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1" tabindex="-1"></a><span class="ex">$</span> ls</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -786,10 +852,10 @@ you make a copy of the file <code>gulliver.txt</code> called
 </button>
 <div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb21">
+<div class="codewrapper sourceCode" id="cb27">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" tabindex="-1"></a><span class="fu">cp</span> gulliver.txt gulliver-backup.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb27-1"><a href="#cb27-1" tabindex="-1"></a><span class="fu">cp</span> gulliver.txt gulliver-backup.txt</span></code></pre>
 </div>
 </div>
 </div>
@@ -818,10 +884,10 @@ directory to <code>backup</code>.</p>
 </button>
 <div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb22">
+<div class="codewrapper sourceCode" id="cb28">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" tabindex="-1"></a><span class="fu">mv</span> firstdir backup</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb28-1"><a href="#cb28-1" tabindex="-1"></a><span class="fu">mv</span> firstdir backup</span></code></pre>
 </div>
 </div>
 </div>
@@ -852,16 +918,16 @@ folder.</p>
 </button>
 <div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb23">
+<div class="codewrapper sourceCode" id="cb29">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" tabindex="-1"></a><span class="fu">mv</span> gulliver-backup.txt backup</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1" tabindex="-1"></a><span class="fu">mv</span> gulliver-backup.txt backup</span></code></pre>
 </div>
 <p>This would also work:</p>
-<div class="codewrapper sourceCode" id="cb24">
+<div class="codewrapper sourceCode" id="cb30">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" tabindex="-1"></a><span class="fu">mv</span> gulliver-backup.txt backup/gulliver-backup.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb30-1"><a href="#cb30-1" tabindex="-1"></a><span class="fu">mv</span> gulliver-backup.txt backup/gulliver-backup.txt</span></code></pre>
 </div>
 </div>
 </div>
