@@ -25,10 +25,13 @@ If you've ever had to deal with large amounts of data or large numbers of digita
 
 The shell (sometimes referred to as the "Unix shell", for the operating system where it was first developed) is a program that allows you to interact with your computer using typed text commands. It is the primary interface used on systems like macOS, as well as other Linux and Unix-based systems. The shell can also be installed optionally on other operating systems such as windows.
 
-::: What is Unix?
+::: callout
+### What is Unix?
 Unix is an operating system (OS) developed in 1969, which laid the groundwork for other OSs. This system has a few key features for users, like the shell for communication.
 :::
-:::What is Linux?
+
+::: callout 
+What is Linux?
 
 Linux is an open-source operating system similar to Unix, but developed later. The shell is also used in this operating system for the same communication purposes.
 :::
