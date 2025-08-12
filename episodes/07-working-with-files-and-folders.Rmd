@@ -109,7 +109,7 @@ The shell will auto complete your command:
 cd Downloads
 ```
 
-This feature can be very helpful for quicker access to files and folders with known names 
+This feature can be very helpful for quicker access to files and folders with known names.  It can also prevent typos, which is especially helpful in files with long names.  
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
