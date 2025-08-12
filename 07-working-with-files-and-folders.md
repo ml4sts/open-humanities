@@ -24,6 +24,11 @@ exercises: 10
 
 As well as navigating directories, we can interact with files on the command line: we can read them, open them, run them, and even edit them. In fact, there's really no limit to what we *can* do in the shell, but even experienced shell users still switch to graphical user interfaces (GUIs) for many tasks, such as editing formatted text documents (Word or OpenOffice), browsing the web, editing images, etc. But if we wanted to make the same crop on hundreds of images, say, the pages of a scanned book, then we could automate that cropping work by using shell commands.
 
+::: callout 
+### What is a Graphical User Interface (GUI)?
+A breakdown of this term: “Graphical”-- contains elements you can click on, “User”-- suited for people to use, “Interface”-- the platform you are working with. Essentially, this is an electronic platform that is designed with buttons and other clickable features, as opposed to an interface that requires text. This would be a different user-computer interaction approach than using a shell.
+:::
+
 Before getting started, we will use `ls` to list the contents of our current directory. Using `ls` periodically to view your options is useful to orient oneself.
 
 ```bash
@@ -69,6 +74,43 @@ Instead of typing `cd firstdir`, let's try to type `cd f` and then press the Tab
 ## Tab for Auto-complete
 
 Pressing tab at any time within the shell will prompt it to attempt to auto-complete the line based on the files or sub-directories in the current directory. Where two or more files have the same characters, the auto-complete will only fill up to the first point of difference, after which we can add more characters, and try using tab again. We would encourage using this method throughout today to see how it behaves (as it saves loads of time and effort!).
+
+With `Desktop`, `Documents`, and `Downloads` folders living in the same directory. Let's say we want to change directory into the `Downloads` folder while using the `Tab` auto-complete help.
+
+```bash
+cd D
+```
+If we press `Tab` at this point we can't really auto-complete because there are three different folders that start with the letter `D`.
+If we double press `Tab` the shell provides us with the options that start with the letter `D`
+
+```output
+Desktop    Documents   
+Downloads
+```
+
+Let's try again 
+
+```bash
+cd Do
+```
+
+With double press on `Tab` we get
+```output
+Documents    Downloads  
+```
+
+Finally if we try the auto-complete method with enough unique set of characters that identify the word `Downloads` bash can auto complete the word:
+```bash
+cd Dow
+```
+
+`Tab`
+The shell will auto complete your command:
+```bash
+cd Downloads
+```
+
+This feature can be very helpful for quicker access to files and folders with known names.  It can also prevent typos, which is especially helpful in files with long names.  
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
