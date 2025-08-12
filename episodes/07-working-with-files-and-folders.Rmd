@@ -74,7 +74,7 @@ Instead of typing `cd firstdir`, let's try to type `cd f` and then press the Tab
 
 Pressing tab at any time within the shell will prompt it to attempt to auto-complete the line based on the files or sub-directories in the current directory. Where two or more files have the same characters, the auto-complete will only fill up to the first point of difference, after which we can add more characters, and try using tab again. We would encourage using this method throughout today to see how it behaves (as it saves loads of time and effort!).
 
-With `Desktop`, `Documents` and `Downloads` folders living in the same directory. Let's say we want to change directory into the `Downlaods` folder while using the `Tab` auto-complete help.
+With `Desktop`, `Documents`, and `Downloads` folders living in the same directory. Let's say we want to change directory into the `Downloads` folder while using the `Tab` auto-complete help.
 
 ```bash
 cd D
