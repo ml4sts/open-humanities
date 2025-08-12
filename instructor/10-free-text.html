@@ -448,7 +448,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Working with free text</h1>
-        <p>Last updated on 2025-08-08 |
+        <p>Last updated on 2025-08-12 |
 
         <a href="https://github.com/ml4sts/open-humanities/edit/main/episodes/10-free-text.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -520,7 +520,7 @@ Piper’s World (a GeoCities page from 1999 saved at <a href="https://wayback.ar
 <hr class="half-width"><div class="section level3">
 <h3 id="grabbing-a-text-cleaning-it-up">Grabbing a text, cleaning it up<a class="anchor" aria-label="anchor" href="#grabbing-a-text-cleaning-it-up"></a></h3>
 <p>We’re going to work with the <code>gulliver.txt</code> file, which we
-made in <a href="03-working-with-files-and-folders.html">Episode 3,
+made in <a href="07-working-with-files-and-folders.html">Episode 3,
 ‘Working with files and directories’</a>. You should (still) be working
 in the <code>shell-lesson</code> directory.</p>
 <p>Let’s look at the file.</p>
@@ -620,7 +620,7 @@ the text has been transformed ready for analysis.</p>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="ex">$</span> tr <span class="st">' '</span> <span class="st">'\n'</span> <span class="op">&lt;</span> gulliver-clean.txt <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="at">-c</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-nr</span> <span class="op">&gt;</span> gulliver-final.txt</span></code></pre>
 </div>
-<p>Here we’ve made extended use of the pipes we saw in <a href="05-counting-mining.html">Counting and mining with the shell</a>.
+<p>Here we’ve made extended use of the pipes we saw in <a href="09-counting-mining.html">Counting and mining with the shell</a>.
 The first part of this script uses the translate command again, this
 time to translate every blank space into <code>\n</code> which renders
 as a new line. Every word in the file will at this stage have its own
@@ -673,7 +673,7 @@ command line like this:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -763,7 +763,7 @@ Note how the text has been transformed ready for analysis.</p>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="ex">$</span> tr <span class="st">' '</span> <span class="st">'\n'</span> <span class="op">&lt;</span> 201403160_01_text-clean.txt <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="at">-c</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-nr</span> <span class="op">&gt;</span> 201403160_01_text-final.txt</span></code></pre>
 </div>
-<p>Here we’ve made extended use of the pipes we saw in <a href="05-counting-mining.html">Counting and mining with the shell</a>.
+<p>Here we’ve made extended use of the pipes we saw in <a href="09-counting-mining.html">Counting and mining with the shell</a>.
 The first part of this script uses the translate command again, this
 time to translate every blank space into <code>\n</code> which renders
 as a new line. Every word in the file will at this stage have its own
@@ -886,7 +886,7 @@ text has been transformed ready for analysis.</p>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" tabindex="-1"></a><span class="ex">$</span> tr <span class="st">' '</span> <span class="st">'\n'</span> <span class="op">&lt;</span> diary-clean.txt <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="at">-c</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-nr</span> <span class="op">&gt;</span> diary-final.txt</span></code></pre>
 </div>
-<p>Here we’ve made extended use of the pipes we saw in <a href="05-counting-mining.html">Counting and mining with the shell</a>.
+<p>Here we’ve made extended use of the pipes we saw in <a href="09-counting-mining.html">Counting and mining with the shell</a>.
 The first part of this script uses the translate command again, this
 time to translate every blank space into <code>\n</code> which renders
 as a new line. Every word in the file will at this stage have its own
@@ -1046,9 +1046,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://ml4sts.github.io/open-humanities/instructor/10-free-text.html",
   "identifier": "https://ml4sts.github.io/open-humanities/instructor/10-free-text.html",
-  "dateCreated": "2025-08-08",
-  "dateModified": "2025-08-08",
-  "datePublished": "2025-08-08"
+  "dateCreated": "2025-08-12",
+  "dateModified": "2025-08-12",
+  "datePublished": "2025-08-12"
 }
 
   </script><script>
