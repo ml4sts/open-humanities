@@ -32,7 +32,7 @@ Before going any further, speak to the person next to you and choose which type 
 
 ### Grabbing a text, cleaning it up
 
-We're going to work with the `gulliver.txt` file, which we made in [Episode 3, 'Working with files and directories'](03-working-with-files-and-folders.md). You should (still) be working in the `shell-lesson` directory.
+We're going to work with the `gulliver.txt` file, which we made in [Episode 3, 'Working with files and directories'](07-working-with-files-and-folders.md). You should (still) be working in the `shell-lesson` directory.
 
 Let's look at the file.
 
@@ -121,7 +121,7 @@ We are now ready to pull the text apart.
 $ tr ' ' '\n' < gulliver-clean.txt | sort | uniq -c | sort -nr > gulliver-final.txt
 ```
 
-Here we've made extended use of the pipes we saw in [Counting and mining with the shell](05-counting-mining.md). The first part of this script uses the translate command again, this time to translate every blank space into `\n` which renders as a new line. Every word in the file will at this stage have its own line.
+Here we've made extended use of the pipes we saw in [Counting and mining with the shell](09-counting-mining.md). The first part of this script uses the translate command again, this time to translate every blank space into `\n` which renders as a new line. Every word in the file will at this stage have its own line.
 
 The second part uses the `sort` command to rearrange the text from its original order into an alphabetical configuration.
 
@@ -233,7 +233,7 @@ We are now ready to pull the text apart.
 $ tr ' ' '\n' < 201403160_01_text-clean.txt | sort | uniq -c | sort -nr > 201403160_01_text-final.txt
 ```
 
-Here we've made extended use of the pipes we saw in [Counting and mining with the shell](05-counting-mining.md). The first part of this script uses the translate command again, this time to translate every blank space into `\n` which renders as a new line. Every word in the file will at this stage have its own line.
+Here we've made extended use of the pipes we saw in [Counting and mining with the shell](09-counting-mining.md). The first part of this script uses the translate command again, this time to translate every blank space into `\n` which renders as a new line. Every word in the file will at this stage have its own line.
 
 The second part uses the `sort` command to rearrange the text from its original order into an alphabetical configuration.
 
@@ -334,7 +334,7 @@ We are now ready to pull the text apart.
 $ tr ' ' '\n' < diary-clean.txt | sort | uniq -c | sort -nr > diary-final.txt
 ```
 
-Here we've made extended use of the pipes we saw in [Counting and mining with the shell](05-counting-mining.md). The first part of this script uses the translate command again, this time to translate every blank space into `\n` which renders as a new line. Every word in the file will at this stage have its own line.
+Here we've made extended use of the pipes we saw in [Counting and mining with the shell](09-counting-mining.md). The first part of this script uses the translate command again, this time to translate every blank space into `\n` which renders as a new line. Every word in the file will at this stage have its own line.
 
 The second part uses the `sort` command to rearrange the text from its original order into an alphabetical configuration.
 
