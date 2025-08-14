@@ -70,6 +70,7 @@ We want to make sure we have it installed to use some packages that are built wi
 Here are steps to installing python:
 
 :::::::::::::::::: prereq
+### Installing Python
 
 ::: tab
 ### Windows
@@ -131,6 +132,7 @@ You need to download some files to follow this lesson:
 
 
 ## Git
+Git is a version control tool used to track changes made on a project. Later was used for collaboration on projects as well
 :::::::::::: prereq
 ## Installing Git
 
@@ -144,10 +146,11 @@ instructions on installing Git for various operating systems.
 ::::::::::::
 
 
+## GitHub
+GitHub is a web-based platform that uses Git for version control and provides tools for collaboration on projects such as issue tracking and project progress tracking.
+
 :::::::::::: prereq
-
 ## Creating a GitHub Account
-
 You will need an account for [GitHub](https://github.com) to follow this lesson.
 
 1. Go to <https://github.com> and follow the "Sign up" link at the top-right of the window
@@ -187,7 +190,6 @@ The GitHub documentation provides [more details about configuring 2FA](https://d
 
 
 
-::::::::::::::: prereq
 ## VS Code 
 VS Code is a text editor with super powers that help programmers with their work by applying color schemes to text to help programmers follow syntactical and semantical rules.
 It also gives its users access to a terminal built in within it. And it can holf extentions that can be useful for different purposes.
@@ -196,7 +198,8 @@ Example extentions:
 - [pdf viewer](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf)
 - [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
 
-Here are installation instructions for VS Code:
+::::::::::::::: prereq
+### Installing VSCode
 ::: tab
 ### Windows
 Download the [windows installer](https://code.visualstudio.com/docs?dv=win) for windows and run it 
@@ -218,17 +221,18 @@ sudo apt install ./<file>.deb
 - Add VS Code to your Dock by right-clicking on the icon, located in the Dock, to bring up the context menu and choosing Options, Keep in Dock.
 - Launch VS Code from the c
 :::
-::::::::::::::
+:::::::::::::::
 
 
 ## Myst
 Myst is a tool used to build and render interactive webpages easily using text files with a splash of markdown syntax (the arrangement of words and phrases to create well-formed sentences in a language)
 :::::::: callout
 Depending on how your python install went, you may need to use `pip3` instead of pip
-::::::
+::::::::
 
 :::::::::: prereq
-Installing myst:
+### Installing myst:
+
 ::: tab
 ### Windows
 
