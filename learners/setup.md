@@ -226,16 +226,15 @@ sudo apt install ./<file>.deb
 
 ## Myst
 Myst is a tool used to build and render interactive webpages easily using text files with a splash of markdown syntax (the arrangement of words and phrases to create well-formed sentences in a language)
-:::::::: callout
+
+:::::::::::: callout
 Depending on how your python install went, you may need to use `pip3` instead of pip
-::::::::
+::::::::::::
 
 :::::::::: prereq
 ### Installing myst:
-
 ::: tab
 ### Windows
-
 This requires having python package installer
 - Confirm you have Python installed in your system and Python Package Installer `pip`
 
@@ -252,7 +251,6 @@ pip install mystmd
 ```
 
 ### Linux
-
 This requires having python package installer
  Confirm you have Python installed in your system and Python Package Installer `pip`
 
@@ -270,7 +268,6 @@ pip install mystmd
 ```
 
 ### Mac OS
-
 This requires having python package installer
 - Confirm you have Python installed in your system and Python Package Installer `pip`
 
@@ -285,8 +282,6 @@ If you get an output from these two commands then you have these two packages in
 pip install mystmd
 ```
 :::
-
-
 ::::::::::
 
 [workshop-setup]: https://carpentries.github.io/workshop-template/install_instructions/#git
