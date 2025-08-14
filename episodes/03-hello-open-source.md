@@ -117,7 +117,7 @@ And here's a preview of the new website
 
 ![](fig\gh-pages_new-webpage.png){alt="GitHub new webpage"}
 
-### Adding new content to your webpage
+## Adding new content to your webpage
 
 Locally rename a copy of your file to `index.md`
 
