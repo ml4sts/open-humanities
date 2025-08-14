@@ -45,7 +45,7 @@ GitHub Pages is a simple service to publish a website directly on GitHub from a 
 You can add some files and folders to a repository and GitHub Pages turns it into a website.
 There are multiple ways of doing so, either by having GitHub use an HTML file (`index.html`) directly to publish, or by using a tool that GitHub provides called Jekyll which renders Markdown into HTML. You can use the contents of one md file directly named either `README.md` or `index.md and Jekyll will render them into a webpage making it really easy to setup a blog or a template-based website.
 You can then configure Jekyll with more detailed configuration settings to make your webpage more customized.
-There also more tools that help turn md files into HTML that can be published by gh-pages such as Jupyterbook or MkDocs.
+There are many tools to convert markdown (or other simple formats, like [RestructuredText](https://docutils.sourceforge.io/rst.html)) to HTML, called [static site generators](https://jamstack.org/generators/).  We will see another one later, called Mystmd (read myst Markdown). 
 
 ### Why GitHub Pages is awesome!
 
