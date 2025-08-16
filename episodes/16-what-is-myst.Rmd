@@ -108,57 +108,45 @@ If we opened the webpage using the link above we see somthing like this
 ![](fig\myst_page2.png)
 
 We notice a few things on this page:
-- On the top-left corner says `Made with Myst`
-- For each md file we have a button on the left page section 
-- On the top-right corner we have a dark/light theme button as well as a search bar
+* On the top-left corner says `Made with Myst`
+* For each md file we have a button on the left page section 
+* On the top-right corner we have a dark/light theme button as well as a search bar that works!
+
+#### What does that tell us?
+We were able to create an interactive webpage using the same markdown files and turn them into an interactive page. We used the `myst` tool to make the webpage look nicer and have more powers.
+
+#### What did myst need to run?
+We noticed earlier that myst added a file to our directory as soon as we ran it. `myst.md`
+Let's figure out why it did so by viewing the contents of it and trying to understand it.
+
+```yaml
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 5f256b79-5f82-4a71-b061-138da64f191a
+  # title:
+  # description:
+  # keywords: []
+  # authors: []
+  github: https://github.com/mystudyroom0/my-website
+  # To autogenerate a Table of Contents, run "myst init --write-toc"
+site:
+  template: book-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png
+  ```
 
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
-
-Inline instructor notes can help inform instructors of timing challenges
-associated with the lessons. They appear in the "Instructor View"
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::: challenge 
-
-## Challenge 1: Can you do it?
-
-
-:::::::::::::::::::::::: solution 
-
-## Output
- 
-```output
-
-```
-
-:::::::::::::::::::::::::::::::::
-
-
-## Challenge 2: how do you nest solutions within challenge blocks?
-
-:::::::::::::::::::::::: solution 
-
-You can add a line with at least three colons and a `solution` tag.
-
-:::::::::::::::::::::::::::::::::
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-## Figures
-
-You can use pandoc markdown for static figures with the following syntax:
-
-`![optional caption that appears below the figure](figure url){alt='alt text for
-accessibility purposes'}`
-
-![You belong in The Carpentries!](https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg){alt='Blue Carpentries hex person logo with no text.'}
-
+We find that the the file holds some metadata for the webpage. Most of it isn't filled in and is also commented out since it isn't filled out yet. (we comment lines in the YAML syntax using the `#` symbol). We also some site settings such as the theme, logo and icon.
+So we learn that myst requires this file to be in your project directory to be able to built the webpage.
 
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- 
+- Myst is a tool that builds interactive webpages from markdown files 
+- To built a webpage using myst we simply start myst on the terminal
+- Myst requires the file `myst.md` to run and build a webpage
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
