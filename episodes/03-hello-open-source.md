@@ -14,10 +14,9 @@ exercises: 20
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Create a GitHub repo and push a file to it
+- Create a GitHub repo 
 - Complete the steps to make a commit
 - Differentiate Markdown and HTML
-- Render a static webpage from the repo
 - Differentiate source and rendered content
 - Identify the parts of the GitHub Interface
 - Create a Website using GitHub Pages default settings
