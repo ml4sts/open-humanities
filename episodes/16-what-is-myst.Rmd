@@ -29,6 +29,12 @@ MyST is an open-source, community-driven project to improve scientific communica
 Myst is a tool that we will learn to use to build interactive webpages or pdfs. The benifit of this is more powerful publishing of content and information.
 Here's an example of a paper published using myst: [A Literature Review On AI fairness Best Practices](https://ml4sts.com/fairml-bestpractices/)
 
+## A Different Way of Building HTML
+The purpose of MyST is to have a powerful tool that builds interactive HTML pages without doing any HTML coding.
+Remember, on the first day we used GH Pages' simple rendering system to render a single md file (`index.md`) into a simple HTML page.
+MyST will do a similar job, except that it can render a more powerful HTML page with interactive button and it can render a collection of md files distributed into multiple directories within one project directory.
+
+
 Let's learn about using myst on the simple repo we created on the first day.
 
 ## Starting myst
@@ -112,6 +118,32 @@ We notice a few things on this page:
 * For each md file we have a button on the left page section 
 * On the top-right corner we have a dark/light theme button as well as a search bar that works!
 
+
+### Challange: Edit your redame file and see
+
+::::::::::::::::::::::::::::::::::::: challenge 
+
+## Challenge 1: Edit your redame file and see what happens
+
+
+:::::::::::::::::::::::: solution 
+
+## Output
+ 
+We notice how myst tracks all requests on the local host and applies the changes made to the readme file immedietly to the webpage
+```output
+💌 GET  /readme?_data=routes%2F%24 200 - - 9.687 ms
+📖 Built README.md in 57 ms.
+💌 GET  /readme 200 - - 18.691 ms
+```
+
+![](fig\myst_page3.png)
+
+:::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
 #### What does that tell us?
 We were able to create an interactive webpage using the same markdown files and turn them into an interactive page. We used the `myst` tool to make the webpage look nicer and have more powers.
 
@@ -142,6 +174,43 @@ We find that the the file holds some metadata for the webpage. Most of it isn't 
 So we learn that myst requires this file to be in your project directory to be able to built the webpage.
 
 
+::::::::::::::::::::::::::::::::::::: challenge 
+
+## Challenge 2: Change the title of your webpage
+
+:::::::::::::::::::::::: solution 
+
+Let's look at how the tab is labeled on the browser and what the page title looks like 
+
+![](fig\tab-label.png)
+![](fig\webpage-title.png)
+
+Edit the metadata of your webpage from ` myst.yml`. Remove the `#` to uncomment the line that has `title:` in it and then add a title to your webpage.
+
+```yaml
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: b9be35e6-0f75-4da5-b971-9add4d00ed44
+  title: Benchmarking proposal
+  # description:
+  # keywords: []
+  # authors: []
+  github: https://github.com/AymanBx/my-website
+  # To autogenerate a Table of Contents, run "myst init --write-toc"
+site:
+  template: book-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png
+```
+
+![](fig\tab-label-changed.png)
+![](fig\webpage-title-changed.png)
+
+:::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::
+
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
 - Myst is a tool that builds interactive webpages from markdown files 
@@ -150,3 +219,4 @@ So we learn that myst requires this file to be in your project directory to be a
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+ 
