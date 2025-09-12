@@ -32,7 +32,7 @@ Here's an example of a paper published using myst: [A Literature Review On AI fa
 ## A Different Way of Building HTML
 The purpose of MyST is to have a powerful tool that builds interactive HTML pages without doing any HTML coding.
 Remember, on the first day we used GH Pages' simple rendering system to render a single md file (`index.md`) into a simple HTML page.
-MyST will do a similar job, except that it can render a more powerful HTML page with interactive button and it can render a collection of md files distributed into multiple directories within one project directory.
+MyST can also do this, except that it uses templates to render pages with a more structure, does some extra processing of the content and it can render a collection of md files distributed across multiple directories within one project directory into a cohesive site.
 
 
 Let's learn about using myst on the simple repo we created on the first day.
