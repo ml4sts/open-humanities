@@ -119,7 +119,6 @@ We notice a few things on this page:
 * On the top-right corner we have a dark/light theme button as well as a search bar that works!
 
 
-### Challange: Edit your redame file and see
 
 ::::::::::::::::::::::::::::::::::::: challenge 
 
