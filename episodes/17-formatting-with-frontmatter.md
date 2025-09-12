@@ -46,8 +46,20 @@ authors:
 ---
 ```
 
-Here is a [list of frontmatter fields](https://mystmd.org/guide/frontmatter#available-frontmatter-fields) that can be used
 
+## MyST Themes 
+One of the main things that the configuration file can be used for is to choose the main theme of the webpage.
+There are two themes offered by myst: `book-theme` & `article-theme`
+
+## Glossary
+A gossary is a collection of definitions for the different terms that can be found of your website. Since your website is either a in a book style or an article style. There's a large chance that it holds great scienfic information. Some of which might need to be well-defined for your target audience or the general public.
+
+
+
+
+### Accronyms
+
+Here is a [list of frontmatter fields](https://mystmd.org/guide/frontmatter#available-frontmatter-fields) that can be used
 
 
 
