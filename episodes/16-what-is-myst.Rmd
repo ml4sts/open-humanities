@@ -123,7 +123,7 @@ We notice a few things on this page:
 
 ::::::::::::::::::::::::::::::::::::: challenge 
 
-## Challenge 1: Edit your redame file and see what happens
+## Edit your readme file and see what happens
 
 
 :::::::::::::::::::::::: solution 
