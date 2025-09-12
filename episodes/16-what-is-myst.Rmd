@@ -175,7 +175,7 @@ So we learn that myst requires this file to be in your project directory to be a
 
 ::::::::::::::::::::::::::::::::::::: challenge 
 
-## Challenge 2: Change the title of your webpage
+## Editing meta data
 
 :::::::::::::::::::::::: solution 
 
