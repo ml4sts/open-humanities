@@ -211,6 +211,8 @@
 <li><a href="#shell">Shell</a></li>
 <li><a href="#python">Python</a></li>
 <li><a href="#git">Git</a></li>
+<li><a href="#github">GitHub</a></li>
+<li><a href="#vs-code">VS Code</a></li>
 <li><a href="#myst">Myst</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
@@ -567,7 +569,7 @@ to install Git Bash to provide a Unix-like environment.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-1" class="tab-content">
-<div id="nav-tabpanel-1-1" class="tab-pane show active" aria-labelledby="nav-tab-1-1" role="tabpanel">
+<div id="nav-tabpanel-1-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-1">
 <p>On Windows, CMD or PowerShell are normally available as the default
 shell environments. These use a syntax and set of applications unique to
 Windows systems and are incompatible with the more widely used Unix
@@ -582,14 +584,14 @@ settings.</li>
 <li>Once installed, open the shell by selecting Git Bash from the start
 menu (in the Git folder).</li>
 </ul></div>
-<div id="nav-tabpanel-1-2" class="tab-pane" aria-labelledby="nav-tab-1-2" role="tabpanel">
+<div id="nav-tabpanel-1-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-2">
 <p>The default shell is usually Bash, but if your machine is set up
 differently you can run it by opening a terminal and typing
 <code>bash</code> followed by the <kbd>enter</kbd> key. There is no need
 to install anything. Look for Terminal in your applications to start the
 Bash shell.</p>
 </div>
-<div id="nav-tabpanel-1-3" class="tab-pane" aria-labelledby="nav-tab-1-3" role="tabpanel">
+<div id="nav-tabpanel-1-3" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-3">
 <p>Open Terminal from <code>/Applications/Utilities</code> or Spotlight
 Search. In versions before Catalina, Bash is the default shell, so you
 do not need to do anything further. In Catalina and onwards, the default
@@ -619,12 +621,13 @@ Problems and Solutions wiki page</a> that may help.</p>
 make sure we have it installed to use some packages that are built with
 python such as <code>mystmd</code> Here are steps to installing
 python:</p>
-<div id="prereq2" class="callout prereq">
+<div id="installing-python" class="callout prereq">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check"></i>
 </div>
 <span class="callout-header">Prerequisite</span>
-<div class="callout-inner">
+<div id="installing-python" class="callout-inner">
+<h3 class="callout-title">Installing Python</h3>
 <div class="callout-content">
 <div class="tabs">
 <nav><div id="nav-tab-2" class="nav nav-tabs" role="tablist">
@@ -645,12 +648,12 @@ python:</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-2" class="tab-content">
-<div id="nav-tabpanel-2-1" class="tab-pane show active" aria-labelledby="nav-tab-2-1" role="tabpanel">
+<div id="nav-tabpanel-2-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-2-1">
 <p>To install python on windows, download and run the <a href="https://www.python.org/downloads/" class="external-link">python installer</a> When
 installing make sure to check the two boxes that say to
 <code>include PATH</code> and <code>Accept long paths</code></p>
 </div>
-<div id="nav-tabpanel-2-2" class="tab-pane" aria-labelledby="nav-tab-2-2" role="tabpanel">
+<div id="nav-tabpanel-2-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-2">
 <p>Python 3 is typically pre-installed on modern Ubuntu versions. To
 install or ensure you have the latest available version from the Ubuntu
 repositories, follow these steps: Update Package Lists. - Open your
@@ -665,7 +668,7 @@ run:</li>
 </ul><pre><code>sudo apt install python3
 sudo apt install python3-pip</code></pre>
 </div>
-<div id="nav-tabpanel-2-3" class="tab-pane" aria-labelledby="nav-tab-2-3" role="tabpanel">
+<div id="nav-tabpanel-2-3" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-3">
 <p>To install python on macOS, download and run the <a href="https://www.python.org/downloads/" class="external-link">python installer</a></p>
 </div>
 </div>
@@ -716,14 +719,9 @@ with the data in <code>shell-lesson</code> folder.</p>
 </div>
 </div>
 </section><section><h2 class="section-heading" id="git">Git<a class="anchor" aria-label="anchor" href="#git"></a></h2>
-<hr class="half-width"><div id="installing-git" class="callout prereq">
-<div class="callout-square">
-<i class="callout-icon" data-feather="check"></i>
-</div>
-<span class="callout-header">Prerequisite</span>
-<div id="installing-git" class="callout-inner">
-<h3 class="callout-title">Installing Git</h3>
-<div class="callout-content">
+<hr class="half-width"><p>Git is a version control tool used to track changes made on a
+project. Later was used for collaboration on projects as well
+:::::::::::: prereq ## Installing Git</p>
 <p>Since several Carpentries lessons rely on Git, please see <a href="https://carpentries.github.io/workshop-template/install_instructions/#git" class="external-link">this
 section of the workshop template</a> for instructions on installing Git
 for various operating systems.</p>
@@ -731,11 +729,13 @@ for various operating systems.</p>
 installation on Windows</a></li>
 <li><a href="https://carpentries.github.io/workshop-template/install_instructions/#git" class="external-link">Git
 installation on MacOS</a></li>
-<li><a href="https://carpentries.github.io/workshop-template/install_instructions/#git" class="external-link">Git
-installation on Linux</a></li>
-</ul></div>
-</div>
-</div>
+<li>
+<a href="https://carpentries.github.io/workshop-template/install_instructions/#git" class="external-link">Git
+installation on Linux</a> ::::::::::::</li>
+</ul></section><section><h2 class="section-heading" id="github">GitHub<a class="anchor" aria-label="anchor" href="#github"></a></h2>
+<hr class="half-width"><p>GitHub is a web-based platform that uses Git for version control and
+provides tools for collaboration on projects such as issue tracking and
+project progress tracking.</p>
 <div id="creating-a-github-account" class="callout prereq">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check"></i>
@@ -789,15 +789,8 @@ details about configuring 2FA</a>.</p>
 </div>
 </div>
 </div>
-<div id="vs-code" class="callout prereq">
-<div class="callout-square">
-<i class="callout-icon" data-feather="check"></i>
-</div>
-<span class="callout-header">Prerequisite</span>
-<div id="vs-code" class="callout-inner">
-<h3 class="callout-title">VS Code</h3>
-<div class="callout-content">
-<p>VS Code is a text editor with super powers that help programmers with
+</section><section><h2 class="section-heading" id="vs-code">VS Code<a class="anchor" aria-label="anchor" href="#vs-code"></a></h2>
+<hr class="half-width"><p>VS Code is a text editor with super powers that help programmers with
 their work by applying color schemes to text to help programmers follow
 syntactical and semantical rules. It also gives its users access to a
 terminal built in within it. And it can holf extentions that can be
@@ -805,11 +798,38 @@ useful for different purposes. Example extentions: - <a href="https://marketplac
 - <a href="https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf" class="external-link">pdf
 viewer</a> - <a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot" class="external-link">GitHub
 Copilot</a></p>
-<p>Here are installation instructions for VS Code: ::: tab ### Windows
-Download the <a href="https://code.visualstudio.com/docs?dv=win" class="external-link">windows
-installer</a> for windows and run it</p>
-<div class="section level3">
-<h3 id="linux-2">Linux<a class="anchor" aria-label="anchor" href="#linux-2"></a></h3>
+<div id="installing-vscode" class="callout prereq">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check"></i>
+</div>
+<span class="callout-header">Prerequisite</span>
+<div id="installing-vscode" class="callout-inner">
+<h3 class="callout-title">Installing VSCode</h3>
+<div class="callout-content">
+<div class="tabs">
+<nav><div id="nav-tab-3" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-3-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-3-1" type="button" role="tab" aria-controls="nav-tabpanel-3-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-3-1">
+  Windows
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-3-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-3-2" type="button" role="tab" aria-controls="nav-tabpanel-3-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-3-2">
+  Linux
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-3-3" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-3-3" type="button" role="tab" aria-controls="nav-tabpanel-3-3" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-3-3">
+  Mac OS
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-3" class="tab-content">
+<div id="nav-tabpanel-3-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-3-1">
+<p>Download the <a href="https://code.visualstudio.com/docs?dv=win" class="external-link">windows installer</a>
+for windows and run it</p>
+</div>
+<div id="nav-tabpanel-3-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-3-2">
 <ul><li>Download the <a href="https://go.microsoft.com/fwlink/?LinkID=760868" class="external-link">debian-based
 distribution</a>
 </li>
@@ -818,8 +838,7 @@ available</li>
 <li>Or use the commandline to run it:</li>
 </ul><pre><code>sudo apt install ./&lt;file&gt;.deb</code></pre>
 </div>
-<div class="section level3">
-<h3 id="mac-os-2">Mac OS<a class="anchor" aria-label="anchor" href="#mac-os-2"></a></h3>
+<div id="nav-tabpanel-3-3" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-3-3">
 <ul><li>
 <a href="https://go.microsoft.com/fwlink/?LinkID=534106" class="external-link">Download
 Visual Studio Code</a> for macOS.</li>
@@ -839,21 +858,52 @@ Dock.</li>
 </div>
 </div>
 </div>
-<p>::::::::::::::</p>
+</div>
+</div>
 </section><section><h2 class="section-heading" id="myst">Myst<a class="anchor" aria-label="anchor" href="#myst"></a></h2>
 <hr class="half-width"><p>Myst is a tool used to build and render interactive webpages easily
 using text files with a splash of markdown syntax (the arrangement of
-words and phrases to create well-formed sentences in a language)
-:::::::: callout Depending on how your python install went, you may need
-to use <code>pip3</code> instead of pip ::::::</p>
-<div id="prereq7" class="callout prereq">
+words and phrases to create well-formed sentences in a language)</p>
+<div id="callout1" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>Depending on how your python install went, you may need to use
+<code>pip3</code> instead of pip</p>
+</div>
+</div>
+</div>
+<div id="installing-myst" class="callout prereq">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check"></i>
 </div>
 <span class="callout-header">Prerequisite</span>
-<div class="callout-inner">
+<div id="installing-myst" class="callout-inner">
+<h3 class="callout-title">Installing myst:</h3>
 <div class="callout-content">
-<p>Installing myst: ::: tab ### Windows</p>
+<div class="tabs">
+<nav><div id="nav-tab-4" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-4-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-4-1" type="button" role="tab" aria-controls="nav-tabpanel-4-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-4-1">
+  Windows
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-4-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-4-2" type="button" role="tab" aria-controls="nav-tabpanel-4-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-4-2">
+  Linux
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-4-3" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-4-3" type="button" role="tab" aria-controls="nav-tabpanel-4-3" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-4-3">
+  Mac OS
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-4" class="tab-content">
+<div id="nav-tabpanel-4-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-4-1">
 <p>This requires having python package installer - Confirm you have
 Python installed in your system and Python Package Installer
 <code>pip</code></p>
@@ -862,8 +912,8 @@ Python installed in your system and Python Package Installer
 <p>If you get an output from these two commands then you have these two
 packages installed - On your shell terminal run:</p>
 <pre><code>pip install mystmd</code></pre>
-<div class="section level3">
-<h3 id="linux-3">Linux<a class="anchor" aria-label="anchor" href="#linux-3"></a></h3>
+</div>
+<div id="nav-tabpanel-4-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-4-2">
 <p>This requires having python package installer Confirm you have Python
 installed in your system and Python Package Installer
 <code>pip</code></p>
@@ -874,8 +924,7 @@ packages installed</p>
 <p>On your shell terminal run:</p>
 <pre><code>pip install mystmd</code></pre>
 </div>
-<div class="section level3">
-<h3 id="mac-os-3">Mac OS<a class="anchor" aria-label="anchor" href="#mac-os-3"></a></h3>
+<div id="nav-tabpanel-4-3" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-4-3">
 <p>This requires having python package installer - Confirm you have
 Python installed in your system and Python Package Installer
 <code>pip</code></p>
@@ -888,7 +937,8 @@ packages installed - On your shell terminal run:</p>
 </div>
 </div>
 </div>
-<p>::::::::::</p>
+</div>
+</div>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
