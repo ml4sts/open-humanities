@@ -33,7 +33,7 @@ $ pwd
 ```
 
 ```output
-/Users/riley
+/Users/humanist
 ```
 
 The output will be a path to your home directory. Let's check if we recognise it by looking at the contents of the directory. To do that, we use the `ls` command. This stands for "list" and the result is a print out of all the contents in the directory:
@@ -58,14 +58,14 @@ $ ls -l
 
 ```output
 total 0
-drwx------+  6 riley  staff   204 Jul 16 11:50 Desktop
-drwx------+  3 riley  staff   102 Jul 16 11:30 Documents
-drwx------+  3 riley  staff   102 Jul 16 11:30 Downloads
-drwx------@ 46 riley  staff  1564 Jul 16 11:38 Library
-drwx------+  3 riley  staff   102 Jul 16 11:30 Movies
-drwx------+  3 riley  staff   102 Jul 16 11:30 Music
-drwx------+  3 riley  staff   102 Jul 16 11:30 Pictures
-drwxr-xr-x+  5 riley  staff   170 Jul 16 11:30 Public
+drwx------+  6 humanist  staff   204 Jul 16 11:50 Desktop
+drwx------+  3 humanist  staff   102 Jul 16 11:30 Documents
+drwx------+  3 humanist  staff   102 Jul 16 11:30 Downloads
+drwx------@ 46 humanist  staff  1564 Jul 16 11:38 Library
+drwx------+  3 humanist  staff   102 Jul 16 11:30 Movies
+drwx------+  3 humanist  staff   102 Jul 16 11:30 Music
+drwx------+  3 humanist  staff   102 Jul 16 11:30 Pictures
+drwxr-xr-x+  5 humanist  staff   170 Jul 16 11:30 Public
 ```
 
 In everyday usage we are more accustomed to units of measurement like kilobytes, megabytes, and gigabytes. Luckily, there's another flag `-h` that when used with the -l option, prints unit suffixes: Byte, Kilobyte, Megabyte, Gigabyte, Terabyte and Petabyte in order to reduce the number of digits to three or fewer using base 2 for sizes.
@@ -79,14 +79,14 @@ $ ls -lh
 
 ```output
 total 0
-drwx------+  6 riley  staff   204B Jul 16 11:50 Desktop
-drwx------+  3 riley  staff   102B Jul 16 11:30 Documents
-drwx------+  3 riley  staff   102B Jul 16 11:30 Downloads
-drwx------@ 46 riley  staff   1.5K Jul 16 11:38 Library
-drwx------+  3 riley  staff   102B Jul 16 11:30 Movies
-drwx------+  3 riley  staff   102B Jul 16 11:30 Music
-drwx------+  3 riley  staff   102B Jul 16 11:30 Pictures
-drwxr-xr-x+  5 riley  staff   170B Jul 16 11:30 Public
+drwx------+  6 humanist  staff   204B Jul 16 11:50 Desktop
+drwx------+  3 humanist  staff   102B Jul 16 11:30 Documents
+drwx------+  3 humanist  staff   102B Jul 16 11:30 Downloads
+drwx------@ 46 humanist  staff   1.5K Jul 16 11:38 Library
+drwx------+  3 humanist  staff   102B Jul 16 11:30 Movies
+drwx------+  3 humanist  staff   102B Jul 16 11:30 Music
+drwx------+  3 humanist  staff   102B Jul 16 11:30 Pictures
+drwxr-xr-x+  5 humanist  staff   170B Jul 16 11:30 Public
 ```
 
 We've now spent a great deal of time in our home directory. Let's go somewhere else. We can do that through the `cd` or Change Directory command: (Note: On Windows and Mac, by default, the case of the file/directory doesn't matter. On Linux it does.)
@@ -102,7 +102,7 @@ $ pwd
 ```
 
 ```output
-/Users/riley/Desktop
+/Users/humanist/Desktop
 ```
 
 If something had gone wrong, however, the command would have told you. Let's test that by trying to move into a non-existent directory:
