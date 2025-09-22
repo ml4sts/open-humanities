@@ -110,7 +110,8 @@ To install python on macOS, download and run the [python installer](https://www.
 You need to download some files to follow this lesson:
 
 ::::::::::::::::::::::::::::::::::::::::::  prereq
-1. Download [shell-lesson.zip](data/shell-lesson.zip) and move the file to your Desktop.
+1. Download [shell-lesson.zip](https://librarycarpentry.org/lc-shell/data/shell-lesson.zip) and move the file to your Desktop.
+<!-- 1. Download [shell-lesson.zip](data/shell-lesson.zip) and move the file to your Desktop. -->
 2. Unzip/extract the file (ask your instructor if you need help with this step). You should end up with a new folder called `shell-lesson` on your Desktop.
 3. Open the terminal and type `ls` followed by the <kbd>enter</kbd> key.
 
