@@ -48,7 +48,7 @@ Desktop      Downloads    Movies       Pictures
 ```
 
 We may want more information than just a list of files and directories. We can get this by specifying various **flags** (also known as `options`) to go with our basic commands. 
-Options modify the workings of the command by telling the computer what sort of output or manipulation we want.
+
 
 If we type `ls -l` and press enter, the computer returns a list of files that contains information similar to what we would find in our Finder (Mac) or Explorer (Windows): the size of the files in bytes, the date it was created or last modified, and the file name.
 
@@ -70,7 +70,8 @@ drwxr-xr-x+  5 riley  staff   170 Jul 16 11:30 Public
 
 In everyday usage we are more accustomed to units of measurement like kilobytes, megabytes, and gigabytes. Luckily, there's another flag `-h` that when used with the -l option, prints unit suffixes: Byte, Kilobyte, Megabyte, Gigabyte, Terabyte and Petabyte in order to reduce the number of digits to three or fewer using base 2 for sizes.
 
-Now `ls -h` won't work on its own. When we want to combine two flags, we can just run them together. So, by typing `ls -lh` and pressing enter we receive an output in a human-readable format (note: the order here doesn't matter).
+Now `ls -h` won't work on its own. When we want to combine two flags, we can just run them together. To do so, we can either run then as so `ls -l -h` or combine them as so `ls -lh`
+So, by typing `ls -lh` and pressing enter we receive an output in a human-readable format (note: the order here doesn't matter).
 
 ```bash
 $ ls -lh
@@ -115,7 +116,12 @@ bash: cd: things to learn about the shell: No such file or directory
 ```
 
 Notice that we surrounded the name by quotation marks. The *arguments* given to any shell command are separated by spaces, so a way to let them know that we mean 'one single thing called "things to learn about the shell"', not 'six different things', is to use (single or double) quotation marks.
-Arguments are things that we give the command to work with; for example, if the command is change directory, we give it an argument _a path_ to use to change the directory to that path. We could do the same thing with the list command (`ls`). If we provide it with a path as an **argument**, instead of listing the files and directories of the current directory (that we're in) it does so for the provided path.
+
+:::::::::::: callout
+Here, we need to make a quick observation to distinguish between two terms that are very different:
+**Arguments** are things that we give the command to work with; for example, if the command is change directory, we give it an argument _a path_ to use to change the directory to that path. We could do the same thing with the list command (`ls`). If we provide it with a path as an **argument**, instead of listing the files and directories of the current directory (that we're in) it does so for the provided path.
+Whereas **options** modify the workings of the command by telling the computer what sort of output or manipulation we want. Options are denoted by one or two hyphens `-`, `--`.
+::::::::::::
 
 We've now seen how we can go 'down' through our directory structure (as in into more nested directories). If we want to go back, we can type `cd ..`. This moves us 'up' one directory, putting us back where we started. **If we ever get completely lost, the command `cd` without any arguments will bring us right back to the home directory, the place where we started.**
 

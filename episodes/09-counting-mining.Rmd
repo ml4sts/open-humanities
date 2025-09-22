@@ -403,6 +403,7 @@ $ grep 1999 *.tsv
 ```
 
 Remember that the shell will expand `*.tsv` to a list of all the `.tsv` files in the directory. `grep` will then search these for instances of the string "1999" and print the matching lines.
+There were a lot of instances of `1999` in the `tsv` files. Let's try getting their count instead of instances.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
@@ -412,6 +413,7 @@ A string is a sequence of characters, or "a piece of text".
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+We're going to run the same commad with the option `-c` for count.
 Press the up arrow once in order to cycle back to your most recent action. Amend `grep 1999 *.tsv` to `grep -c 1999 *.tsv` and press enter.
 
 ```bash
