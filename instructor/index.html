@@ -447,28 +447,7 @@ tools. At the conclusion of the lesson you will be able to:</p>
 <li>use shell commands to find and manipulate data</li>
 <li>Understand and use Git/GitHub</li>
 <li>Use Git from the Unix Shell</li>
-</ul><div id="prerequisites" class="callout prereq">
-<div class="callout-square">
-<i class="callout-icon" data-feather="check"></i>
-</div>
-<span class="callout-header">Prerequisite</span>
-<div id="prerequisites" class="callout-inner">
-<h3 class="callout-title">Prerequisites</h3>
-<div class="callout-content">
-<ol style="list-style-type: decimal"><li>To complete this lesson, you will need a Unix-like shell environment
-(see <a href="index.html#setup">Setup</a>). You will also need to download the
-file <strong><a href="https://librarycarpentry.org/lc-shell/data/shell-lesson.zip" class="external-link">shell-lesson.zip</a></strong>
-from the lesson website to your <em>desktop</em> and extract it there
-(once you have unzipped/extracted the file, you should end up with a
-folder called “shell-lesson”).</li>
-<li>Setup a <a href="https://github.com/" class="external-link">GitHub account</a>
-</li>
-<li><a href="https://help.github.com/articles/set-up-git/" class="external-link">Install git
-on your own computer</a></li>
-</ol></div>
-</div>
-</div>
-<div id="be-excellent-to-each-other" class="callout discussion">
+</ul><div id="be-excellent-to-each-other" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
@@ -774,7 +753,7 @@ to install Git Bash to provide a Unix-like environment.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-1" class="tab-content">
-<div id="nav-tabpanel-1-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-1">
+<div id="nav-tabpanel-1-1" class="tab-pane show active" aria-labelledby="nav-tab-1-1" role="tabpanel">
 <p>On Windows, CMD or PowerShell are normally available as the default
 shell environments. These use a syntax and set of applications unique to
 Windows systems and are incompatible with the more widely used Unix
@@ -789,14 +768,14 @@ settings.</li>
 <li>Once installed, open the shell by selecting Git Bash from the start
 menu (in the Git folder).</li>
 </ul></div>
-<div id="nav-tabpanel-1-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-2">
+<div id="nav-tabpanel-1-2" class="tab-pane" aria-labelledby="nav-tab-1-2" role="tabpanel">
 <p>The default shell is usually Bash, but if your machine is set up
 differently you can run it by opening a terminal and typing
 <code>bash</code> followed by the <kbd>enter</kbd> key. There is no need
 to install anything. Look for Terminal in your applications to start the
 Bash shell.</p>
 </div>
-<div id="nav-tabpanel-1-3" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-3">
+<div id="nav-tabpanel-1-3" class="tab-pane" aria-labelledby="nav-tab-1-3" role="tabpanel">
 <p>Open Terminal from <code>/Applications/Utilities</code> or Spotlight
 Search. In versions before Catalina, Bash is the default shell, so you
 do not need to do anything further. In Catalina and onwards, the default
@@ -853,12 +832,12 @@ python:</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-2" class="tab-content">
-<div id="nav-tabpanel-2-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-2-1">
+<div id="nav-tabpanel-2-1" class="tab-pane show active" aria-labelledby="nav-tab-2-1" role="tabpanel">
 <p>To install python on windows, download and run the <a href="https://www.python.org/downloads/" class="external-link">python installer</a> When
 installing make sure to check the two boxes that say to
 <code>include PATH</code> and <code>Accept long paths</code></p>
 </div>
-<div id="nav-tabpanel-2-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-2">
+<div id="nav-tabpanel-2-2" class="tab-pane" aria-labelledby="nav-tab-2-2" role="tabpanel">
 <p>Python 3 is typically pre-installed on modern Ubuntu versions. To
 install or ensure you have the latest available version from the Ubuntu
 repositories, follow these steps: Update Package Lists. - Open your
@@ -873,7 +852,7 @@ run:</li>
 </ul><pre><code>sudo apt install python3
 sudo apt install python3-pip</code></pre>
 </div>
-<div id="nav-tabpanel-2-3" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-3">
+<div id="nav-tabpanel-2-3" class="tab-pane" aria-labelledby="nav-tab-2-3" role="tabpanel">
 <p>To install python on macOS, download and run the <a href="https://www.python.org/downloads/" class="external-link">python installer</a></p>
 </div>
 </div>
@@ -891,8 +870,9 @@ sudo apt install python3-pip</code></pre>
 <span class="callout-header">Prerequisite</span>
 <div class="callout-inner">
 <div class="callout-content">
-<ol style="list-style-type: decimal"><li><p>Download <a href="../data/shell-lesson.zip">shell-lesson.zip</a> and
-move the file to your Desktop.</p></li>
+<ol style="list-style-type: decimal"><li><p>Download <a href="https://librarycarpentry.org/lc-shell/data/shell-lesson.zip" class="external-link">shell-lesson.zip</a>
+and move the file to your Desktop.
+<!-- 1. Download [shell-lesson.zip](data/shell-lesson.zip) and move the file to your Desktop. --></p></li>
 <li><p>Unzip/extract the file (ask your instructor if you need help with
 this step). You should end up with a new folder called
 <code>shell-lesson</code> on your Desktop.</p></li>
@@ -1030,11 +1010,11 @@ Copilot</a></p>
 </button>
 </div>
 </nav><div id="nav-tabContent-3" class="tab-content">
-<div id="nav-tabpanel-3-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-3-1">
+<div id="nav-tabpanel-3-1" class="tab-pane show active" aria-labelledby="nav-tab-3-1" role="tabpanel">
 <p>Download the <a href="https://code.visualstudio.com/docs?dv=win" class="external-link">windows installer</a>
 for windows and run it</p>
 </div>
-<div id="nav-tabpanel-3-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-3-2">
+<div id="nav-tabpanel-3-2" class="tab-pane" aria-labelledby="nav-tab-3-2" role="tabpanel">
 <ul><li>Download the <a href="https://go.microsoft.com/fwlink/?LinkID=760868" class="external-link">debian-based
 distribution</a>
 </li>
@@ -1043,7 +1023,7 @@ available</li>
 <li>Or use the commandline to run it:</li>
 </ul><pre><code>sudo apt install ./&lt;file&gt;.deb</code></pre>
 </div>
-<div id="nav-tabpanel-3-3" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-3-3">
+<div id="nav-tabpanel-3-3" class="tab-pane" aria-labelledby="nav-tab-3-3" role="tabpanel">
 <ul><li>
 <a href="https://go.microsoft.com/fwlink/?LinkID=534106" class="external-link">Download
 Visual Studio Code</a> for macOS.</li>
@@ -1108,7 +1088,7 @@ words and phrases to create well-formed sentences in a language)</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-4" class="tab-content">
-<div id="nav-tabpanel-4-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-4-1">
+<div id="nav-tabpanel-4-1" class="tab-pane show active" aria-labelledby="nav-tab-4-1" role="tabpanel">
 <p>This requires having python package installer - Confirm you have
 Python installed in your system and Python Package Installer
 <code>pip</code></p>
@@ -1118,7 +1098,7 @@ Python installed in your system and Python Package Installer
 packages installed - On your shell terminal run:</p>
 <pre><code>pip install mystmd</code></pre>
 </div>
-<div id="nav-tabpanel-4-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-4-2">
+<div id="nav-tabpanel-4-2" class="tab-pane" aria-labelledby="nav-tab-4-2" role="tabpanel">
 <p>This requires having python package installer Confirm you have Python
 installed in your system and Python Package Installer
 <code>pip</code></p>
@@ -1129,7 +1109,7 @@ packages installed</p>
 <p>On your shell terminal run:</p>
 <pre><code>pip install mystmd</code></pre>
 </div>
-<div id="nav-tabpanel-4-3" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-4-3">
+<div id="nav-tabpanel-4-3" class="tab-pane" aria-labelledby="nav-tab-4-3" role="tabpanel">
 <p>This requires having python package installer - Confirm you have
 Python installed in your system and Python Package Installer
 <code>pip</code></p>
@@ -1196,9 +1176,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://ml4sts.github.io/open-humanities/instructor/index.html",
   "identifier": "https://ml4sts.github.io/open-humanities/instructor/index.html",
-  "dateCreated": "2025-09-21",
-  "dateModified": "2025-09-21",
-  "datePublished": "2025-09-21"
+  "dateCreated": "2025-09-22",
+  "dateModified": "2025-09-22",
+  "datePublished": "2025-09-22"
 }
 
   </script><script>
