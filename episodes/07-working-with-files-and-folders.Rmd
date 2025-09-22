@@ -49,7 +49,7 @@ $ pwd
 ```
 
 ```output
-/Users/riley/Desktop/shell-lesson
+/Users/humanist/Desktop/shell-lesson
 ```
 
 Here, we will create a new directory and move into it:
@@ -126,15 +126,15 @@ $ ls -lh
 
 ```output
 total 33M
--rw-rw-r-- 1 riley staff 383K Feb 22 2017  201403160_01_text.json
--rw-r--r-- 1 riley staff 3.6M Jan 31 2017  2014-01-31_JA-africa.tsv
--rw-r--r-- 1 riley staff 7.4M Jan 31 2017  2014-01-31_JA-america.tsv
--rw-rw-r-- 1 riley staff 125M Jun 10 2015  2014-01_JA.tsv
--rw-r--r-- 1 riley staff 1.4M Jan 31 2017  2014-02-02_JA-britain.tsv
--rw-r--r-- 1 riley staff 582K Feb  2 2017  33504-0.txt
--rw-r--r-- 1 riley staff 598K Jan 31 2017  829-0.txt
--rw-rw-r-- 1 riley staff  18K Feb 22 2017  diary.html
-drwxr-xr-x 1 riley staff  64B Feb 22 2017  firstdir
+-rw-rw-r-- 1 humanist staff 383K Feb 22 2017  201403160_01_text.json
+-rw-r--r-- 1 humanist staff 3.6M Jan 31 2017  2014-01-31_JA-africa.tsv
+-rw-r--r-- 1 humanist staff 7.4M Jan 31 2017  2014-01-31_JA-america.tsv
+-rw-rw-r-- 1 humanist staff 125M Jun 10 2015  2014-01_JA.tsv
+-rw-r--r-- 1 humanist staff 1.4M Jan 31 2017  2014-02-02_JA-britain.tsv
+-rw-r--r-- 1 humanist staff 582K Feb  2 2017  33504-0.txt
+-rw-r--r-- 1 humanist staff 598K Jan 31 2017  829-0.txt
+-rw-rw-r-- 1 humanist staff  18K Feb 22 2017  diary.html
+drwxr-xr-x 1 humanist staff  64B Feb 22 2017  firstdir
 ```
 
 The files `829-0.txt` and `33504-0.txt` holds the content of book #829 and #33504 on Project Gutenberg. But we've forgot *which* books, so we try the `cat` command to read the text of the first file:
@@ -179,7 +179,7 @@ Archive Foundation, how to help produce our new eBooks, and how to
 subscribe to our email newsletter to hear about new eBooks.
 ```
 
-If ten lines is not enough (or too much), we would check `man head` (or `head --help` when using Windows) to see if there exists an option to specify the number of lines to get (there is: `head -n 20` will print 20 lines).
+If ten lines is not enough (or too much), we would check `man head` to see if there exists an option to specify the number of lines to get (there is: `head -n 20` will print 20 lines).
 
 Another way to navigate files is to view the contents one screen at a time. Type `less 829-0.txt` to see the first screen, `spacebar` to see the next screen and so on, then `q` to quit (return to the command prompt).
 
