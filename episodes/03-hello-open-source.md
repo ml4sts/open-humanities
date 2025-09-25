@@ -61,17 +61,10 @@ In this case the markdown is called the *source* and the HTML is the *rendered o
 These are static sites because other tools, for example wordpress, also separate the content and the style, but they do so dynamically, when a visitor goes to the website, it pulls content from a database, inserts it into the html and then sends it to the visitor's browser. 
 ### Why GitHub Pages is awesome!
 
-GitHub Pages allows you to version control your website. This is useful for a lot of different reasons. It allows you to
-keep a record of what changes you have made. It allows people to reference your website at a particular point in time
-and (if you make your repo open source) to see what it was like at that particular point in time. This is very useful for
-academic citations. Most people have had the experience of following up a reference to a website and either getting a
-404 error or seeing something completely different. Although using versions on your site doesn't guarantee this won't
-happen, it does make it easier to manage old versions of your site.
+GitHub Pages provides an easy way to publish your material mostly for free with easy means to modify it and format it with a nice theme of your preference. It also comes with all the collaboration and version control features that Git and GitHub provide us with.  
+Version control features can be very useful for academic citations. Most people have had the experience of following up a reference to a website and either getting a 404 error or seeing something completely different. Although using versions on your site doesn't guarantee this won't happen, it does make it easier to manage old versions of your site.
+More on that later.
 
-GitHub Pages also mean that you can collaborate on a website with a lot of people without everyone having to
-communicate endlessly back and forwards about what changes need to be made, or have been made already. You can create
-'issues' (things that need discussing or fixing), list things to do in the future, and allow other people visiting your
-website to quickly suggest, and help implement changes through pull requests.
 
 ### Creating a new repository
 
