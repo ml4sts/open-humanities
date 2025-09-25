@@ -63,6 +63,33 @@ If you encounter issues, the Carpentries has a [Configuration Problems and Solut
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
+### Data Files
+
+You need to download some files to follow this lesson:
+
+::::::::::::::::::::::::::::::::::::::::::  prereq
+1. Download [shell-lesson.zip](data/shell-lesson.zip) and move the file to your Desktop.
+2. Unzip/extract the file (ask your instructor if you need help with this step). You should end up with a new folder called `shell-lesson` on your Desktop.
+3. Open the terminal and type `ls` followed by the <kbd>enter</kbd> key.
+
+    ```bash
+    $ ls
+    ```
+
+    You should see a list of files and folders in your current directory.
+
+4. Then type:
+
+    ```bash
+    $ pwd
+    ```
+
+    This command will show you where you are in your file system, which should now be your home directory. In the lesson, you will find out more about the commands `ls`, `pwd` and how to work with the data in `shell-lesson` folder.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
 ## Python
 Python is a very popular scripting programming language. 
 We want to make sure we have it installed to use some packages that are built with python such as `mystmd`
@@ -102,32 +129,6 @@ To install python on macOS, download and run the [python installer](https://www.
 
 ::::::::::::::::::::::::
 
-
-
-### Data Files
-
-You need to download some files to follow this lesson:
-
-::::::::::::::::::::::::::::::::::::::::::  prereq
-1. Download [shell-lesson.zip](data/shell-lesson.zip) and move the file to your Desktop.
-2. Unzip/extract the file (ask your instructor if you need help with this step). You should end up with a new folder called `shell-lesson` on your Desktop.
-3. Open the terminal and type `ls` followed by the <kbd>enter</kbd> key.
-
-    ```bash
-    $ ls
-    ```
-
-    You should see a list of files and folders in your current directory.
-
-4. Then type:
-
-    ```bash
-    $ pwd
-    ```
-
-    This command will show you where you are in your file system, which should now be your home directory. In the lesson, you will find out more about the commands `ls`, `pwd` and how to work with the data in `shell-lesson` folder.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 ## Git
