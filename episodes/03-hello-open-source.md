@@ -68,6 +68,8 @@ More on that later.
 
 ## Creating a new repository
 
+A repository can be thought of in many ways, you can think of it as a big folder that holds all the files of your project, or like a vessel that contains all the data and meta-data of your project. Overall a repository is an entity that represents one full project.
+
 To create a new repo login to your GitHub account. At the top, right corner click on the `+` sign and choose `New repository`
 
 ![](fig\gh_new-repo.png){alt="GitHub create a new repo button"}
