@@ -237,10 +237,10 @@ steps below are for working directly on GitHub:
 - A commit is a snapshot that we can go back to
 - Markup languages use special formatting to label the content and indicate styling in addition to the content in the file, examples include Markdown, ReStructured Text (out of scope), XML, and HTML
 - Markdown is a a style of markup that is human and machine readable, it is rendered as HTML
-- HTML is the formt of markup that web browsers use. 
-- Source content is what we edit and may content developer informtion, rendered content (or built) is what is for the reader, output by a build process
-- GitHub Pages offer an automated way to create a website that is version controlled and accessible for collaboration
-- Collaborating on a GitHub Pages website uses the same Git/GitHub workflow you learned for collaborating via a GitHub repository
+- HTML is the formt of markup that web browsers use
+- Source content is what we edit and may content developer information, rendered content (or built) is what is for the reader, output by a build process
+- GitHub Pages offer a free host for a website that is rendered from simple text
+- Collaboration and version control rules and workflows can be used with GitHub Pages as we shall see in future episodes
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
