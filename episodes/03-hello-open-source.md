@@ -35,7 +35,18 @@ Let's use an example of our own to see what it's like to have an open source pro
 GitHub is a developer platform that allows developers to create and hold projects on it. It is benificial for reasons such as managing different versions of a project, collaboration and task management.
 
 ### GitHub Interface
+:::::::::::::::: instructor
 
+here do a quick over view of the github interface. it changes a lot so screen shots get outdated quickly
+
+
+::::::::::
+
+
+There are several key parts to this interface (in a workshop the instructor will point these out):
+- name and owner of the project (repo)
+- tabs for different content *within* a project (repo): code, issue, PR, ...
+- general github things: notifications, profile/settings ...
 
 
 ## GitHub Pages
