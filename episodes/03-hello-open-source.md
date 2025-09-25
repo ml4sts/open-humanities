@@ -66,7 +66,7 @@ Version control features can be very useful for academic citations. Most people 
 More on that later.
 
 
-### Creating a new repository
+## Creating a new repository
 
 To create a new repo login to your GitHub account. At the top, right corner click on the `+` sign and choose `New repository`
 
