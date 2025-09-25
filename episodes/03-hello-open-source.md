@@ -56,7 +56,9 @@ You can add some files and folders to a repository and GitHub Pages turns it int
 There are multiple ways of doing so, either by having GitHub use an HTML file (`index.html`) directly to publish, or by using a tool that GitHub provides called Jekyll which renders Markdown into HTML. You can use the contents of one md file directly named either `README.md` or `index.md and Jekyll will render them into a webpage making it really easy to setup a blog or a template-based website.
 You can then configure Jekyll with more detailed configuration settings to make your webpage more customized.
 There are many tools to convert markdown (or other simple formats, like [RestructuredText](https://docutils.sourceforge.io/rst.html)) to HTML, called [static site generators](https://jamstack.org/generators/).  We will see another one later, called Mystmd (read myst Markdown). 
+In this case the markdown is called the *source* and the HTML is the *rendered output*.  One way to think about source is that it is all of the contents you need to get to the output, but in an easier to modify form. The rendered output is what we want to share with our users, here readers, but the source is easier to manage.  The static site generator, combines everything.  This makes it so that content that should appear for example on every page does not need to be repeated.  It also allows us to separate the content from the visual style for the most part. 
 
+These are static sites because other tools, for example wordpress, also separate the content and the style, but they do so dynamically, when a visitor goes to the website, it pulls content from a database, inserts it into the html and then sends it to the visitor's browser. 
 ### Why GitHub Pages is awesome!
 
 GitHub Pages allows you to version control your website. This is useful for a lot of different reasons. It allows you to
