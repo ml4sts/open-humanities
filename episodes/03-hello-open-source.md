@@ -182,7 +182,7 @@ Wait a minute for the new changes to render and then view your website again
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Challenge: Contributing to a page owned by someone else (slightly easier way)
+## Challenge: Contributing to a page owned by someone else
 
 To practice open source, GitHub and Markdown we can contribute to a GitHub pages site.
 Pair up in groups of two (or more if needed) and do the exercises below together.
@@ -244,21 +244,6 @@ it's more practical to grant everyone access to commit directly instead.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-> ## Optional challenge: Contributing to a page owned by someone else (slightly more complicated way)
-> 
-> Instead of making edits on the GitHub website you can 'clone' the fork to your local machine
-> and work there.
-
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-Try following the rest of the steps in this guide under ["Time to Submit Your First PR"](https://www.thinkful.com/learn/github-pull-request-tutorial/Writing-a-Good-Commit-Message#Time-to-Submit-Your-First-PR).
-
-(If you followed step 1 and 2 in the previous challenge,
-you already have a fork and you can skip the creation of a new fork.
-Start instead at the section titled "Cloning a fork."
-You can submit multiple pull requests using the same fork.)
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
