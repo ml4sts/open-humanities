@@ -116,13 +116,37 @@ See the [GitHub Pages documentation](https://docs.github.com/en/pages/getting-st
 
 ### View your site
 
-If we now visit `https://some-humanist.github.io/my-website/`,
+If we now visit `https://mystudyroom0.github.io/my-website/`,
 we should see the contents of the index.md file that created earlier.
 Usually it's available instantly, but it can take a few seconds and in the worst case a few minutes if GitHub are very busy.
 
 And here's a preview of the new website
 
 ![](fig\gh-pages_new-webpage.png){alt="GitHub new webpage"}
+
+Here, my repository was owned by an GitHub organization (or group) named `mystudyroom0`, hence the name in the link.
+The repository is named `my-website`, hence the header of the page.
+And the content was what I had typed inside my `README` file which in this case was rendered to be the content of the webpage.
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Challenge: View your own webpage:
+See if you can find the link to your newly generated webpage and share it on eitherpad.
+Add the link to your webpage to the about section of your repository.
+
+::::::::::::::: solution
+
+Remember where in the settings we enabled GitHub Pages, the link should be right there. 
+
+To update your repo's about to add the link to your webpage you can find the about section in the right hand side of the main page of your repo.
+![](fig\gh-about-repo.png){alt="GitHub repo about section"}
+
+
+Click on the gear button and paste the link in the website box.
+
+![](fig\gh-about-settings.png){alt="GitHub about settings"}
+
+
 
 ## Adding new content to your webpage
 
