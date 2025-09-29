@@ -22,49 +22,23 @@ exercises: 2
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Introduction
+How do we make our webpage more professional?
+
+With dynamic links, nice looking figures and decent citing of papers and articals.
 
 
+### Adding figures 
+Adding figures to your webpage is essential to to make your webpage more descriptive.
+To do so, we add the figure/image file in the project directory. Then we link it in the page/md-file that we want it to show up in by adding its relative path using special md syntax.
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
-
-Inline instructor notes can help inform instructors of timing challenges
-associated with the lessons. They appear in the "Instructor View"
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::: challenge 
-
-## Challenge 1: Can you do it?
-
-
-:::::::::::::::::::::::: solution 
-
-## Output
- 
-```output
-
+```md
+![](../folder/figure_path.png){alt="This is a figure that is located inside folder"}
 ```
 
-:::::::::::::::::::::::::::::::::
+The `![]` tells markdown that there will be an image linked next. Within parenthesis (`()`) we put a relative path to an image from the location of the markdown file. As an optional add-on we use curly brackets (`{}`)
 
+### Citing papers
 
-## Challenge 2: how do you nest solutions within challenge blocks?
-
-:::::::::::::::::::::::: solution 
-
-You can add a line with at least three colons and a `solution` tag.
-
-:::::::::::::::::::::::::::::::::
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-## Figures
-
-You can use pandoc markdown for static figures with the following syntax:
-
-`![optional caption that appears below the figure](figure url){alt='alt text for
-accessibility purposes'}`
-
-![You belong in The Carpentries!](https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg){alt='Blue Carpentries hex person logo with no text.'}
 
 
 
