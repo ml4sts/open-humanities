@@ -1,5 +1,5 @@
 ---
-title: '16-What-is-myst'
+title: 'What-is-myst'
 teaching: 10
 exercises: 2
 ---
