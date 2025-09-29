@@ -42,9 +42,11 @@ Bash is the default shell on most Linux distributions and older versions of macO
 ### Windows
 On Windows, CMD or PowerShell are normally available as the default shell environments. These use a syntax and set of applications unique to Windows systems and are incompatible with the more widely used Unix utilities. However, a Bash shell can be installed on Windows to provide a Unix-like environment. For this lesson we suggest using Git Bash, part of the >[Git for Windows](https://gitforwindows.org/) package:
   
-  - Download the latest Git for Windows [installer](https://gitforwindows.org/).
-  - Double click the `.exe` file to run the installer (for example, `Git-2.42.0.2-64-bit.exe`) using the default settings.
-  - Once installed, open the shell by selecting Git Bash from the start menu (in the Git folder).
+  - Download the latest Git for Windows [installer](https://gitforwindows.org/)
+  - Double click the `.exe` file to run the installer (for example, `Git-2.42.0.2-64-bit.exe`) using the default settings
+  - Once installed, open the shell by selecting Git Bash from the start menu (in the Git folder)
+
+There are also some more advanced solutions available for running Bash commands on Windows. A Bash shell command-line tool is available for Windows which you can use by enabling the [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install). You can also run Bash commands on a remote computer or server that already has a Unix Shell from your Windows machine. This can be done through a Secure Shell (SSH) client. One client available for free for Windows is [PuTTY](https://www.putty.org/).
 
 ### Linux
 The default shell is usually Bash, but if your machine is set up differently you can run it by opening a terminal and typing `bash` followed by the <kbd>enter</kbd> key. There is no need to install anything. Look for Terminal in your applications to start the Bash shell.
@@ -55,13 +57,37 @@ Open Terminal from `/Applications/Utilities` or Spotlight Search. In versions be
 :::::::::::::::
 
 
-<!-- AS: Most likely for deletion... -->
-- **Windows:** There are also some more advanced solutions available for running Bash commands on Windows. A Bash shell command-line tool is available for Windows 10, which you can use if you enable the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10). You can also run Bash commands on a remote computer or server that already has a Unix Shell from your Windows machine. This can be done through a Secure Shell (SSH) client. One client available for free for Windows is [PuTTY](https://www.putty.org/).
-
 If you encounter issues, the Carpentries has a [Configuration Problems and Solutions wiki page](https://github.com/carpentries/workshop-template/wiki/Configuration-Problems-and-Solutions) that may help.
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+### Data Files
+
+You need to download some files to follow this lesson:
+
+::::::::::::::::::::::::::::::::::::::::::  prereq
+1. Download [shell-lesson.zip](data/shell-lesson.zip) and move the file to your Desktop.
+2. Unzip/extract the file (ask your instructor if you need help with this step). You should end up with a new folder called `shell-lesson` on your Desktop.
+3. Open the terminal and type `ls` followed by the <kbd>enter</kbd> key.
+
+    ```bash
+    $ ls
+    ```
+
+    You should see a list of files and folders in your current directory.
+
+4. Then type:
+
+    ```bash
+    $ pwd
+    ```
+
+    This command will show you where you are in your file system, which should now be your home directory. In the lesson, you will find out more about the commands `ls`, `pwd` and how to work with the data in `shell-lesson` folder.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 
 ## Python
@@ -105,36 +131,10 @@ To install python on macOS, download and run the [python installer](https://www.
 
 
 
-### Data Files
-
-You need to download some files to follow this lesson:
-
-::::::::::::::::::::::::::::::::::::::::::  prereq
-1. Download [shell-lesson.zip](https://librarycarpentry.org/lc-shell/data/shell-lesson.zip) and move the file to your Desktop.
-<!-- 1. Download [shell-lesson.zip](data/shell-lesson.zip) and move the file to your Desktop. -->
-2. Unzip/extract the file (ask your instructor if you need help with this step). You should end up with a new folder called `shell-lesson` on your Desktop.
-3. Open the terminal and type `ls` followed by the <kbd>enter</kbd> key.
-
-    ```bash
-    $ ls
-    ```
-
-    You should see a list of files and folders in your current directory.
-
-4. Then type:
-
-    ```bash
-    $ pwd
-    ```
-
-    This command will show you where you are in your file system, which should now be your home directory. In the lesson, you will find out more about the commands `ls`, `pwd` and how to work with the data in `shell-lesson` folder.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
 ## Git
 Git is a version control tool used to track changes made on a project. Later was used for collaboration on projects as well
-:::::::::::: prereq
+
+:::::::::::::::::::::::::::::::::::: prereq
 ## Installing Git
 
 Since several Carpentries lessons rely on Git, please see
@@ -144,7 +144,7 @@ instructions on installing Git for various operating systems.
 - [Git installation on Windows][workshop-setup]
 - [Git installation on MacOS][workshop-setup]
 - [Git installation on Linux][workshop-setup]
-::::::::::::
+::::::::::::::::::::::::::::::::::::
 
 
 ## GitHub
