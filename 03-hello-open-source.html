@@ -224,12 +224,23 @@
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         3. Hello Open Source
         </span>
-      
+      </button>
     </div><!--/div.accordion-header-->
+
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
+      <div class="accordion-body">
+        <ul><li><a href="#what-is-open-source">What is open source</a></li>
+<li><a href="#github">GitHub</a></li>
+<li><a href="#github-pages">GitHub Pages</a></li>
+<li><a href="#creating-a-new-repository">Creating a new repository</a></li>
+<li><a href="#adding-new-content-to-your-webpage">Adding new content to your webpage</a></li>
+        </ul></div><!--/div.accordion-body-->
+    </div><!--/div.accordion-collapse-->
 
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -464,7 +475,9 @@
 <div class="card-body">
 <div class="inner">
 <h3 class="card-title">Questions</h3>
-<ul><li>what is open source</li>
+<ul><li>What is open source?</li>
+<li>What is GitHub Pages?</li>
+<li>How can I use GitHub Pages to collaborate and share my work?</li>
 </ul></div>
 </div>
 </div>
@@ -472,14 +485,305 @@
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<ul><li>Complete the steps to make a commit</li>
+<ul><li>Create a GitHub repo</li>
+<li>Complete the steps to make a commit</li>
 <li>Differentiate Markdown and HTML</li>
 <li>Differentiate source and rendered content</li>
 <li>Identify the parts of the GitHub Interface</li>
 <li>Create a Website using GitHub Pages default settings</li>
+<li>Share the link to your webpage with a partner and confirm they can
+view it</li>
+<li>Consider what options there are to collaborate on a website or
+contribute to someone else’s webpage</li>
 </ul></div>
 </div>
 </div>
+</div>
+</div>
+<section><h2 class="section-heading" id="what-is-open-source">What is open source<a class="anchor" aria-label="anchor" href="#what-is-open-source"></a></h2>
+<hr class="half-width"><p>Open source is when a software or a project is published online and
+available to the public to view the details of or contribute to.</p>
+<p>Let’s use an example of our own to see what it’s like to have an open
+source project.</p>
+</section><section><h2 class="section-heading" id="github">GitHub<a class="anchor" aria-label="anchor" href="#github"></a></h2>
+<hr class="half-width"><p>GitHub is a developer platform that allows developers to create and
+hold projects on it. It is benificial for reasons such as managing
+different versions of a project, collaboration and task management.</p>
+<div class="section level3">
+<h3 id="github-interface">GitHub Interface<a class="anchor" aria-label="anchor" href="#github-interface"></a></h3>
+
+<p>There are several key parts to this interface (in a workshop the
+instructor will point these out): - name and owner of the project (repo)
+- tabs for different content <em>within</em> a project (repo): code,
+issue, PR, … - general github things: notifications, profile/settings
+…</p>
+</div>
+</section><section><h2 class="section-heading" id="github-pages">GitHub Pages<a class="anchor" aria-label="anchor" href="#github-pages"></a></h2>
+<hr class="half-width"><p>GitHub Pages is a simple service to publish a website directly on
+GitHub from a Git repository. You can add some files and folders to a
+repository and GitHub Pages turns it into a website. There are multiple
+ways of doing so, either by having GitHub use an HTML file
+(<code>index.html</code>) directly to publish, or by using a tool that
+GitHub provides called Jekyll which renders Markdown into HTML. You can
+use the contents of one md file directly named either
+<code>README.md</code> or `index.md and Jekyll will render them into a
+webpage making it really easy to setup a blog or a template-based
+website. You can then configure Jekyll with more detailed configuration
+settings to make your webpage more customized. There are many tools to
+convert markdown (or other simple formats, like <a href="https://docutils.sourceforge.io/rst.html" class="external-link">RestructuredText</a>) to
+HTML, called <a href="https://jamstack.org/generators/" class="external-link">static site
+generators</a>. We will see another one later, called Mystmd (read myst
+Markdown). In this case the markdown is called the <em>source</em> and
+the HTML is the <em>rendered output</em>. One way to think about source
+is that it is all of the contents you need to get to the output, but in
+an easier to modify form. The rendered output is what we want to share
+with our users, here readers, but the source is easier to manage. The
+static site generator, combines everything. This makes it so that
+content that should appear for example on every page does not need to be
+repeated. It also allows us to separate the content from the visual
+style for the most part.</p>
+<p>These are static sites because other tools, for example wordpress,
+also separate the content and the style, but they do so dynamically,
+when a visitor goes to the website, it pulls content from a database,
+inserts it into the html and then sends it to the visitor’s browser. ###
+Why GitHub Pages is awesome!</p>
+<p>GitHub Pages provides an easy way to publish your material mostly for
+free with easy means to modify it and format it with a nice theme of
+your preference. It also comes with all the collaboration and version
+control features that Git and GitHub provide us with.<br>
+Version control features can be very useful for academic citations. Most
+people have had the experience of following up a reference to a website
+and either getting a 404 error or seeing something completely different.
+Although using versions on your site doesn’t guarantee this won’t
+happen, it does make it easier to manage old versions of your site. More
+on that later.</p>
+</section><section><h2 class="section-heading" id="creating-a-new-repository">Creating a new repository<a class="anchor" aria-label="anchor" href="#creating-a-new-repository"></a></h2>
+<hr class="half-width"><p>A repository can be thought of in many ways, you can think of it as a
+big folder that holds all the files of your project, or like a vessel
+that contains all the data and meta-data of your project. Overall a
+repository is an entity that represents one full project.</p>
+<p>To create a new repo login to your GitHub account. At the top, right
+corner click on the <code>+</code> sign and choose
+<code>New repository</code></p>
+<figure><img src="fig%5Cgh_new-repo.png" alt="GitHub create a new repo button" class="figure mx-auto d-block"></figure><p>Give your repository a meaningful name that suits the contents it
+shall hold. And we encourage adding something to the optional
+description section. Toggle the <code>Add a README file</code> button
+and click on the green <code>Create Repository</code> button.</p>
+<figure><img src="fig%5Cgh-new-repo-name.png" alt="GitHub create a new repo page" class="figure mx-auto d-block"></figure><p>Here is a preview of how the new repo would look like:</p>
+<figure><img src="fig%5Cgh_new-repo-page.png" alt="GitHub new repo view" class="figure mx-auto d-block"></figure><div class="section level3">
+<h3 id="enable-github-pages">Enable GitHub Pages<a class="anchor" aria-label="anchor" href="#enable-github-pages"></a></h3>
+<p>GitHub Pages is turned off by default for all new repositories, and
+can be turned on in the settings menu for any repository.</p>
+<p>Let’s set up a new site by enabling GitHub Pages for our project.</p>
+<p>Go to the Pages section of your repository’s Settings:</p>
+<figure><img src="fig/github-repo-settings-pages.png" alt="GitHub repository's Pages settings" class="figure mx-auto d-block"></figure><div class="section level4">
+<h4 id="source-branch-required">Source branch (required)<a class="anchor" aria-label="anchor" href="#source-branch-required"></a></h4>
+<p>Pages needs to know the branch in your repository from which you want
+to serve your site. This can be any branch, including
+<code>main</code>.</p>
+<p>Select then save the source branch:</p>
+<figure><img src="fig/github-repo-settings-pages-branch.png" alt="GitHub Pages source branch menu" class="figure mx-auto d-block"></figure><figure><img src="fig/github-repo-settings-pages-save.png" alt="GitHub Pages source branch save" class="figure mx-auto d-block"></figure></div>
+<div class="section level4">
+<h4 id="theme-optional">Theme (optional)<a class="anchor" aria-label="anchor" href="#theme-optional"></a></h4>
+<p>GitHub Pages provides different themes to visually style and organize
+your site’s content. Choosing a theme is optional, and themes can be
+interchanged quickly.</p>
+<figure><img src="fig/github-repo-settings-pages-theme.png" alt="GitHub Pages choose theme" class="figure mx-auto d-block"></figure><p>See the <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/adding-a-theme-to-your-github-pages-site-with-the-theme-chooser" class="external-link">GitHub
+Pages documentation</a> for further information on using themes.</p>
+</div>
+</div>
+<div class="section level3">
+<h3 id="view-your-site">View your site<a class="anchor" aria-label="anchor" href="#view-your-site"></a></h3>
+<p>If we now visit
+<code>https://mystudyroom0.github.io/my-website/</code>, we should see
+the contents of the index.md file that created earlier. Usually it’s
+available instantly, but it can take a few seconds and in the worst case
+a few minutes if GitHub are very busy.</p>
+<p>And here’s a preview of the new website</p>
+<figure><img src="fig%5Cgh-pages_new-webpage.png" alt="GitHub new webpage" class="figure mx-auto d-block"></figure><p>Here, my repository was owned by an GitHub organization (or group)
+named <code>mystudyroom0</code>, hence the name in the link. The
+repository is named <code>my-website</code>, hence the header of the
+page. And the content was what I had typed inside my <code>README</code>
+file which in this case was rendered to be the content of the
+webpage.</p>
+<div id="challenge-view-your-own-webpage" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="challenge-view-your-own-webpage" class="callout-inner">
+<h3 class="callout-title">Challenge: View your own webpage:</h3>
+<div class="callout-content">
+<p>See if you can find the link to your newly generated webpage and
+share it on eitherpad. Add the link to your webpage to the about section
+of your repository.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<p>Remember where in the settings we enabled GitHub Pages, the link
+should be right there.</p>
+<p>To update your repo’s about to add the link to your webpage you can
+find the about section in the right hand side of the main page of your
+repo. <img src="fig%5Cgh-about-repo.png" alt="GitHub repo about section" class="figure"></p>
+<p>Click on the gear button and paste the link in the website box.</p>
+<figure><img src="fig%5Cgh-about-settings.png" alt="GitHub about settings" class="figure mx-auto d-block"></figure></div>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="adding-new-content-to-your-webpage">Adding new content to your webpage<a class="anchor" aria-label="anchor" href="#adding-new-content-to-your-webpage"></a></h2>
+<hr class="half-width"><p>Find a text file of an article of yours or a one page paper that you
+would want to see used as the content of your new webpage.</p>
+<p>On your repository <code>code&lt;&gt;</code> page click
+<code>Upload files</code> from the <code>Add file</code> dropdown
+menu</p>
+<figure><img src="fig%5Cgh_add-file.png" alt="GitHub add file" class="figure mx-auto d-block"></figure><p>Drag your file and drop it in the following page and select
+<code>Commit changes</code></p>
+<figure><img src="fig%5Cgh_upload-file.png" alt="GitHub upload file" class="figure mx-auto d-block"></figure><div id="callout1" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>A commit is an annotated change or a checkpoint in a repository. We
+shall talk more about it later on.</p>
+</div>
+</div>
+</div>
+<p>After successfully uploading the file it can be found in the list of
+files of your repo. Click on it to open it and then click on the edit
+button on the top of the file.<br>
+Rename the file to <code>index.md</code> then commit the changes
+again.</p>
+<figure><img src="fig/github-edit-pencil.png" alt="GitHub edit pencil" class="figure mx-auto d-block"></figure><div id="callout2" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>Notice the “commit message” automatically generated by GitHub
+regarding this change.</p>
+</div>
+</div>
+</div>
+<p>Wait a minute for the new changes to render and then view your
+website again</p>
+<figure><img src="fig%5Cgh_updated-webpage.png" alt="GitHub new webpage with new content" class="figure mx-auto d-block"></figure><div id="challenge-contributing-to-a-page-owned-by-someone-else" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="challenge-contributing-to-a-page-owned-by-someone-else" class="callout-inner">
+<h3 class="callout-title">Challenge: Contributing to a page owned by
+someone else</h3>
+<div class="callout-content">
+<p>To practice open source, GitHub and Markdown we can contribute to a
+GitHub pages site. Pair up in groups of two (or more if needed) and do
+the exercises below together.</p>
+<ol style="list-style-type: decimal"><li><p>Go to <a href="">https://github.com/some-humanist/my-website</a>,
+where “some-humanist” is the username of your exercise partner.</p></li>
+<li><p>Find the website link in their about section of their repo and
+open it.</p></li>
+<li><p>Scroll to the bottom of their webpage and find the button that
+says <code>improve this page</code>.</p></li>
+<li><p>Click on <code>Fork this repository</code>. This takes you to a
+file editor that edits your partner’s article.</p></li>
+<li><p>Now is good chance to try some Markdown syntax. Try some of the
+examples at <a href="https://guides.github.com/features/mastering-markdown/" class="external-link">Mastering
+Markdown</a>. You can preview how it will look before you commit
+changes.</p></li>
+<li><p>Once you are ready to commit, enter a short commit message,
+select “Create a new branch for this commit and start a pull request”
+and press “Propose changes” to avoid commiting directly to the main
+branch.</p></li>
+</ol><figure><img src="fig/github-commit-pr.png" alt="Commit and create pull request" class="figure mx-auto d-block"></figure><ol style="list-style-type: decimal"><li><p>You can now go to the repository on your account and click “New
+Pull Request” button, where you can select base branches repositories,
+review the changes and add an additional explanation before sending the
+pull request (this is especially useful if you make a single pull
+request for multiple commits).</p></li>
+<li><p>Your partner should now see a pull request under the “Pull
+requests” tab and can accept (“Merge pull request”) the changes there.
+Try this.</p></li>
+</ol><p>This whole process of making a fork and a pull request might seem a
+bit cumbersome. Try to think of why it was needed? And why it’s called
+“pull request”?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div class="accordion-body">
+<p>We made a fork and a pull request because we did not have permission
+to edit (or commit) the repository directly. A fork is a copy of the
+repository that we <em>can</em> edit. By making a pull request we ask
+the owner of the repository if they would like to accept (pull in) the
+changes from our fork (our copy) into their version. The owner can then
+review the changes and choose to accept or reject them.</p>
+<div id="callout3" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>A fork is a copy of someone else’s project that is owned by you!</p>
+</div>
+</div>
+</div>
+<div id="callout4" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>A pull request is a proposal from you to the owner or lead of a
+project to make some changes to it. More on PRs later.</p>
+</div>
+</div>
+</div>
+<p>You can open pull requests on any repository you find on GitHub. If
+you are a group of people who plan to collaborate closely, on the other
+hand, it’s more practical to grant everyone access to commit directly
+instead.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="optional-challenge-adding-an-html-page" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="optional-challenge-adding-an-html-page" class="callout-inner">
+<h3 class="callout-title">Optional challenge: Adding an HTML page</h3>
+<div class="callout-content">
+<p>GitHub Pages is not limited to Markdown. If you know some HTML, try
+adding an HTML page to your repository. You could do this on the command
+line or directly on GitHub. The steps below are for working directly on
+GitHub:</p>
+<ol style="list-style-type: decimal"><li>To add a new file directly on GitHub, press the “Create new file”
+button.</li>
+</ol><figure><img src="fig/github-create-new-file.png" alt="Create new file on GitHub" class="figure mx-auto d-block"></figure><ol start="2" style="list-style-type: decimal"><li><p>Name it ‘test.html’, add some HTML and click “Commit new
+file”.</p></li>
+<li><p>Try opening
+<code>https://some-humanist.github.io/hello-world/test</code> (replace
+“some-humanist” with your username). Notice that the HTML extension is
+not included.</p></li>
+</ol></div>
 </div>
 </div>
 <div id="keypoints1" class="callout keypoints">
@@ -497,10 +801,14 @@ indicate styling in addition to the content in the file, examples
 include Markdown, ReStructured Text (out of scope), XML, and HTML</li>
 <li>Markdown is a a style of markup that is human and machine readable,
 it is rendered as HTML</li>
-<li>HTML is the formt of markup that web browsers use.</li>
-<li>Source content is what we edit and may content developer informtion,
-rendered content (or built) is what is for the reader, output by a build
-process</li>
+<li>HTML is the formt of markup that web browsers use</li>
+<li>Source content is what we edit and may content developer
+information, rendered content (or built) is what is for the reader,
+output by a build process</li>
+<li>GitHub Pages offer a free host for a website that is rendered from
+simple text</li>
+<li>Collaboration and version control rules and workflows can be used
+with GitHub Pages as we shall see in future episodes</li>
 </ul></div>
 </div>
 </div>
@@ -508,10 +816,7 @@ process</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-
-
-
-      </div> <!-- / div.lesson-content -->
+</section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="02-jargon-busting.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="04-homework.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
