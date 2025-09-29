@@ -341,7 +341,7 @@
 <div class="accordion accordion-flush" id="accordionFlush17">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading17">
-        <a href="16-what-is-myst.html">16. 16-what-is-myst</a>
+        <a href="16-what-is-myst.html">16. 16-What-is-myst</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -361,7 +361,8 @@
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
         <ul><li><a href="#introduction">Introduction</a></li>
-<li><a href="#figures">Figures</a></li>
+<li><a href="#myst-themes">MyST Themes</a></li>
+<li><a href="#glossary">Glossary</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
 
@@ -444,7 +445,7 @@
       <div class="d-none d-sm-none d-md-block">
         <a class="chapter-link" href="../instructor/16-what-is-myst.html" rel="prev">
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
-          Previous: 16-what-is-myst
+          Previous: 16-What-is-myst
         </a>
         <a class="chapter-link float-end" href="../instructor/18-dynamic-content.html" rel="next">
           Next: 18-dynamic-content...
@@ -475,7 +476,7 @@
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul><li>How do you format your webpage using frontmatter?</li>
-<li>How do you have preview glossary in oyur webpage nicely?</li>
+<li>How do you have preview glossary in your webpage nicely?</li>
 <li>How do you change your webpage’s theme?</li>
 </ul></div>
 </div>
@@ -494,80 +495,44 @@ your webpage</li>
 </div>
 </div>
 <section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a></h2>
-<hr class="half-width"><div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
-  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
-</button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
-<div class="accordion-body">
-<p>Inline instructor notes can help inform instructors of timing
-challenges associated with the lessons. They appear in the “Instructor
-View”</p>
-</div>
-</div>
-</div>
-</div>
-<div id="challenge-1-can-you-do-it" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<span class="callout-header">Challenge</span>
-<div id="challenge-1-can-you-do-it" class="callout-inner">
-<h3 class="callout-title">Challenge 1: Can you do it?</h3>
-<div class="callout-content">
-
-</div>
-</div>
-</div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1"> Output </h4>
-</button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
-<div class="accordion-body">
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+<hr class="half-width"><p>Frontmatter is a way to format your project. It is a section
+separated by <code>---</code> as delimeters that can be found in the
+<code>myst.md</code> file or can be added individually at the top of any
+<code>md</code> file to affect individual pages.</p>
+<p>Frontmatter is one of the things that makes MyST special. Remember
+that we talked about how MyST is a tool that gives our project
+superpowers by giving it a more dynamic and interactive interface.</p>
+<p>Frontmatter fields can be used in different scopes that can be
+divided into four: * Page &amp; project * Page only * Page that can
+override project * Project only</p>
+<p>Example frontmatter:</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code></code></pre>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> My First Article</span></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> 2022-05-11</span></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="fu">authors</span><span class="kw">:</span></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Smart Person</span></span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a><span class="at">    </span><span class="fu">affiliations</span><span class="kw">:</span></span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> University of Rhode Island</span></span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a><span class="pp">---</span></span></code></pre>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<span class="callout-header">Challenge</span>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout-inner">
-<h3 class="callout-title">Challenge 2: how do you nest solutions within
-challenge blocks?</h3>
-<div class="callout-content">
-
-</div>
-</div>
-</div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
-</button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
-<div class="accordion-body">
-<p>You can add a line with at least three colons and a
-<code>solution</code> tag.</p>
-</div>
-</div>
-</div>
-</div>
-</section><section><h2 class="section-heading" id="figures">Figures<a class="anchor" aria-label="anchor" href="#figures"></a></h2>
-<hr class="half-width"><p>You can use pandoc markdown for static figures with the following
-syntax:</p>
-<p><code>![optional caption that appears below the figure](figure url){alt='alt text for accessibility purposes'}</code></p>
-<figure><img src="https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg" alt="Blue Carpentries hex person logo with no text." class="figure mx-auto d-block"><div class="figcaption">You belong in The Carpentries!</div>
-</figure><div id="keypoints1" class="callout keypoints">
+</section><section><h2 class="section-heading" id="myst-themes">MyST Themes<a class="anchor" aria-label="anchor" href="#myst-themes"></a></h2>
+<hr class="half-width"><p>One of the main things that the configuration file can be used for is
+to choose the main theme of the webpage. There are two themes offered by
+myst: <code>book-theme</code> &amp; <code>article-theme</code></p>
+</section><section><h2 class="section-heading" id="glossary">Glossary<a class="anchor" aria-label="anchor" href="#glossary"></a></h2>
+<hr class="half-width"><p>A gossary is a collection of definitions for the different terms that
+can be found of your website. Since your website is either a in a book
+style or an article style. There’s a large chance that it holds great
+scienfic information. Some of which might need to be well-defined for
+your target audience or the general public.</p>
+<div class="section level3">
+<h3 id="accronyms">Accronyms<a class="anchor" aria-label="anchor" href="#accronyms"></a></h3>
+<p>Here is a <a href="https://mystmd.org/guide/frontmatter#available-frontmatter-fields" class="external-link">list
+of frontmatter fields</a> that can be used</p>
+<div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
 </div>
@@ -582,6 +547,7 @@ syntax:</p>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
+</div>
 </section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/16-what-is-myst.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
@@ -591,7 +557,7 @@ any links that you are not going to use.
       <div class="d-none d-sm-none d-md-block">
         <a class="chapter-link" href="../instructor/16-what-is-myst.html" rel="prev">
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
-          Previous: 16-what-is-myst
+          Previous: 16-What-is-myst
         </a>
         <a class="chapter-link float-end" href="../instructor/18-dynamic-content.html" rel="next">
           Next: 18-dynamic-content...

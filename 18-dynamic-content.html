@@ -341,7 +341,7 @@
 <div class="accordion accordion-flush" id="accordionFlush17">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading17">
-        <a href="16-what-is-myst.html">16. 16-what-is-myst</a>
+        <a href="16-what-is-myst.html">16. 16-What-is-myst</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -370,7 +370,6 @@
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
         <ul><li><a href="#introduction">Introduction</a></li>
-<li><a href="#figures">Figures</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
 
@@ -492,66 +491,28 @@ view</li>
 </div>
 </div>
 <section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a></h2>
-<hr class="half-width"><div id="challenge-1-can-you-do-it" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<span class="callout-header">Challenge</span>
-<div id="challenge-1-can-you-do-it" class="callout-inner">
-<h3 class="callout-title">Challenge 1: Can you do it?</h3>
-<div class="callout-content">
-
-</div>
-</div>
-</div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1"> Output </h4>
-</button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
-<div class="accordion-body">
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+<hr class="half-width"><p>How do we make our webpage more professional?</p>
+<p>With dynamic links, nice looking figures and decent citing of papers
+and articals.</p>
+<div class="section level3">
+<h3 id="adding-figures">Adding figures<a class="anchor" aria-label="anchor" href="#adding-figures"></a></h3>
+<p>Adding figures to your webpage is essential to to make your webpage
+more descriptive. To do so, we add the figure/image file in the project
+directory. Then we link it in the page/md-file that we want it to show
+up in by adding its relative path using special md syntax.</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">MD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code></code></pre>
+<pre class="sourceCode md" tabindex="0"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="al">![](../folder/figure_path.png)</span>{alt="This is a figure that is located inside folder"}</span></code></pre>
 </div>
+<p>The <code>![]</code> tells markdown that there will be an image
+linked next. Within parenthesis (<code>()</code>) we put a relative path
+to an image from the location of the markdown file. As an optional
+add-on we use curly brackets (<code>{}</code>)</p>
 </div>
-</div>
-</div>
-</div>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<span class="callout-header">Challenge</span>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout-inner">
-<h3 class="callout-title">Challenge 2: how do you nest solutions within
-challenge blocks?</h3>
-<div class="callout-content">
-
-</div>
-</div>
-</div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
-</button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
-<div class="accordion-body">
-<p>You can add a line with at least three colons and a
-<code>solution</code> tag.</p>
-</div>
-</div>
-</div>
-</div>
-</section><section><h2 class="section-heading" id="figures">Figures<a class="anchor" aria-label="anchor" href="#figures"></a></h2>
-<hr class="half-width"><p>You can use pandoc markdown for static figures with the following
-syntax:</p>
-<p><code>![optional caption that appears below the figure](figure url){alt='alt text for accessibility purposes'}</code></p>
-<figure><img src="https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg" alt="Blue Carpentries hex person logo with no text." class="figure mx-auto d-block"><div class="figcaption">You belong in The Carpentries!</div>
-</figure><div id="keypoints1" class="callout keypoints">
+<div class="section level3">
+<h3 id="citing-papers">Citing papers<a class="anchor" aria-label="anchor" href="#citing-papers"></a></h3>
+<div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
 </div>
@@ -566,6 +527,7 @@ syntax:</p>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
+</div>
 </section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="17-formatting-with-frontmatter.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
