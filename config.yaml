@@ -17,12 +17,10 @@ carpentry: 'incubator'
 # carpentry_description: "Custom Carpentry"
 
 # Overall title for pages.
-
-title: 'Open Humanities' 
-
+title: 'Open Humanities'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: 
+created:
 
 # Comma-separated list of keywords for the lesson
 keywords: 'software, data, lesson, The Carpentries'
@@ -35,17 +33,13 @@ life_cycle: 'pre-alpha'
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-
-source: 'https://github.com/ml4sts/open-humanities' # FIXME
-
+source: 'https://github.com/ml4sts/open-humanities'
 
 # Default branch of your lesson
 branch: 'main'
 
 # Who to contact if there are any issues
-
-contact: 'brownsarahm@uri.edu' 
-
+contact: 'brownsarahm@uri.edu'
 
 # Navigation ------------------------------------------------
 #
@@ -70,7 +64,7 @@ contact: 'brownsarahm@uri.edu'
 # - another-learner.md
 
 # Order of episodes in your lesson
-episodes: 
+episodes:
 - 01-introduction.md
 - 02-jargon-busting.md
 - 03-hello-open-source.md
@@ -86,15 +80,21 @@ episodes:
 - 13-sharing.Rmd
 - 14-review.Rmd
 - 15-github-pages.Rmd
+- 16-what-is-myst.Rmd
+- 17-formatting-with-frontmatter.md
+- 18-dynamic-content.md
+- 19-publishing-myst.md
+- 20-closing-next-steps.md
+
 
 # Information for Learners
-learners: 
+learners:
 
 # Information for Instructors
-instructors: 
+instructors:
 
 # Learner Profiles
-profiles: 
+profiles:
 
 # Customisation ---------------------------------------------
 #
