@@ -761,13 +761,21 @@ utilities. However, a Bash shell can be installed on Windows to provide
 a Unix-like environment. For this lesson we suggest using Git Bash, part
 of the &gt;<a href="https://gitforwindows.org/" class="external-link">Git for Windows</a>
 package:</p>
-<ul><li>Download the latest Git for Windows <a href="https://gitforwindows.org/" class="external-link">installer</a>.</li>
+<ul><li>Download the latest Git for Windows <a href="https://gitforwindows.org/" class="external-link">installer</a>
+</li>
 <li>Double click the <code>.exe</code> file to run the installer (for
 example, <code>Git-2.42.0.2-64-bit.exe</code>) using the default
-settings.</li>
+settings</li>
 <li>Once installed, open the shell by selecting Git Bash from the start
-menu (in the Git folder).</li>
-</ul></div>
+menu (in the Git folder)</li>
+</ul><p>There are also some more advanced solutions available for running
+Bash commands on Windows. A Bash shell command-line tool is available
+for Windows which you can use by enabling the <a href="https://learn.microsoft.com/en-us/windows/wsl/install" class="external-link">Windows
+Subsystem for Linux</a>. You can also run Bash commands on a remote
+computer or server that already has a Unix Shell from your Windows
+machine. This can be done through a Secure Shell (SSH) client. One
+client available for free for Windows is <a href="https://www.putty.org/" class="external-link">PuTTY</a>.</p>
+</div>
 <div id="nav-tabpanel-1-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-2">
 <p>The default shell is usually Bash, but if your machine is set up
 differently you can run it by opening a terminal and typing
@@ -785,18 +793,50 @@ your terminal window followed by the <kbd>enter</kbd> key.</p>
 </div>
 </div>
 </div>
-<!-- AS: Most likely for deletion... -->
-<ul><li>
-<strong>Windows:</strong> There are also some more advanced
-solutions available for running Bash commands on Windows. A Bash shell
-command-line tool is available for Windows 10, which you can use if you
-enable the <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10" class="external-link">Windows
-Subsystem for Linux</a>. You can also run Bash commands on a remote
-computer or server that already has a Unix Shell from your Windows
-machine. This can be done through a Secure Shell (SSH) client. One
-client available for free for Windows is <a href="https://www.putty.org/" class="external-link">PuTTY</a>.</li>
-</ul><p>If you encounter issues, the Carpentries has a <a href="https://github.com/carpentries/workshop-template/wiki/Configuration-Problems-and-Solutions" class="external-link">Configuration
+<p>If you encounter issues, the Carpentries has a <a href="https://github.com/carpentries/workshop-template/wiki/Configuration-Problems-and-Solutions" class="external-link">Configuration
 Problems and Solutions wiki page</a> that may help.</p>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="data-files">Data Files<a class="anchor" aria-label="anchor" href="#data-files"></a></h3>
+<p>You need to download some files to follow this lesson:</p>
+<div id="prereq2" class="callout prereq">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check"></i>
+</div>
+<span class="callout-header">Prerequisite</span>
+<div class="callout-inner">
+<div class="callout-content">
+<ol style="list-style-type: decimal"><li><p>Download <a href="../data/shell-lesson.zip">shell-lesson.zip</a> and
+move the file to your Desktop.</p></li>
+<li><p>Unzip/extract the file (ask your instructor if you need help with
+this step). You should end up with a new folder called
+<code>shell-lesson</code> on your Desktop.</p></li>
+<li>
+<p>Open the terminal and type <code>ls</code> followed by the
+<kbd>enter</kbd> key.</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">$</span> ls</span></code></pre>
+</div>
+<p>You should see a list of files and folders in your current
+directory.</p>
+</li>
+<li>
+<p>Then type:</p>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">$</span> pwd</span></code></pre>
+</div>
+<p>This command will show you where you are in your file system, which
+should now be your home directory. In the lesson, you will find out more
+about the commands <code>ls</code>, <code>pwd</code> and how to work
+with the data in <code>shell-lesson</code> folder.</p>
+</li>
+</ol></div>
 </div>
 </div>
 </div>
@@ -860,53 +900,17 @@ sudo apt install python3-pip</code></pre>
 </div>
 </div>
 </div>
-<div class="section level3">
-<h3 id="data-files">Data Files<a class="anchor" aria-label="anchor" href="#data-files"></a></h3>
-<p>You need to download some files to follow this lesson:</p>
-<div id="prereq3" class="callout prereq">
+</section><section><h2 class="section-heading" id="git">Git<a class="anchor" aria-label="anchor" href="#git"></a></h2>
+<hr class="half-width"><p>Git is a version control tool used to track changes made on a
+project. Later was used for collaboration on projects as well</p>
+<div id="installing-git" class="callout prereq">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check"></i>
 </div>
 <span class="callout-header">Prerequisite</span>
-<div class="callout-inner">
+<div id="installing-git" class="callout-inner">
+<h3 class="callout-title">Installing Git</h3>
 <div class="callout-content">
-<ol style="list-style-type: decimal"><li><p>Download <a href="https://librarycarpentry.org/lc-shell/data/shell-lesson.zip" class="external-link">shell-lesson.zip</a>
-and move the file to your Desktop.
-<!-- 1. Download [shell-lesson.zip](data/shell-lesson.zip) and move the file to your Desktop. --></p></li>
-<li><p>Unzip/extract the file (ask your instructor if you need help with
-this step). You should end up with a new folder called
-<code>shell-lesson</code> on your Desktop.</p></li>
-<li>
-<p>Open the terminal and type <code>ls</code> followed by the
-<kbd>enter</kbd> key.</p>
-<div class="codewrapper sourceCode" id="cb4">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="ex">$</span> ls</span></code></pre>
-</div>
-<p>You should see a list of files and folders in your current
-directory.</p>
-</li>
-<li>
-<p>Then type:</p>
-<div class="codewrapper sourceCode" id="cb5">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="ex">$</span> pwd</span></code></pre>
-</div>
-<p>This command will show you where you are in your file system, which
-should now be your home directory. In the lesson, you will find out more
-about the commands <code>ls</code>, <code>pwd</code> and how to work
-with the data in <code>shell-lesson</code> folder.</p>
-</li>
-</ol></div>
-</div>
-</div>
-</div>
-</section><section><h2 class="section-heading" id="git">Git<a class="anchor" aria-label="anchor" href="#git"></a></h2>
-<hr class="half-width"><p>Git is a version control tool used to track changes made on a
-project. Later was used for collaboration on projects as well
-:::::::::::: prereq ## Installing Git</p>
 <p>Since several Carpentries lessons rely on Git, please see <a href="https://carpentries.github.io/workshop-template/install_instructions/#git" class="external-link">this
 section of the workshop template</a> for instructions on installing Git
 for various operating systems.</p>
@@ -914,10 +918,12 @@ for various operating systems.</p>
 installation on Windows</a></li>
 <li><a href="https://carpentries.github.io/workshop-template/install_instructions/#git" class="external-link">Git
 installation on MacOS</a></li>
-<li>
-<a href="https://carpentries.github.io/workshop-template/install_instructions/#git" class="external-link">Git
-installation on Linux</a> ::::::::::::</li>
-</ul></section><section><h2 class="section-heading" id="github">GitHub<a class="anchor" aria-label="anchor" href="#github"></a></h2>
+<li><a href="https://carpentries.github.io/workshop-template/install_instructions/#git" class="external-link">Git
+installation on Linux</a></li>
+</ul></div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="github">GitHub<a class="anchor" aria-label="anchor" href="#github"></a></h2>
 <hr class="half-width"><p>GitHub is a web-based platform that uses Git for version control and
 provides tools for collaboration on projects such as issue tracking and
 project progress tracking.</p>
@@ -1176,9 +1182,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://ml4sts.github.io/open-humanities/instructor/index.html",
   "identifier": "https://ml4sts.github.io/open-humanities/instructor/index.html",
-  "dateCreated": "2025-09-22",
-  "dateModified": "2025-09-23",
-  "datePublished": "2025-09-23"
+  "dateCreated": "2025-09-29",
+  "dateModified": "2025-09-29",
+  "datePublished": "2025-09-29"
 }
 
   </script><script>
