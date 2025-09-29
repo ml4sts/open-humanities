@@ -1,5 +1,5 @@
 ---
-title: '18-dynamic-content'
+title: 'dynamic-content'
 teaching: 10
 exercises: 2
 ---

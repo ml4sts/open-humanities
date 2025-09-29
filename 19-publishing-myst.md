@@ -1,5 +1,5 @@
 ---
-title: '19-publishing-myst'
+title: 'publishing-myst'
 teaching: 10
 exercises: 2
 ---
