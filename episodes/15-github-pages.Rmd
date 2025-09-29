@@ -35,7 +35,7 @@ academic citations. Most people have had the experience of following up a refere
 404 error or seeing something completely different. Although using versions on your site doesn't guarantee this won't
 happen, it does make it easier to manage old versions of your site.
 
-GitHub Pages also mean that you can collaborate on a website with a lot of people without everyone having to
+Using GitHub Pages, you can also collaborate on a website with a lot of people without everyone having to
 communicate endlessly back and forwards about what changes need to be made, or have been made already. You can create
 'issues' (things that need discussing or fixing), list things to do in the future, and allow other people visiting your
 website to quickly suggest, and help implement changes through pull requests.

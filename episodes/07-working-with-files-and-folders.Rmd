@@ -24,6 +24,11 @@ exercises: 10
 
 As well as navigating directories, we can interact with files on the command line: we can read them, open them, run them, and even edit them. In fact, there's really no limit to what we *can* do in the shell, but even experienced shell users still switch to graphical user interfaces (GUIs) for many tasks, such as editing formatted text documents (Word or OpenOffice), browsing the web, editing images, etc. But if we wanted to make the same crop on hundreds of images, say, the pages of a scanned book, then we could automate that cropping work by using shell commands.
 
+::: callout 
+### What is a Graphical User Interface (GUI)?
+A breakdown of this term: “Graphical”-- contains elements you can click on, “User”-- suited for people to use, “Interface”-- the platform you are working with. Essentially, this is an electronic platform that is designed with buttons and other clickable features, as opposed to an interface that requires text. This would be a different user-computer interaction approach than using a shell.
+:::
+
 Before getting started, we will use `ls` to list the contents of our current directory. Using `ls` periodically to view your options is useful to orient oneself.
 
 ```bash
@@ -44,7 +49,7 @@ $ pwd
 ```
 
 ```output
-/Users/riley/Desktop/shell-lesson
+/Users/humanist/Desktop/shell-lesson
 ```
 
 Here, we will create a new directory and move into it:
@@ -70,6 +75,43 @@ Instead of typing `cd firstdir`, let's try to type `cd f` and then press the Tab
 
 Pressing tab at any time within the shell will prompt it to attempt to auto-complete the line based on the files or sub-directories in the current directory. Where two or more files have the same characters, the auto-complete will only fill up to the first point of difference, after which we can add more characters, and try using tab again. We would encourage using this method throughout today to see how it behaves (as it saves loads of time and effort!).
 
+With `Desktop`, `Documents`, and `Downloads` folders living in the same directory. Let's say we want to change directory into the `Downloads` folder while using the `Tab` auto-complete help.
+
+```bash
+cd D
+```
+If we press `Tab` at this point we can't really auto-complete because there are three different folders that start with the letter `D`.
+If we double press `Tab` the shell provides us with the options that start with the letter `D`
+
+```output
+Desktop    Documents   
+Downloads
+```
+
+Let's try again 
+
+```bash
+cd Do
+```
+
+With double press on `Tab` we get
+```output
+Documents    Downloads  
+```
+
+Finally if we try the auto-complete method with enough unique set of characters that identify the word `Downloads` bash can auto complete the word:
+```bash
+cd Dow
+```
+
+`Tab`
+The shell will auto complete your command:
+```bash
+cd Downloads
+```
+
+This feature can be very helpful for quicker access to files and folders with known names.  It can also prevent typos, which is especially helpful in files with long names.  
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ### Reading files
@@ -84,15 +126,15 @@ $ ls -lh
 
 ```output
 total 33M
--rw-rw-r-- 1 riley staff 383K Feb 22 2017  201403160_01_text.json
--rw-r--r-- 1 riley staff 3.6M Jan 31 2017  2014-01-31_JA-africa.tsv
--rw-r--r-- 1 riley staff 7.4M Jan 31 2017  2014-01-31_JA-america.tsv
--rw-rw-r-- 1 riley staff 125M Jun 10 2015  2014-01_JA.tsv
--rw-r--r-- 1 riley staff 1.4M Jan 31 2017  2014-02-02_JA-britain.tsv
--rw-r--r-- 1 riley staff 582K Feb  2 2017  33504-0.txt
--rw-r--r-- 1 riley staff 598K Jan 31 2017  829-0.txt
--rw-rw-r-- 1 riley staff  18K Feb 22 2017  diary.html
-drwxr-xr-x 1 riley staff  64B Feb 22 2017  firstdir
+-rw-rw-r-- 1 humanist staff 383K Feb 22 2017  201403160_01_text.json
+-rw-r--r-- 1 humanist staff 3.6M Jan 31 2017  2014-01-31_JA-africa.tsv
+-rw-r--r-- 1 humanist staff 7.4M Jan 31 2017  2014-01-31_JA-america.tsv
+-rw-rw-r-- 1 humanist staff 125M Jun 10 2015  2014-01_JA.tsv
+-rw-r--r-- 1 humanist staff 1.4M Jan 31 2017  2014-02-02_JA-britain.tsv
+-rw-r--r-- 1 humanist staff 582K Feb  2 2017  33504-0.txt
+-rw-r--r-- 1 humanist staff 598K Jan 31 2017  829-0.txt
+-rw-rw-r-- 1 humanist staff  18K Feb 22 2017  diary.html
+drwxr-xr-x 1 humanist staff  64B Feb 22 2017  firstdir
 ```
 
 The files `829-0.txt` and `33504-0.txt` holds the content of book #829 and #33504 on Project Gutenberg. But we've forgot *which* books, so we try the `cat` command to read the text of the first file:
@@ -137,7 +179,7 @@ Archive Foundation, how to help produce our new eBooks, and how to
 subscribe to our email newsletter to hear about new eBooks.
 ```
 
-If ten lines is not enough (or too much), we would check `man head` (or `head --help` when using Windows) to see if there exists an option to specify the number of lines to get (there is: `head -n 20` will print 20 lines).
+If ten lines is not enough (or too much), we would check `man head` to see if there exists an option to specify the number of lines to get (there is: `head -n 20` will print 20 lines).
 
 Another way to navigate files is to view the contents one screen at a time. Type `less 829-0.txt` to see the first screen, `spacebar` to see the next screen and so on, then `q` to quit (return to the command prompt).
 
