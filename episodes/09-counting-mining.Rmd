@@ -45,7 +45,7 @@ $ pwd
 ```
 
 ```output
-/Users/riley/Desktop/shell-lesson
+/Users/humanist/Desktop/shell-lesson
 ```
 
 And let's check what files are in the directory and how large they are with `ls -lhS`:
@@ -56,13 +56,13 @@ $ ls -lhS
 
 ```output
 total 139M
--rw-rw-r-- 1 riley staff 126M Jun 10  2015 2014-01_JA.tsv
--rw-r--r-- 1 riley staff 7.4M Jan 31 18:47 2014-01-31_JA-america.tsv
--rw-r--r-- 1 riley staff 3.6M Jan 31 18:47 2014-01-31_JA-africa.tsv
--rw-r--r-- 1 riley staff 1.4M Jan 31 18:47 2014-02-02_JA-britain.tsv
--rw-r--r-- 1 riley staff 598K Jan 31 18:47 gulliver.txt
--rw-r--r-- 1 riley staff 583K Feb  1 22:53 33504-0.txt
-drwxr-xr-x 2 riley staff   68 Feb  2 00:58 backup
+-rw-rw-r-- 1 humanist staff 126M Jun 10  2015 2014-01_JA.tsv
+-rw-r--r-- 1 humanist staff 7.4M Jan 31 18:47 2014-01-31_JA-america.tsv
+-rw-r--r-- 1 humanist staff 3.6M Jan 31 18:47 2014-01-31_JA-africa.tsv
+-rw-r--r-- 1 humanist staff 1.4M Jan 31 18:47 2014-02-02_JA-britain.tsv
+-rw-r--r-- 1 humanist staff 598K Jan 31 18:47 gulliver.txt
+-rw-r--r-- 1 humanist staff 583K Feb  1 22:53 33504-0.txt
+drwxr-xr-x 2 humanist staff   68 Feb  2 00:58 backup
 ```
 
 In this episode we'll focus on the dataset `2014-01_JA.tsv`, that contains journal article metadata, and the three `.tsv` files derived from the original dataset. Each of these three `.tsv` files includes all data where a keyword such as `africa` or `america` appears in the 'Title' field of `2014-01_JA.tsv`.
@@ -403,6 +403,7 @@ $ grep 1999 *.tsv
 ```
 
 Remember that the shell will expand `*.tsv` to a list of all the `.tsv` files in the directory. `grep` will then search these for instances of the string "1999" and print the matching lines.
+There were a lot of instances of `1999` in the `tsv` files. Let's try getting their count instead of instances.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
@@ -412,6 +413,7 @@ A string is a sequence of characters, or "a piece of text".
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+We're going to run the same commad with the option `-c` for count.
 Press the up arrow once in order to cycle back to your most recent action. Amend `grep 1999 *.tsv` to `grep -c 1999 *.tsv` and press enter.
 
 ```bash
