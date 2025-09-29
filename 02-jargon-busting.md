@@ -20,7 +20,7 @@ exercises: 30
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Jargon Busting
+### Jargon Busting!
 
 This exercise is an opportunity to gain a firmer grasp on the concepts around data, code or software development in the humanities' world.
 
