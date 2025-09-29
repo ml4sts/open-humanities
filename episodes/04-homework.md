@@ -54,9 +54,10 @@ Take a few minutes and make notes for yourself about the most important things y
 Think about these as what would you want to review in a few minutes before the next session starts. 
 
 Some guiding questions:
-- What was most surprising?
-- Did anything challenge what you thought before?
-- Do you have new ideas about how you might approach an aspect of your work? 
+
+- What was most surprising? 
+- Did anything challenge what you thought before? 
+- Do you have new ideas about how you might approach an aspect of your work?  
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
