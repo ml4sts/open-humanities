@@ -143,6 +143,12 @@ The files `829-0.txt` and `33504-0.txt` holds the content of book #829 and #3350
 $ cat 829-0.txt
 ```
 
+::::::::::::: callout
+if you use `cat` without a file you enter a program, to exit send the
+end of file symbol with <kbd>ctrl</kbd> + <kbd>D</kbd> or <kbd>cmd<kbd> + <kbd>D</kbd> 
+
+::::::::::::::::::::
+
 The terminal window erupts and the whole book cascades by (it is printed to your terminal), leaving us with a new prompt and the last few lines of the book above this prompt.
 
 Often we just want a quick glimpse of the first or the last part of a file to get an idea about what the file is about. To let us do that, the Unix shell provides us with the commands `head` and `tail`.
