@@ -6,67 +6,69 @@ exercises: 20
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-
-
+- Make sure the differences between git and GitHub are clear
+- Revise some work from day 1
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-
 ## GitHub Pages
 
+:::::::::::::::::::::: callout
 GitHub Pages is a simple service to publish a website directly on GitHub from a Git repository.
 You add some files and folders to a repository and GitHub Pages turns it into a website.
 You can use HTML directly if you like, but they also provide Jekyll,
 which renders Markdown into HTML and makes it really easy to setup a blog or a template-based website.
+:::::::::::::::::::::::
 
-### Why GitHub Pages is awesome!
 
-GitHub Pages allows you to version control your website. This is useful for a lot of different reasons. It allows you to
-keep a record of what changes you have made. It allows people to reference your website at a particular point in time
-and (if you make your source open) to see what it was like at that particular point in time. This is very useful for
-academic citations. Most people have had the experience of following up a reference to a website and either getting a
-404 error or seeing something completely different. Although using versions on your site doesn't guarantee this won't
-happen, it does make it easier to manage old versions of your site.
+:::::::::::::::::::::::::::::::: Challenge
+### Enable GitHub Pages on the hello-world repo
 
-Using GitHub Pages, you can also collaborate on a website with a lot of people without everyone having to
-communicate endlessly back and forwards about what changes need to be made, or have been made already. You can create
-'issues' (things that need discussing or fixing), list things to do in the future, and allow other people visiting your
-website to quickly suggest, and help implement changes through pull requests.
+Remember: GitHub Pages is turned off by default for all new repositories, and can be turned on in the settings menu for any repository.
+Let's set up a new site by enabling GitHub Pages for our recently created project.
 
-### Enable GitHub Pages
+:::::::::::::::: solution
+- On your GitHub view of the hello-world project, go to the settings from the top tab menu
+- Find `Pages` on the list on the left
+- Change where it says `None` to `main` under `Deploy from a branch
+::::::::::::::::
+::::::::::::::::::::::::::::::::
 
-GitHub Pages is turned off by default for all new repositories, and can be turned on in the settings menu for any repository.
 
-Let's set up a new site by enabling GitHub Pages for our project.
-
-Go to the Pages section of your repository's Settings:
-
-![](fig/github-repo-settings-pages.png){alt="GitHub repository's Pages settings"}
-
-#### Source branch (required)
-
-Pages needs to know the branch in your repository from which you want to serve your site. This can be any branch, including `main`.
-
-Select then save the source branch:
-
-![](fig/github-repo-settings-pages-branch.png){alt="GitHub Pages source branch menu"}
-
-![](fig/github-repo-settings-pages-save.png){alt="GitHub Pages source branch save"}
-
-#### Theme (optional)
-
-GitHub Pages provides different themes to visually style and organize your site's content. Choosing a theme is optional, and themes can be interchanged quickly.
-
-![](fig/github-repo-settings-pages-theme.png){alt="GitHub Pages choose theme"}
-
-See the [GitHub Pages documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/adding-a-theme-to-your-github-pages-site-with-the-theme-chooser) for further information on using themes.
-
+:::::::::::::::::::::::::::::::: Challenge
 ### View your site
 
-If we now visit `https://some-librarian.github.io/hello-world/`,
-we should see the contents of the index.md file that created earlier.
 Usually it's available instantly, but it can take a few seconds and in the worst case a few minutes if GitHub are very busy.
+On the main `code` page of your repo, find the about section and edit it to include the link to your webpage and try opeinging the link\
+Share the link on Eitherpad
+:::::::::::::::: solution
+Check the box that says `Use your GitHub Pages website`
+
+::::::::::::::::
+::::::::::::::::::::::::::::::::
+
+
+
+
+:::::::::::::::::::::::::::::::: Challenge
+### Clone your "my-website" locally and explore its content 
+
+Today we created a repo (project) locally (on our terminal) and then created an online duplicate of it, then we linked them to each other to be able to "push" and "pull" changes. Basically saving our work on a cloud.
+
+Now, let's do it the other way around. We created a project online on day 1 called my-website. Let's now create a local copy of this project to ourselves to be able to make changes to that project locally.
+
+Use this [instructional page](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) to read about how to do so
+
+:::::::::::::::: solution
+- On your terminal `cd` into a folder where you want to have the local copy of your repo
+- run the command `git clone <link_to_project>`
+- Confirm this was successful with `ls`
+- Check the contents of the newly added project folder using `cd`, `ls` and `cat`
+::::::::::::::::
+
+
+
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
