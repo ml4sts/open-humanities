@@ -12,6 +12,8 @@ exercises: 20
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+
+
 ## GitHub Pages
 
 :::::::::::::::::::::: callout
@@ -22,7 +24,7 @@ which renders Markdown into HTML and makes it really easy to setup a blog or a t
 :::::::::::::::::::::::
 
 
-:::::::::::::::::::::::::::::::: Challenge
+:::::::::::::::::::::::::::::::: challenge
 ### Enable GitHub Pages on the hello-world repo
 
 Remember: GitHub Pages is turned off by default for all new repositories, and can be turned on in the settings menu for any repository.
@@ -36,7 +38,7 @@ Let's set up a new site by enabling GitHub Pages for our recently created projec
 ::::::::::::::::::::::::::::::::
 
 
-:::::::::::::::::::::::::::::::: Challenge
+:::::::::::::::::::::::::::::::: challenge
 ### View your site
 
 Usually it's available instantly, but it can take a few seconds and in the worst case a few minutes if GitHub are very busy.
@@ -51,7 +53,7 @@ Check the box that says `Use your GitHub Pages website`
 
 
 
-:::::::::::::::::::::::::::::::: Challenge
+:::::::::::::::::::::::::::::::: challenge
 ### Clone your "my-website" locally and explore its content 
 
 Today we created a repo (project) locally (on our terminal) and then created an online duplicate of it, then we linked them to each other to be able to "push" and "pull" changes. Basically saving our work on a cloud.
@@ -66,6 +68,13 @@ Use this [instructional page](https://docs.github.com/en/repositories/creating-a
 - Confirm this was successful with `ls`
 - Check the contents of the newly added project folder using `cd`, `ls` and `cat`
 ::::::::::::::::
+
+::::::::::::::::::::::::::::::::
+
+
+
+
+
 
 
 
@@ -126,6 +135,12 @@ Start instead at the section titled "Cloning a fork."
 You can submit multiple pull requests using the same fork.)
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+
+
+
 
 
 
