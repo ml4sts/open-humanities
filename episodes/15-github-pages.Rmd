@@ -42,8 +42,10 @@ Let's set up a new site by enabling GitHub Pages for our recently created projec
 ### View your site
 
 Usually it's available instantly, but it can take a few seconds and in the worst case a few minutes if GitHub are very busy.
-On the main `code` page of your repo, find the about section and edit it to include the link to your webpage and try opeinging the link\
+On the main `code` page of your repo, find the about section and edit it to include the link to your webpage and try opeinging the link
 Share the link on Eitherpad
+
+
 :::::::::::::::: solution
 Check the box that says `Use your GitHub Pages website`
 
