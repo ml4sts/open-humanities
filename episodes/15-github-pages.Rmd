@@ -74,16 +74,45 @@ Use this [instructional page](https://docs.github.com/en/repositories/creating-a
 ::::::::::::::::::::::::::::::::
 
 
+:::::::::::::::::::::::::::::::: challenge
+### Add material to your webpage locally
+
+Now that we've become more comfortable with the shell and using git on the shell.
+
+We're going to add the material we had prepared, add it to our webpage and view it.
+
+Start by copying the file of your choosing or the contents of it into a new file in your local repo.
+
+::::::::::::: solution
+
+::: tab
+
+#### File is in .txt or .md or any other plain text format
+- Locate the path to the file on from your terminal (you can test that you have the correct path by using `cat` or `head` to view the contents of the file )
+- Copy the file to the `my-website` local repo using the `cp` command make sure the copied file is in `.md` 
+- Use `ls` to confirm that the copy was successful
+- Use git commands like `add`, `commit` and `push` to push the new change onto your GitHub-based repo
+
+### File in .pdf or different non-plain text format
+- Locate the file you want to use the content of
+- Open the file in the appropriate viewer and copy its contents
+- On your terminal make sure to navigate to your repo's folder
+- Use commands like `touch` and/or `nano` to create and fill out the new file with the content that you copied (make sure the new file is `.md`)
+- Use `ls` to confirm that the copy was successful
+- Use git commands like `add`, `commit` and `push` to push the new change onto your GitHub-based repo
 
 
+:::
 
+:::::::::::::
+::::::::::::::::::::::::::::::::
 
 
 
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Challenge: Contributing to a page owned by someone else (slightly easier way)
+### Challenge: Contributing to a page owned by someone else (slightly easier way)
 
 To practice using Git, GitHub pages and Markdown we can contribute to a GitHub pages site.
 Pair up in groups of two (or more if needed) and do the exercises below together.
