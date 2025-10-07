@@ -93,7 +93,7 @@ Start by copying the file of your choosing or the contents of it into a new file
 - Use `ls` to confirm that the copy was successful
 - Use git commands like `add`, `commit` and `push` to push the new change onto your GitHub-based repo
 
-### File in .pdf or different non-plain text format
+#### File in .pdf or different non-plain text format
 - Locate the file you want to use the content of
 - Open the file in the appropriate viewer and copy its contents
 - On your terminal make sure to navigate to your repo's folder
