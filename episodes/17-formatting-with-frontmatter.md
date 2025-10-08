@@ -143,7 +143,7 @@ To use accronyms in a file, we need to declare them in the frontmatter header of
 ::::::::::::::::: challenge
 ### Select some words in your paper and make them into accronyms or declare them as accronyms to myst
 Select some words in your paper and make them into accronyms or declare them as accronyms to myst
-
+or use existing acronyms in the document
 
 :::::::::::: solution
 ```
