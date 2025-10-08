@@ -360,9 +360,10 @@
 
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
-        <ul><li><a href="#introduction">Introduction</a></li>
+        <ul><li><a href="#what-is-frontmatter">What is frontmatter</a></li>
 <li><a href="#myst-themes">MyST Themes</a></li>
 <li><a href="#glossary">Glossary</a></li>
+<li><a href="#accronyms">Accronyms</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
 
@@ -454,7 +455,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>formatting-with-frontmatter</h1>
-        <p>Last updated on 2025-10-07 |
+        <p>Last updated on 2025-10-08 |
 
         <a href="https://github.com/ml4sts/open-humanities/edit/main/episodes/17-formatting-with-frontmatter.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -492,7 +493,7 @@ your webpage</li>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a></h2>
+<section><h2 class="section-heading" id="what-is-frontmatter">What is frontmatter<a class="anchor" aria-label="anchor" href="#what-is-frontmatter"></a></h2>
 <hr class="half-width"><p>Frontmatter is a way to format your project. It is a section
 separated by <code>---</code> as delimeters that can be found in the
 <code>myst.md</code> file or can be added individually at the top of any
@@ -516,18 +517,155 @@ override project * Project only</p>
 <span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> University of Rhode Island</span></span>
 <span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a><span class="pp">---</span></span></code></pre>
 </div>
+<p>We saw how we were able to change the title of our webpage from the
+frontmatter found in the <code>myst.md</code> file.</p>
+<p>How can we change the title of a section of the webpage using front
+matter?</p>
+<div id="change-the-title-of-the-paper-added-to-the-webpage" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="change-the-title-of-the-paper-added-to-the-webpage" class="callout-inner">
+<h3 class="callout-title">Change the title of the paper added to the
+webpage</h3>
+<div class="callout-content">
+<p>Change the title of the paper added last session to reflect on the
+webpage</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<p>If we add a header to the file using <code>#</code> myst recognizes
+the larger header and names the section of the webpage according to it.
+Try adding <code>#</code> to the first line of your text file witn a
+meaningful name.</p>
+<p>At the top of the file add the following</p>
+<pre><code>---
+title: &lt;Better_Title&gt;
+---</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div id="callout1" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>We don’t need to re-build the webpage manually, myst automatically
+re-builds every time we save new changes to our webpage</p>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="updating-our-online-repo">Updating our online repo<a class="anchor" aria-label="anchor" href="#updating-our-online-repo"></a></h3>
+<p>Let’s start with <code>git status</code></p>
+<div class="section level4">
+<h4 id="ignoring-some-changes">Ignoring some changes<a class="anchor" aria-label="anchor" href="#ignoring-some-changes"></a></h4>
+<pre><code>echo "_build" &gt;&gt; .gitignore</code></pre>
+</div>
+</div>
 </section><section><h2 class="section-heading" id="myst-themes">MyST Themes<a class="anchor" aria-label="anchor" href="#myst-themes"></a></h2>
 <hr class="half-width"><p>One of the main things that the configuration file can be used for is
 to choose the main theme of the webpage. There are two themes offered by
 myst: <code>book-theme</code> &amp; <code>article-theme</code></p>
+<p>The one we saw in the example was using the
+<code>article-theme</code></p>
 </section><section><h2 class="section-heading" id="glossary">Glossary<a class="anchor" aria-label="anchor" href="#glossary"></a></h2>
 <hr class="half-width"><p>A gossary is a collection of definitions for the different terms that
 can be found of your website. Since your website is either a in a book
 style or an article style. There’s a large chance that it holds great
 scienfic information. Some of which might need to be well-defined for
 your target audience or the general public.</p>
-<div class="section level3">
-<h3 id="accronyms">Accronyms<a class="anchor" aria-label="anchor" href="#accronyms"></a></h3>
+<p>To add definitions to a glossary for our site what we need is mainly
+what myst considers a <strong>glossary body</strong>.</p>
+<p>A glossary body has the following format:</p>
+<pre><code>:::{golssary}
+
+&lt;term&gt;
+: &lt;definition&gt;
+
+&lt;term&gt;
+: &lt;definition&gt;
+
+...
+
+:::</code></pre>
+<p>A glossary body can be exist in any file in our project or, for
+organization purposes, can be on a file of its own.</p>
+<p>Let’s start by creating a file called in our repo called
+<code>glossary.md</code></p>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="fu">touch</span> glossary.md</span></code></pre>
+</div>
+<p>The second step is to pick a few words that might need to be defined
+in our paper/article and add them to our Glossary file wrapped in one
+glossary body.</p>
+<p>The last step is to find the items we added to our glossary,
+surrounding it with <strong>backticks</strong> (<strong>`</strong>) and
+prefix it with {term}.</p>
+<div id="callout2" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>Remember to add, commit and push your changes to update the online
+repo</p>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="accronyms">Accronyms<a class="anchor" aria-label="anchor" href="#accronyms"></a></h2>
+<hr class="half-width"><p>In any article, paper, or general text some words are repeated and
+sometimes it might be tedious to type the words everytime they need to
+be mentioned. So we use accronyms for those words.</p>
+<p>To use accronyms in a file, we need to declare them in the
+frontmatter header of the file with an object called
+<code>abbreviations</code> and the list of words</p>
+<div id="select-some-words-in-your-paper-and-make-them-into-acronyms-or-declare-them-as-acronyms-to-myst" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="select-some-words-in-your-paper-and-make-them-into-acronyms-or-declare-them-as-acronyms-to-myst" class="callout-inner">
+<h3 class="callout-title">Select some words in your paper and make them
+into acronyms or declare them as acronyms to myst</h3>
+<div class="callout-content">
+<p>Select some words in your paper and make them into accronyms or
+declare them as accronyms to myst or use existing acronyms in the
+document</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div class="accordion-body">
+<pre><code>---
+title: &lt;Better_Title&gt;
+abbreviations:
+  &lt;first&gt;: Full words
+  &lt;Second&gt;: Full words
+---</code></pre>
+</div>
+</div>
+</div>
+</div>
 <p>Here is a <a href="https://mystmd.org/guide/frontmatter#available-frontmatter-fields" class="external-link">list
 of frontmatter fields</a> that can be used</p>
 <div id="keypoints1" class="callout keypoints">
@@ -545,7 +683,6 @@ of frontmatter fields</a> that can be used</p>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</div>
 </section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="16-what-is-myst.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
@@ -603,9 +740,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://ml4sts.github.io/open-humanities/17-formatting-with-frontmatter.html",
   "identifier": "https://ml4sts.github.io/open-humanities/17-formatting-with-frontmatter.html",
-  "dateCreated": "2025-10-07",
-  "dateModified": "2025-10-07",
-  "datePublished": "2025-10-07"
+  "dateCreated": "2025-10-08",
+  "dateModified": "2025-10-08",
+  "datePublished": "2025-10-08"
 }
 
   </script><script>

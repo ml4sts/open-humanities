@@ -454,7 +454,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>What-is-myst</h1>
-        <p>Last updated on 2025-10-07 |
+        <p>Last updated on 2025-10-08 |
 
         <a href="https://github.com/ml4sts/open-humanities/edit/main/episodes/16-what-is-myst.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -476,7 +476,7 @@
 <ul><li>How can we build an interactive webpage using Markdown files?</li>
 <li>How do we initialize myst?</li>
 <li>What does myst need to run?</li>
-<li>How do I view mny work?</li>
+<li>How do I view my work?</li>
 </ul></div>
 </div>
 </div>
@@ -494,6 +494,7 @@
 </div>
 </div>
 
+
 <section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a></h2>
 <hr class="half-width"><p>MyST is an open-source, community-driven project to improve
 scientific communication, including integrations into Jupyter Notebooks
@@ -504,6 +505,7 @@ webpages or pdfs. The benifit of this is more powerful publishing of
 content and information. Here’s an example of a paper published using
 myst: <a href="https://ml4sts.com/fairml-bestpractices/" class="external-link">A Literature
 Review On AI fairness Best Practices</a></p>
+
 </section><section><h2 class="section-heading" id="a-different-way-of-building-html">A Different Way of Building HTML<a class="anchor" aria-label="anchor" href="#a-different-way-of-building-html"></a></h2>
 <hr class="half-width"><p>The purpose of MyST is to have a powerful tool that builds
 interactive HTML pages without doing any HTML coding. Remember, on the
@@ -516,13 +518,16 @@ one project directory into a cohesive site.</p>
 <p>Let’s learn about using myst on the simple repo we created on the
 first day.</p>
 </section><section><h2 class="section-heading" id="starting-myst">Starting myst<a class="anchor" aria-label="anchor" href="#starting-myst"></a></h2>
-<hr class="half-width"><p>Open your terminal and <code>cd</code> into your repo’s
-directory.</p>
+<hr class="half-width"><p>Open your terminal and <code>cd</code> into your
+<code>my-website</code> repo’s directory Type the command
+<code>code</code> into your terminal</p>
+
+<p>Notice how you can access your terminal directly from vscode too!</p>
 <p>In your terminal type myst:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">myst</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">myst</span> init</span></code></pre>
 </div>
 <pre><code>Welcome to the MyST CLI! 🎉 🚀
 
@@ -570,9 +575,21 @@ Learn more about this CLI and MyST Markdown at: https://mystmd.org
    ╰────────────────────────────────────────────╯</code></pre>
 <p>This tells you that all the files that were in your directory
 (README.md &amp; index.md) were built into a website locally.</p>
+<div id="callout1" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>Locally means this content is hosted on your machine. Not published
+for the public to be able to access.</p>
+</div>
+</div>
+</div>
 <p>To view this website follow the link provided in the prompt:
 <code>http://localhost:3000</code></p>
-<div id="callout1" class="callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -585,17 +602,18 @@ different number</p>
 </div>
 </div>
 <div class="section level3">
-<h3 id="what-dit-this-do">What dit this do?<a class="anchor" aria-label="anchor" href="#what-dit-this-do"></a></h3>
-<p>Firstly we notice that the files in the directory got increaced by 1.
+<h3 id="what-did-this-do">What did this do?<a class="anchor" aria-label="anchor" href="#what-did-this-do"></a></h3>
+<p>Firstly we notice that the files in the directory got increased by 1.
 The new file is called myst.yml as mentioned by the output from the
 command we ran.</p>
 <p>If we opened the webpage using the link above we see somthing like
 this</p>
-<p><img src="fig%5Cmyst_page.png" class="figure"><img src="fig%5Cmyst_page2.png" class="figure"></p>
-<p>We notice a few things on this page: * On the top-left corner says
-<code>Made with Myst</code> * For each md file we have a button on the
-left page section * On the top-right corner we have a dark/light theme
-button as well as a search bar that works!</p>
+<p><img src="fig/myst_page.png" alt="my-website rendered locally" class="figure"><img src="fig/myst_page2.png" alt="my-websit's other page rendered locally" class="figure"></p>
+<p>We notice a few things on this page:<br>
+- On the top-left corner says <code>Made with Myst</code> - For each md
+file we have a button on the left page section - On the top-right corner
+we have a dark/light theme button as well as a search bar that
+works!</p>
 <div id="edit-your-readme-file-and-see-what-happens" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -614,7 +632,7 @@ happens</h3>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Output </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>We notice how myst tracks all requests on the local host and applies
 the changes made to the readme file immedietly to the webpage</p>
@@ -625,7 +643,7 @@ the changes made to the readme file immedietly to the webpage</p>
 📖 Built README.md in 57 ms.
 💌 GET  /readme 200 - - 18.691 ms</code></pre>
 </div>
-<figure><img src="fig%5Cmyst_page3.png" class="figure mx-auto d-block"></figure></div>
+<figure><img src="fig/myst_page3.png" alt="my-website rendered locally with new readme" class="figure mx-auto d-block"></figure></div>
 </div>
 </div>
 </div>
@@ -635,6 +653,11 @@ the changes made to the readme file immedietly to the webpage</p>
 files and turn them into an interactive page. We used the
 <code>myst</code> tool to make the webpage look nicer and have more
 powers.</p>
+<p>We also notice that with every change we make the contents of the
+<code>_build</code> folder get <strong>rebuilt</strong> to generate the
+newly updated material and settings. And we see a large number of files
+in there that we might want to hide from the front face of our GitHub
+repo.</p>
 </div>
 <div class="section level4">
 <h4 id="what-did-myst-need-to-run">What did myst need to run?<a class="anchor" aria-label="anchor" href="#what-did-myst-need-to-run"></a></h4>
@@ -642,23 +665,29 @@ powers.</p>
 we ran it. <code>myst.md</code> Let’s figure out why it did so by
 viewing the contents of it and trying to understand it.</p>
 <div class="codewrapper sourceCode" id="cb6">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="fu">cat</span> myst.yml</span></code></pre>
+</div>
+<p>or view it using vscode</p>
+<div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="co"># See docs at: https://mystmd.org/guide/frontmatter</span></span>
-<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a><span class="fu">version</span><span class="kw">:</span><span class="at"> </span><span class="dv">1</span></span>
-<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
-<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a><span class="at">  </span><span class="fu">id</span><span class="kw">:</span><span class="at"> 5f256b79-5f82-4a71-b061-138da64f191a</span></span>
-<span id="cb6-5"><a href="#cb6-5" tabindex="-1"></a><span class="co">  # title:</span></span>
-<span id="cb6-6"><a href="#cb6-6" tabindex="-1"></a><span class="co">  # description:</span></span>
-<span id="cb6-7"><a href="#cb6-7" tabindex="-1"></a><span class="co">  # keywords: []</span></span>
-<span id="cb6-8"><a href="#cb6-8" tabindex="-1"></a><span class="co">  # authors: []</span></span>
-<span id="cb6-9"><a href="#cb6-9" tabindex="-1"></a><span class="at">  </span><span class="fu">github</span><span class="kw">:</span><span class="at"> https://github.com/mystudyroom0/my-website</span></span>
-<span id="cb6-10"><a href="#cb6-10" tabindex="-1"></a><span class="co">  # To autogenerate a Table of Contents, run "myst init --write-toc"</span></span>
-<span id="cb6-11"><a href="#cb6-11" tabindex="-1"></a><span class="fu">site</span><span class="kw">:</span></span>
-<span id="cb6-12"><a href="#cb6-12" tabindex="-1"></a><span class="at">  </span><span class="fu">template</span><span class="kw">:</span><span class="at"> book-theme</span></span>
-<span id="cb6-13"><a href="#cb6-13" tabindex="-1"></a><span class="co">  # options:</span></span>
-<span id="cb6-14"><a href="#cb6-14" tabindex="-1"></a><span class="co">  #   favicon: favicon.ico</span></span>
-<span id="cb6-15"><a href="#cb6-15" tabindex="-1"></a><span class="co">  #   logo: site_logo.png</span></span></code></pre>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="co"># See docs at: https://mystmd.org/guide/frontmatter</span></span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a><span class="fu">version</span><span class="kw">:</span><span class="at"> </span><span class="dv">1</span></span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a><span class="at">  </span><span class="fu">id</span><span class="kw">:</span><span class="at"> 5f256b79-5f82-4a71-b061-138da64f191a</span></span>
+<span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a><span class="co">  # title:</span></span>
+<span id="cb7-6"><a href="#cb7-6" tabindex="-1"></a><span class="co">  # description:</span></span>
+<span id="cb7-7"><a href="#cb7-7" tabindex="-1"></a><span class="co">  # keywords: []</span></span>
+<span id="cb7-8"><a href="#cb7-8" tabindex="-1"></a><span class="co">  # authors: []</span></span>
+<span id="cb7-9"><a href="#cb7-9" tabindex="-1"></a><span class="at">  </span><span class="fu">github</span><span class="kw">:</span><span class="at"> https://github.com/mystudyroom0/my-website</span></span>
+<span id="cb7-10"><a href="#cb7-10" tabindex="-1"></a><span class="co">  # To autogenerate a Table of Contents, run "myst init --write-toc"</span></span>
+<span id="cb7-11"><a href="#cb7-11" tabindex="-1"></a><span class="fu">site</span><span class="kw">:</span></span>
+<span id="cb7-12"><a href="#cb7-12" tabindex="-1"></a><span class="at">  </span><span class="fu">template</span><span class="kw">:</span><span class="at"> book-theme</span></span>
+<span id="cb7-13"><a href="#cb7-13" tabindex="-1"></a><span class="co">  # options:</span></span>
+<span id="cb7-14"><a href="#cb7-14" tabindex="-1"></a><span class="co">  #   favicon: favicon.ico</span></span>
+<span id="cb7-15"><a href="#cb7-15" tabindex="-1"></a><span class="co">  #   logo: site_logo.png</span></span></code></pre>
 </div>
 <p>We find that the the file holds some metadata for the webpage. Most
 of it isn’t filled in and is also commented out since it isn’t filled
@@ -674,7 +703,8 @@ be able to built the webpage.</p>
 <div id="editing-meta-data" class="callout-inner">
 <h3 class="callout-title">Editing meta data</h3>
 <div class="callout-content">
-
+<p>Change the title of your webpage from the <code>myst.md</code> file
+and observe the difference before and after</p>
 </div>
 </div>
 </div>
@@ -683,34 +713,34 @@ be able to built the webpage.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Let’s look at how the tab is labeled on the browser and what the page
 title looks like</p>
-<p><img src="fig%5Ctab-label.png" class="figure"><img src="fig%5Cwebpage-title.png" class="figure"></p>
+<p><img src="fig/tab-label.png" alt="my-website rendered locally with old tab title" class="figure"><img src="fig/webpage-title.png" alt="my-website rendered locally with old title" class="figure"></p>
 <p>Edit the metadata of your webpage from <code>myst.yml</code>. Remove
 the <code>#</code> to uncomment the line that has <code>title:</code> in
 it and then add a title to your webpage.</p>
-<div class="codewrapper sourceCode" id="cb7">
+<div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="co"># See docs at: https://mystmd.org/guide/frontmatter</span></span>
-<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a><span class="fu">version</span><span class="kw">:</span><span class="at"> </span><span class="dv">1</span></span>
-<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
-<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a><span class="at">  </span><span class="fu">id</span><span class="kw">:</span><span class="at"> b9be35e6-0f75-4da5-b971-9add4d00ed44</span></span>
-<span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> Benchmarking proposal</span></span>
-<span id="cb7-6"><a href="#cb7-6" tabindex="-1"></a><span class="co">  # description:</span></span>
-<span id="cb7-7"><a href="#cb7-7" tabindex="-1"></a><span class="co">  # keywords: []</span></span>
-<span id="cb7-8"><a href="#cb7-8" tabindex="-1"></a><span class="co">  # authors: []</span></span>
-<span id="cb7-9"><a href="#cb7-9" tabindex="-1"></a><span class="at">  </span><span class="fu">github</span><span class="kw">:</span><span class="at"> https://github.com/AymanBx/my-website</span></span>
-<span id="cb7-10"><a href="#cb7-10" tabindex="-1"></a><span class="co">  # To autogenerate a Table of Contents, run "myst init --write-toc"</span></span>
-<span id="cb7-11"><a href="#cb7-11" tabindex="-1"></a><span class="fu">site</span><span class="kw">:</span></span>
-<span id="cb7-12"><a href="#cb7-12" tabindex="-1"></a><span class="at">  </span><span class="fu">template</span><span class="kw">:</span><span class="at"> book-theme</span></span>
-<span id="cb7-13"><a href="#cb7-13" tabindex="-1"></a><span class="co">  # options:</span></span>
-<span id="cb7-14"><a href="#cb7-14" tabindex="-1"></a><span class="co">  #   favicon: favicon.ico</span></span>
-<span id="cb7-15"><a href="#cb7-15" tabindex="-1"></a><span class="co">  #   logo: site_logo.png</span></span></code></pre>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="co"># See docs at: https://mystmd.org/guide/frontmatter</span></span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="fu">version</span><span class="kw">:</span><span class="at"> </span><span class="dv">1</span></span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a><span class="at">  </span><span class="fu">id</span><span class="kw">:</span><span class="at"> b9be35e6-0f75-4da5-b971-9add4d00ed44</span></span>
+<span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> Benchmarking proposal</span></span>
+<span id="cb8-6"><a href="#cb8-6" tabindex="-1"></a><span class="co">  # description:</span></span>
+<span id="cb8-7"><a href="#cb8-7" tabindex="-1"></a><span class="co">  # keywords: []</span></span>
+<span id="cb8-8"><a href="#cb8-8" tabindex="-1"></a><span class="co">  # authors: []</span></span>
+<span id="cb8-9"><a href="#cb8-9" tabindex="-1"></a><span class="at">  </span><span class="fu">github</span><span class="kw">:</span><span class="at"> https://github.com/some-humanist/my-website</span></span>
+<span id="cb8-10"><a href="#cb8-10" tabindex="-1"></a><span class="co">  # To autogenerate a Table of Contents, run "myst init --write-toc"</span></span>
+<span id="cb8-11"><a href="#cb8-11" tabindex="-1"></a><span class="fu">site</span><span class="kw">:</span></span>
+<span id="cb8-12"><a href="#cb8-12" tabindex="-1"></a><span class="at">  </span><span class="fu">template</span><span class="kw">:</span><span class="at"> book-theme</span></span>
+<span id="cb8-13"><a href="#cb8-13" tabindex="-1"></a><span class="co">  # options:</span></span>
+<span id="cb8-14"><a href="#cb8-14" tabindex="-1"></a><span class="co">  #   favicon: favicon.ico</span></span>
+<span id="cb8-15"><a href="#cb8-15" tabindex="-1"></a><span class="co">  #   logo: site_logo.png</span></span></code></pre>
 </div>
-<p><img src="fig%5Ctab-label-changed.png" class="figure"><img src="fig%5Cwebpage-title-changed.png" class="figure"></p>
+<p><img src="fig/tab-label-changed.png" alt="my-website rendered locally with new lab title" class="figure"><img src="fig/webpage-title-changed.png" alt="my-website rendered locally with new title" class="figure"></p>
 </div>
 </div>
 </div>
@@ -794,9 +824,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://ml4sts.github.io/open-humanities/16-what-is-myst.html",
   "identifier": "https://ml4sts.github.io/open-humanities/16-what-is-myst.html",
-  "dateCreated": "2025-10-07",
-  "dateModified": "2025-10-07",
-  "datePublished": "2025-10-07"
+  "dateCreated": "2025-10-08",
+  "dateModified": "2025-10-08",
+  "datePublished": "2025-10-08"
 }
 
   </script><script>
