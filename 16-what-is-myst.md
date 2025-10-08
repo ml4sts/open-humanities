@@ -230,7 +230,7 @@ So we learn that myst requires this file to be in your project directory to be a
 ::::::::::::::::::::::::::::::::::::: challenge 
 
 ## Editing meta data
-Change the title of your webpage from the `myst.md` file and observe the difference before and after
+Change the title of your webpage from the `myst.yml` file and observe the difference before and after
 
 :::::::::::::::::::::::: solution 
 
