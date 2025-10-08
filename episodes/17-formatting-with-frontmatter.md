@@ -54,7 +54,7 @@ How can we change the title of a section of the webpage using front matter?
 ::::::::::: challenge
 
 ### Change the title of the paper added to the webpage
-Change the title of the paper added last class to reflect on the webpage
+Change the title of the paper added last session to reflect on the webpage
 
 ::::::::solution
 If we add a header to the file using `#` myst recognizes the larger header and names the section of the webpage according to it.
