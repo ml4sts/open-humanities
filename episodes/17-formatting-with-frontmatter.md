@@ -141,7 +141,7 @@ In any article, paper, or general text some words are repeated and sometimes it 
 To use accronyms in a file, we need to declare them in the frontmatter header of the file with an object called `abbreviations` and the list of words
 
 ::::::::::::::::: challenge
-### Select some words in your paper and make them into accronyms or declare them as accronyms to myst
+### Select some words in your paper and make them into acronyms or declare them as acronyms to myst
 Select some words in your paper and make them into accronyms or declare them as accronyms to myst
 or use existing acronyms in the document
 
