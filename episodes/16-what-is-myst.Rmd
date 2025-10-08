@@ -66,7 +66,7 @@ MyST can also do this, except that it uses templates to render pages with a more
 Let's learn about using myst on the simple repo we created on the first day.
 
 ## Starting myst
-Open your terminal and `cd` into your repo's directory
+Open your terminal and `cd` into your `my-website` repo's directory
 Type the command `code` into your terminal 
 
 
@@ -82,7 +82,7 @@ Notice how you can access your terminal directly from vscode too!
 
 In your terminal type myst:
 ```bash
-myst
+myst init
 ```
 ```
 Welcome to the MyST CLI! 🎉 🚀
@@ -152,12 +152,12 @@ If your port `3000` was already occupied you might get a different number
 
 
 ### What did this do?
-Firstly we notice that the files in the directory got increaced by 1. The new file is called myst.yml as mentioned by the output from the command we ran.
+Firstly we notice that the files in the directory got increased by 1. The new file is called myst.yml as mentioned by the output from the command we ran.
 
 If we opened the webpage using the link above we see somthing like this
 
-![](fig/myst_page.png)
-![](fig/myst_page2.png)
+![](fig/myst_page.png){alt="my-website rendered locally"}
+![](fig/myst_page2.png){alt="my-websit's other page rendered locally"}
 
 We notice a few things on this page:  
 - On the top-left corner says `Made with Myst`
@@ -182,7 +182,7 @@ We notice how myst tracks all requests on the local host and applies the changes
 💌 GET  /readme 200 - - 18.691 ms
 ```
 
-![](fig/myst_page3.png)
+![](fig/myst_page3.png){alt="my-website rendered locally with new readme"}
 
 :::::::::::::::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -199,7 +199,7 @@ We noticed earlier that myst added a file to our directory as soon as we ran it.
 Let's figure out why it did so by viewing the contents of it and trying to understand it.
 
 ``` bash
-cat myst.md
+cat myst.yml
 ```
 or view it using vscode
 
@@ -236,8 +236,8 @@ Change the title of your webpage from the `myst.md` file and observe the differe
 
 Let's look at how the tab is labeled on the browser and what the page title looks like 
 
-![](fig/tab-label.png)
-![](fig/webpage-title.png)
+![](fig/tab-label.png){alt="my-website rendered locally with old tab title"}
+![](fig/webpage-title.png){alt="my-website rendered locally with old title"}
 
 Edit the metadata of your webpage from ` myst.yml`. Remove the `#` to uncomment the line that has `title:` in it and then add a title to your webpage.
 
@@ -259,8 +259,8 @@ site:
   #   logo: site_logo.png
 ```
 
-![](fig/tab-label-changed.png)
-![](fig/webpage-title-changed.png)
+![](fig/tab-label-changed.png){alt="my-website rendered locally with new lab title"}
+![](fig/webpage-title-changed.png){alt="my-website rendered locally with new title"}
 
 :::::::::::::::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::::::::::::::
