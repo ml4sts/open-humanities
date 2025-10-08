@@ -33,9 +33,9 @@ Remember to address feedback from the previous session
 
 Today is when everything we've learned comes together.
 - We've talked about GitHub
-- We've seen GitHub pages do magic
-- We got intorduced to the shell of our operating systems
-- And we've learned how to do different tricks over the shell
+- We've seen GitHub pages convert markdown to HTML
+- We got introduced to the shell of our operating systems
+- And we've learned how to manipulate files and data in the shell
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
