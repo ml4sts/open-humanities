@@ -1,5 +1,5 @@
 ---
-title: 'formatting-with-frontmatter'
+title: Formatting with Frontmatter
 teaching: 10
 exercises: 2
 ---
@@ -70,16 +70,13 @@ title: <Better_Title>
 :::::::::::
 
 ::::::::::::::: callout
-We don't need to re-build the webpage manually, myst automatically re-builds every time we save new changes to our webpage
+We don't need to re-build the webpage manually, myst automatically re-builds every time we save new changes to our webpage while the server is running.  
+
+You can stop it with <kdb>ctrl</kbd>+ <kdb>c</kbd> 
 :::::::::::::::
 
 ### Updating our online repo
 Let's start with `git status`
-
-#### Ignoring some changes
-``` 
-echo "_build" >> .gitignore
-```
 
 
 
@@ -101,7 +98,7 @@ To add definitions to a glossary for our site what we need is mainly what myst c
 A glossary body has the following format:
 
 ```
-:::{golssary}
+:::{glossary}
 
 <term>
 : <definition>
@@ -109,7 +106,6 @@ A glossary body has the following format:
 <term>
 : <definition>
 
-...
 
 :::
 ```
@@ -126,6 +122,19 @@ The second step is to pick a few words that might need to be defined in our pape
 
 The last step is to find the items we added to our glossary, surrounding it with **backticks** (**\`**) and prefix it with \{term\}.
 
+So for example your document might have text like: 
+```md
+It is very important to identify key {term}`jargon` when teaching. 
+```
+
+and then your glossary could have
+```
+::::{glossary}
+jargon
+: domain specific terms in a field
+::::
+```
+
 
 
 ::::::::::::::: callout
@@ -133,16 +142,16 @@ Remember to add, commit and push your changes to update the online repo
 :::::::::::::::
 
 
-## Accronyms
+## Acronyms
 
-In any article, paper, or general text some words are repeated and sometimes it might be tedious to type the words everytime they need to be mentioned. So we use accronyms for those words.
+In any article, paper, or general text some words are repeated and sometimes it might be tedious to type the words everytime they need to be mentioned. So we use acronyms or abbreviations for those words.
 
 
-To use accronyms in a file, we need to declare them in the frontmatter header of the file with an object called `abbreviations` and the list of words
+To use acronyms in a file, we need to declare them in the frontmatter header of the file with an object called `abbreviations` and the list of words
 
 ::::::::::::::::: challenge
 ### Select some words in your paper and make them into acronyms or declare them as acronyms to myst
-Select some words in your paper and make them into accronyms or declare them as accronyms to myst
+Select some words in your paper and make them into acronyms or declare them as acronyms to myst
 or use existing acronyms in the document
 
 :::::::::::: solution
@@ -168,7 +177,8 @@ Here is a [list of frontmatter fields](https://mystmd.org/guide/frontmatter#avai
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- 
+- myst front matter provides document metadata per page or for the whole project
+- glossaries and abbreviations support hover text with contextual information well positioned for the reader
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 

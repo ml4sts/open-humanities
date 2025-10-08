@@ -21,7 +21,7 @@ exercises: 30
 
 ## This lesson is open source
 
-You can help us improve this over time! Issues are valuabe too, not only PRs. 
+You can help us improve this over time! Issues are valuable too, not only PRs. 
 
 
 ## Local Resources
