@@ -114,7 +114,7 @@ A glossary body has the following format:
 :::
 ```
 
-A glossary body can be create in any file in our project or for organization purposes can be on a file of its own.
+A glossary body can be exist in any file in our project or, for organization purposes, can be on a file of its own.
 
 Let's start by creating a file called in our repo called `Glossary.md`
 
@@ -124,7 +124,7 @@ touch Glossary.md
 
 The second step is to pick a few words that might need to be defined in our paper/article and add them to our Glossary file wrapped in one glossary body.
 
-The last step is to find the items we added to our glossary, surroung it with **backticks** (**\`**) and prefix it with \{term\}.
+The last step is to find the items we added to our glossary, surrounding it with **backticks** (**\`**) and prefix it with \{term\}.
 
 
 

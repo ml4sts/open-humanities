@@ -192,6 +192,8 @@ We notice how myst tracks all requests on the local host and applies the changes
 #### What does that tell us?
 We were able to create an interactive webpage using the same markdown files and turn them into an interactive page. We used the `myst` tool to make the webpage look nicer and have more powers.
 
+We also notice that with every change we make the contents of the `_build` folder get **rebuilt** to generate the newly updated material and settings. And we see a large number of files in there that we might want to hide from the front face of our GitHub repo.
+
 #### What did myst need to run?
 We noticed earlier that myst added a file to our directory as soon as we ran it. `myst.md`
 Let's figure out why it did so by viewing the contents of it and trying to understand it.
