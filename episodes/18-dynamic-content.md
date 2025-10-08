@@ -1,5 +1,5 @@
 ---
-title: 'dynamic-content'
+title: Dynamic Content
 teaching: 10
 exercises: 2
 ---
@@ -15,7 +15,7 @@ exercises: 2
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Citing papers in markdown with myst
+- Cite papers in markdown with myst
 - Using relative paths to link figures 
 - Applying cross referencing on our webpage to have a nice and dynamic view
 
@@ -24,18 +24,56 @@ exercises: 2
 ## Introduction
 How do we make our webpage more professional?
 
-With dynamic links, nice looking figures and decent citing of papers and articals.
+With dynamic links, nice looking figures and well-formatted citations
 
 
 ### Adding figures 
-Adding figures to your webpage is essential to to make your webpage more descriptive.
+
+We often want to include figures to our images. 
 To do so, we add the figure/image file in the project directory. Then we link it in the page/md-file that we want it to show up in by adding its relative path using special md syntax.
 
 ```md
-![](../folder/figure_path.png){alt="This is a figure that is located inside folder"}
+![This is a figure that is located inside folder](../folder/figure_path.png){alt=""}
 ```
 
-The `![]` tells markdown that there will be an image linked next. Within parenthesis (`()`) we put a relative path to an image from the location of the markdown file. As an optional add-on we use curly brackets (`{}`)
+The `![]` tells markdown that there will be an image linked next, the text inside is the alt-text, this is what a person using a screen reader would hear, and what would show if something was wrong with the image . Within parenthesis (`()`) we put a relative path to an image from the location of the markdown file. 
+
+This inserts a basic image into the flow of the text.  
+
+So for example
+
+```md
+![a screenshot of the website](fig/myst_page.png)
+```
+
+Would show up directly in the page.  
+
+Sometimes we want to have content instead in a figure that we can reference later. 
+
+If we use the `figure` directive, we can get that. 
+
+```md
+::::{figure} path/to/image
+:label: identifier_for_referencing
+:alt: alternative text for screen readers
+
+A figure caption
+:::::
+```
+
+In myst, a directive is a type of content that will be rendered into a different format, and it is syntactically enclosed in either 3 backticks or colon fences of at least 3 long. Above, we used a colon fence, with 4 at the top, the bottom then has to be 4 or more. 
+
+````md
+```{figure} path/to/image
+:label: identifier_for_referencing
+:alt: alternative text for screen readers
+
+A figure caption using backtics 
+```
+````
+
+
+
 
 ### Citing papers
 Including citations on your webpage is important. It provides the webpage with an extra layer of credibility to your contenr and provides the readers with access to the original sources and resources they might want to explore further.
@@ -53,7 +91,7 @@ for example
 }
 ```
 
-The next step is to add the citing to a dedicated file in your project named `Bibliography.bib`.
+The next step is to add the citing to a dedicated file in your project named `references.bib`.
 
 Finally, use the header of the citation with the `@` symbol to have myst cite the article in a neat way!
 
@@ -62,11 +100,11 @@ For the example above, the paper can be cited in my content using `@huang2023mla
 ::::::::::::::::::::::::: challenge 
 ### Create your own Bibliography
 
-Find a citing that might be useful for your material and add it to your own `Bibliography.bib`
+Find a citing that might be useful for your material and add it to your own `references.bib`
 
 :::::::::::: solution
 ```
-touch Bibliography.bib
+touch references.bib
 ```
 copy the citing and place it inside the file
 
@@ -78,7 +116,8 @@ copy the citing and place it inside the file
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- 
+- myst figures (and tables and other items) can be cross referenced
+- with bibtex, myst will format references and citations for you
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 

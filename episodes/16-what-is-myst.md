@@ -45,7 +45,13 @@ Today is when everything we've learned comes together.
 MyST is an open-source, community-driven project to improve scientific communication, including integrations into Jupyter Notebooks and computational results. (Sourced from [mystmd.org's Project goals](https://mystmd.org/guide#project-goals))
 
 Myst is a tool that we will learn to use to build interactive webpages or pdfs. The benifit of this is more powerful publishing of content and information.
+
+
 Here's an example of a paper published using myst: [A Literature Review On AI fairness Best Practices](https://ml4sts.com/fairml-bestpractices/)
+
+
+<!-- here is a good place for a testimonial box with past learners' sites -->
+
 
 ::::::::::::: instructor
 Show dynamic glossary items and links
@@ -66,14 +72,22 @@ MyST can also do this, except that it uses templates to render pages with a more
 Let's learn about using myst on the simple repo we created on the first day.
 
 ## Starting myst
-Open your terminal and `cd` into your `my-website` repo's directory
+Open your terminal and navigte to your `my-website` repo's directory:
+
+```bash
+cd Desktop/my-website
+```
+
 Type the command `code` into your terminal 
 
+```bash
+code .
+```
 
 :::::::: instructor
 Quick rundown on vscode view. 
 If code doesn't work (problems with path) open vscode manually
-
+Instructions for macos are linked on setup page
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
@@ -84,6 +98,8 @@ In your terminal type myst:
 ```bash
 myst init
 ```
+
+This will produce output like: 
 ```
 Welcome to the MyST CLI! 🎉 🚀
 
@@ -102,10 +118,15 @@ Learn more about this CLI and MyST Markdown at: https://mystmd.org
 
 ? Would you like to run myst start now? 
 ```
+
 Answer the prompt with `yes`
+
 ```
 ? Would you like to run myst start now? Yes
 ```
+
+answer with Yes again
+
 ```
 📖 Built README.md in 62 ms.
 📖 Built index.md in 364 ms.
@@ -123,17 +144,7 @@ Answer the prompt with `yes`
 
 
 
-   ╭────────────────────────────────────────────╮
-   │                                            │
-   │     Update available! v1.5.1 ≫ v1.6.0      │
-   │                                            │
-   │   Run `pip install -U mystmd` to update.   │
-   │                                            │
-   │      Follow @mystmd.org for updates!       │
-   │    https://bsky.app/profile/mystmd.org     │
-   │                                            │
-   ╰────────────────────────────────────────────╯
-   ```
+```
 
 This tells you that all the files that were in your directory (README.md & index.md) were built into a website locally.
 
@@ -147,12 +158,16 @@ To view this website follow the link provided in the prompt:
 
 
 ::::: callout
-If your port `3000` was already occupied you might get a different number
+If your port `3000` was already occupied you might get a different number e.g. 3001 or 3002
 :::::
 
 
 ### What did this do?
-Firstly we notice that the files in the directory got increased by 1. The new file is called myst.yml as mentioned by the output from the command we ran.
+Firstly we notice that the files in the directory increased.
+
+- the first new file is called `myst.yml` as mentioned by the output from the command we ran.
+- another is `.gitignore`
+- there is also a new folder `_build/`
 
 If we opened the webpage using the link above we see somthing like this
 
@@ -194,8 +209,11 @@ We were able to create an interactive webpage using the same markdown files and 
 
 We also notice that with every change we make the contents of the `_build` folder get **rebuilt** to generate the newly updated material and settings. And we see a large number of files in there that we might want to hide from the front face of our GitHub repo.
 
+Myst planned ahead and automatically added a `.gitignore` file and added patterns (like the ones we used on the shell with the bash commands) for those files.  Take a look to see.
+
+
 #### What did myst need to run?
-We noticed earlier that myst added a file to our directory as soon as we ran it. `myst.md`
+We noticed earlier that myst added a file to our directory as soon as we ran it. `myst.yml`
 Let's figure out why it did so by viewing the contents of it and trying to understand it.
 
 ``` bash

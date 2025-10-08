@@ -1,5 +1,5 @@
 ---
-title: 'publishing-myst'
+title: Publishing Myst
 teaching: 10
 exercises: 2
 ---
@@ -24,7 +24,7 @@ Now to finally see our nice work published!
 
 We're going to use GitHub Pages again, similar to what we did in day one.
 
-But wait, we added the `_build` folder to `.gitignore` to prevent git from tracking this information and requiring `git add`, `git commit` and `git push` for those changes.
+
 
 ### Why don't we want to track these changes?
 The first reason is that they're a lot of files and they will clutter the GitHub repository. Not to mention that tracking all of the changes in terms of adding and committing might get annoying and tricky.
