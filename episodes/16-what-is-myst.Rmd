@@ -31,7 +31,7 @@ Remember to address feedback from the previous session
 
 :::::::: instructor
 
-Today is when everything we've learned come together into on.
+Today is when everything we've learned comes together.
 - We've talked about GitHub
 - We've seen GitHub pages do magic
 - We got intorduced to the shell of our operating systems
