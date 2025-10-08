@@ -119,7 +119,7 @@ A glossary body can be exist in any file in our project or, for organization pur
 Let's start by creating a file called in our repo called `glossary.md`
 
 ```bash
-touch Glossary.md
+touch glossary.md
 ```
 
 The second step is to pick a few words that might need to be defined in our paper/article and add them to our Glossary file wrapped in one glossary body.
