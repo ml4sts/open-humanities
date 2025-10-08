@@ -9,7 +9,7 @@ exercises: 2
 - How can we build an interactive webpage using Markdown files?
 - How do we initialize myst?
 - What does myst need to run?
-- How do I view mny work?
+- How do I view my work?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -28,12 +28,34 @@ Remember to address feedback from the previous session
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+
+:::::::: instructor
+
+Today is when everything we've learned comes together.
+- We've talked about GitHub
+- We've seen GitHub pages convert markdown to HTML
+- We got introduced to the shell of our operating systems
+- And we've learned how to manipulate files and data in the shell
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 ## Introduction
 
 MyST is an open-source, community-driven project to improve scientific communication, including integrations into Jupyter Notebooks and computational results. (Sourced from [mystmd.org's Project goals](https://mystmd.org/guide#project-goals))
 
 Myst is a tool that we will learn to use to build interactive webpages or pdfs. The benifit of this is more powerful publishing of content and information.
 Here's an example of a paper published using myst: [A Literature Review On AI fairness Best Practices](https://ml4sts.com/fairml-bestpractices/)
+
+::::::::::::: instructor
+Show dynamic glossary items and links
+- Header
+- Tables of contents 
+- AI in intro vs AI in Technical challenges
+- Links to articles
+- Table in Fair-learn
+- Table in Synthesis of Frameworks
+::::::::::::::::::::::::::::::::::::::::::
 
 ## A Different Way of Building HTML
 The purpose of MyST is to have a powerful tool that builds interactive HTML pages without doing any HTML coding.
@@ -44,11 +66,23 @@ MyST can also do this, except that it uses templates to render pages with a more
 Let's learn about using myst on the simple repo we created on the first day.
 
 ## Starting myst
-Open your terminal and `cd` into your repo's directory.
+Open your terminal and `cd` into your `my-website` repo's directory
+Type the command `code` into your terminal 
+
+
+:::::::: instructor
+Quick rundown on vscode view. 
+If code doesn't work (problems with path) open vscode manually
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+Notice how you can access your terminal directly from vscode too!
+
 
 In your terminal type myst:
 ```bash
-myst
+myst init
 ```
 ```
 Welcome to the MyST CLI! 🎉 🚀
@@ -103,26 +137,32 @@ Answer the prompt with `yes`
 
 This tells you that all the files that were in your directory (README.md & index.md) were built into a website locally.
 
+::::: callout
+Locally means this content is hosted on your machine. Not published for the public to be able to access.
+:::::
+
+
 To view this website follow the link provided in the prompt:
 `http://localhost:3000`
+
 
 ::::: callout
 If your port `3000` was already occupied you might get a different number
 :::::
 
 
-### What dit this do?
-Firstly we notice that the files in the directory got increaced by 1. The new file is called myst.yml as mentioned by the output from the command we ran.
+### What did this do?
+Firstly we notice that the files in the directory got increased by 1. The new file is called myst.yml as mentioned by the output from the command we ran.
 
 If we opened the webpage using the link above we see somthing like this
 
-![](fig\myst_page.png)
-![](fig\myst_page2.png)
+![](fig/myst_page.png){alt="my-website rendered locally"}
+![](fig/myst_page2.png){alt="my-websit's other page rendered locally"}
 
-We notice a few things on this page:
-* On the top-left corner says `Made with Myst`
-* For each md file we have a button on the left page section 
-* On the top-right corner we have a dark/light theme button as well as a search bar that works!
+We notice a few things on this page:  
+- On the top-left corner says `Made with Myst`
+- For each md file we have a button on the left page section 
+- On the top-right corner we have a dark/light theme button as well as a search bar that works!
 
 
 
@@ -142,7 +182,7 @@ We notice how myst tracks all requests on the local host and applies the changes
 💌 GET  /readme 200 - - 18.691 ms
 ```
 
-![](fig\myst_page3.png)
+![](fig/myst_page3.png){alt="my-website rendered locally with new readme"}
 
 :::::::::::::::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -152,9 +192,17 @@ We notice how myst tracks all requests on the local host and applies the changes
 #### What does that tell us?
 We were able to create an interactive webpage using the same markdown files and turn them into an interactive page. We used the `myst` tool to make the webpage look nicer and have more powers.
 
+We also notice that with every change we make the contents of the `_build` folder get **rebuilt** to generate the newly updated material and settings. And we see a large number of files in there that we might want to hide from the front face of our GitHub repo.
+
 #### What did myst need to run?
 We noticed earlier that myst added a file to our directory as soon as we ran it. `myst.md`
 Let's figure out why it did so by viewing the contents of it and trying to understand it.
+
+``` bash
+cat myst.yml
+```
+or view it using vscode
+
 
 ```yaml
 # See docs at: https://mystmd.org/guide/frontmatter
@@ -182,13 +230,14 @@ So we learn that myst requires this file to be in your project directory to be a
 ::::::::::::::::::::::::::::::::::::: challenge 
 
 ## Editing meta data
+Change the title of your webpage from the `myst.md` file and observe the difference before and after
 
 :::::::::::::::::::::::: solution 
 
 Let's look at how the tab is labeled on the browser and what the page title looks like 
 
-![](fig\tab-label.png)
-![](fig\webpage-title.png)
+![](fig/tab-label.png){alt="my-website rendered locally with old tab title"}
+![](fig/webpage-title.png){alt="my-website rendered locally with old title"}
 
 Edit the metadata of your webpage from ` myst.yml`. Remove the `#` to uncomment the line that has `title:` in it and then add a title to your webpage.
 
@@ -201,7 +250,7 @@ project:
   # description:
   # keywords: []
   # authors: []
-  github: https://github.com/AymanBx/my-website
+  github: https://github.com/some-humanist/my-website
   # To autogenerate a Table of Contents, run "myst init --write-toc"
 site:
   template: book-theme
@@ -210,8 +259,8 @@ site:
   #   logo: site_logo.png
 ```
 
-![](fig\tab-label-changed.png)
-![](fig\webpage-title-changed.png)
+![](fig/tab-label-changed.png){alt="my-website rendered locally with new lab title"}
+![](fig/webpage-title-changed.png){alt="my-website rendered locally with new title"}
 
 :::::::::::::::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::::::::::::::
