@@ -78,7 +78,7 @@ Let's start with `git status`
 
 #### Ignoring some changes
 ``` 
-echo "_build" >> .ignore
+echo "_build" >> .gitignore
 ```
 
 
