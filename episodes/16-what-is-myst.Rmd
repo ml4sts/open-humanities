@@ -72,7 +72,7 @@ Type the command `code` into your terminal
 
 :::::::: instructor
 Quick rundown on vscode view. 
-If code doesn't work (problems with path) just open vscode manually
+If code doesn't work (problems with path) open vscode manually
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
