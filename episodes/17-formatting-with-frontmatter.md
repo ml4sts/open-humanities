@@ -116,7 +116,7 @@ A glossary body has the following format:
 
 A glossary body can be exist in any file in our project or, for organization purposes, can be on a file of its own.
 
-Let's start by creating a file called in our repo called `Glossary.md`
+Let's start by creating a file called in our repo called `glossary.md`
 
 ```bash
 touch Glossary.md
