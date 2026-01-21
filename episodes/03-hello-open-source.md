@@ -72,18 +72,18 @@ A repository can be thought of in many ways, you can think of it as a big folder
 
 To create a new repo login to your GitHub account. At the top, right corner click on the `+` sign and choose `New repository`
 
-![](fig\gh_new-repo.png){alt="GitHub create a new repo button"}
+![](fig/gh_new-repo.png){alt="GitHub create a new repo button"}
 
 
 Give your repository a meaningful name that suits the contents it shall hold. And we encourage adding something to the optional description section. 
 Toggle the `Add a README file` button and click on the green `Create Repository` button.
 
-![](fig\gh-new-repo-name.png){alt="GitHub create a new repo page"}
+![](fig/gh-new-repo-name.png){alt="GitHub create a new repo page"}
 
 
 Here is a preview of how the new repo would look like:
 
-![](fig\gh_new-repo-page.png){alt="GitHub new repo view"}
+![](fig/gh_new-repo-page.png){alt="GitHub new repo view"}
 
 
 ### Enable GitHub Pages
